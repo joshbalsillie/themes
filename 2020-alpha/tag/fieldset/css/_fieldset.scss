@@ -1,0 +1,35 @@
+@charset "utf-8";
+/*
+ * Author:Joshua Balsillie
+ * Date Created:2019-02-16
+ * Description:define <fieldset></fieldset> styles
+ */
+
+fieldset {
+	@include browserSupport( margin-start, 0 );
+	@include browserSupport( margin-end, 0 );
+	@include browserSupport( padding-before, 0 );
+	@include browserSupport( padding-start, 0 );
+	@include browserSupport( padding-end, 0 );
+	@include browserSupport( padding-after, 0 );
+	
+	display:block;
+	margin-top:0;
+	margin-bottom:$paddingAroundItems;
+	margin-left:0;
+	margin-right:0;
+	padding-top:0;
+	padding-bottom:0;
+	padding-left:0;
+	padding-right:0;
+	border-style:none;
+	border-width:0;
+
+	&:last-child {
+		margin-bottom:0;
+		text-align:right;
+	}
+	& > *:last-child {
+		margin-bottom:0;
+	}
+}

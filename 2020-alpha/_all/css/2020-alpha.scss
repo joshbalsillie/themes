@@ -1,0 +1,63 @@
+@charset "utf-8";
+/*
+ * Author: Joshua Balsillie
+ * Date Created: 2016-08-17
+ * Description: Import tag styles
+ * 
+ * References
+ * Define ID: #id {
+ * Define class: .class {
+ * Define all: * {
+ * Define child: > {
+ * Define import css: @import "folder/_file.scss";
+ * Setup and use: http://sass-lang.com/guide
+ *
+ * Important
+ * Order files for inheritance
+ */
+
+/* Functions and Mixins */
+@import "../../variable/css/_functions.scss";
+@import "../../variable/css/_mixins.scss";
+
+/* Variables */
+@import "../../variable/css/_actions.scss";
+@import "../../variable/css/_colours.scss";
+@import "../../variable/css/_spacial.scss";
+@import "../../variable/css/_typefaces.scss";
+
+/* Tags */
+@import "../../tag/a/css/_a.scss";
+@import "../../tag/body/css/_body.scss";
+@import "../../tag/button/css/_button.scss";
+@import "../../tag/div/css/_div.scss";
+@import "../../tag/fieldset/css/_fieldset.scss";
+@import "../../tag/footer/css/_footer.scss";
+@import "../../tag/form/css/_form.scss";
+@import "../../tag/h1/css/_h1.scss";
+@import "../../tag/h2/css/_h2.scss";
+@import "../../tag/h3/css/_h3.scss";
+@import "../../tag/h4/css/_h4.scss";
+@import "../../tag/h5/css/_h5.scss";
+@import "../../tag/h6/css/_h6.scss";
+@import "../../tag/head/css/_head.scss";
+@import "../../tag/header/css/_header.scss";
+@import "../../tag/html/css/_html.scss";
+@import "../../tag/img/css/_img.scss";
+@import "../../tag/input/css/_input.scss";
+@import "../../tag/label/css/_label.scss";
+@import "../../tag/link/css/_link.scss";
+@import "../../tag/main/css/_main.scss";
+@import "../../tag/meta/css/_meta.scss";
+@import "../../tag/nav/css/_nav.scss";
+@import "../../tag/p/css/_p.scss";
+@import "../../tag/script/css/_script.scss";
+@import "../../tag/section/css/_section.scss";
+@import "../../tag/style/css/_style.scss";
+@import "../../tag/textarea/css/_textarea.scss";
+@import "../../tag/title/css/_title.scss";
+@import "../../tag/video/css/_video.scss";
+
+/* Other Elements */
+@import "../../element/columns/css/_columns.scss";
+@import "../../element/scrollbar/css/_scrollbar.scss";

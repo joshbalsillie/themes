@@ -1,0 +1,19 @@
+@charset "utf-8";
+/*
+ * Author:Joshua Balsillie
+ * Date Created:2016-08-18
+ * Description:define <h4></h4> attributes
+ */
+
+h4 {
+	display:block;
+	line-height:180%;
+	font-size:( $defaultFontSize * $fontSmallest );
+	font-weight:100;
+
+	/* Remove defaults */
+	@include browserSupport( margin-start, $fontMargin );
+	@include browserSupport( margin-end, $fontMargin );
+	@include browserSupport( margin-before, $fontMargin );
+	@include browserSupport( margin-after, $fontMargin );
+}

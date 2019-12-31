@@ -1,0 +1,27 @@
+@charset "utf-8";
+/*
+ * Author: Joshua Balsillie
+ * Date Created: 2016-08-18
+ * Description: define <body></body> styles
+*/
+
+body {
+	display:block;
+	margin:0;
+	padding:0;
+	border:0;
+	width:100%;
+	cursor:auto;
+	
+	background:$colour1stBackground;
+
+	/* Remove default font styles */
+	font-style:normal;
+	font-weight:normal;
+	font-stretch:normal;
+	font-variant:normal;
+	
+	line-height:$defaultFontSize;
+	font-size:$defaultFontSize;
+	font-family:$defaultFontFamily;
+}

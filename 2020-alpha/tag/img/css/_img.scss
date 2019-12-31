@@ -1,0 +1,20 @@
+/*
+Author:Joshua Balsillie
+Date Created:2016-09-07
+Description:define <img></img> attributes
+*/
+
+img {
+	max-width:100%;
+	max-height:inherit;
+	
+	border-color:$colour1stForeground;
+	border-style:$defaultBorderStyle;
+	
+	&.circle {
+		border-radius:50%;
+	}
+
+	/* Uniform tag sizing */
+	@include browserSupport( box-sizing, border-box );
+}

@@ -1,0 +1,18 @@
+/*
+Author:Joshua Balsillie
+Date Created:2016-09-07
+Description:define <img></img> attributes
+*/
+
+img {
+	max-width:100%;
+	max-height:inherit;
+	object-fit:contain;
+	
+	&.portrait_9x16 {
+		
+	}
+
+	/* Uniform tag sizing */
+	@include browserSupport( box-sizing, border-box );
+}

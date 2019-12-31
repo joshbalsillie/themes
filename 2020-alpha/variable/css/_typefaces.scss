@@ -1,0 +1,25 @@
+@charset "utf-8";
+/*
+ * Author: Joshua Balsillie
+ * Date Created: 2016-08-17
+ * Description: define typeface styles
+ */
+
+/* Font attributes */
+$defaultFontSize: 1rem;
+$defaultFontStyle: normal;
+$defaultFontFamily:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+
+$transformTitle: uppercase;
+$emphasizedText: italic;
+$boldText: 100;
+
+/* Font ratios */
+$fontLarge: 2;
+$fontMedium: 1.5;
+$fontSmall: 1.25;
+$fontSmallest: 1;
+
+:lang(en) {
+	font-family: $defaultFontFamily;
+}

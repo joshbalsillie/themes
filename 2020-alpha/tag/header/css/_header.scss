@@ -1,0 +1,29 @@
+@charset "utf-8";
+/*
+ * Author: Joshua Balsillie
+ * Date Created: 2016-08-20
+ * Description: define <header></header> attributes
+*/
+
+header {
+	border-width:0;
+	border-bottom-width:$defaultBorderWidth;
+	border-bottom-style:$defaultBorderStyle;
+	
+	color:$colour1stForeground;
+	background:$colour1stBackground;
+	overflow-y:hidden;
+	
+	display:block;
+	
+	padding-left:10%;
+	padding-right:10%;
+	
+	padding-top:$sizeMedium;
+	padding-bottom:$sizeMedium;
+	margin-left:auto;
+	margin-right:auto;
+	
+	/* Uniform tag sizing */
+	@include browserSupport( box-sizing, border-box );
+}

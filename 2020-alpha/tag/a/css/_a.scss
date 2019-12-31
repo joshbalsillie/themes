@@ -1,0 +1,20 @@
+@charset "utf-8";
+/*
+ * Author:Joshua Balsillie
+ * Date Created:2016-08-18
+ * Description:define <a></a> styles
+ */
+
+a {
+	font-size:( $defaultFontSize * $fontSmallest );
+	text-decoration:none;
+	display:inline;
+	cursor:pointer;
+	line-height:140%;
+	
+	/* Remove defaults */
+	@include browserSupport( margin-start, $fontMargin );
+	@include browserSupport( margin-end, $fontMargin );
+	@include browserSupport( margin-before, $fontMargin );
+	@include browserSupport( margin-after, $fontMargin );
+}

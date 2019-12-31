@@ -1,0 +1,25 @@
+@charset "utf-8";
+/*
+ * Author: Joshua Balsillie
+ * Date Created: 2016-08-20
+ * Description: define <textarea></textarea> styles
+ */
+
+textarea {
+	width:100%;
+	display:block;
+	box-sizing: border-box;
+	height:8em;
+	resize:none;
+	border-style:none;
+	border-width:0;
+	border:0;
+	
+	margin-bottom:$marginItemsUnrelated;
+	padding-top:$cellPadding;
+	padding-bottom:$cellPadding;
+	padding-left:$cellPadding;
+	padding-right:$cellPadding;
+	color:$colour1stBackground;
+	background-color:$colour1stAccent;
+}

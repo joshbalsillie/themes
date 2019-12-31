@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+
+@function luminance( $color ){
+	/*
+	 * Returns the luminance of `$color` as a float (between 0 and 1)
+	 * 1 is pure white, 0 is pure black
+	 * @param {Color} $color - Color
+	 * @return {Number}
+	 * @link http://www.w3.org/TR/2008/REC-WCAG20-20081211/#relativeluminancedef Reference
+	 */
+	$colors: (
+		'red': red( $color ),
+		'green': green( $color ),
+		'blue': blue( $color )
+	);
+
+	@each $name, $value in $colors {
+		$adjusted: 0;
+		$value: $value / 255;
+
+		@if $value < 0.03928 {
+			$value: $value / 12.92;
+		} @else {
+			$value: ( $value + .055 ) / 1.055;
+			$value: pow( $value, 2.4 );
+		}
+
+		$colors: map-merge( $colors, ( $name: $value ));
+	}
+
+	@return ( map-get( $colors, 'red' ) * .2126 ) + ( map-get( $colors, 'green' ) * .7152 ) + ( map-get( $colors, 'blue' ) * .0722 );
+}
+
+@function contrastRatio( $colour1, $colour2 ){
+	// get the contrast ratio between 1 and 21
+	// 3.0 == A compliance
+	// 4.5 == AA compliance
+	// 7.0 == AAA compliance
+	$colour1Luminance: luminance( $colour1 );
+	$colour2Luminance: luminance( $colour2 );
+
+	@return ( $colour1Luminance + 0.05 ) / ( $colour2Luminance + 0.05 );
+}
+
+@function setColourAa( $backgroundColour, $colourOption1, $colourOption2 ){
+	// Evaluate colours in preferred order and return first colour that is at least AA (4.5:1) compliant
+	// Otherwise return either white or black
+	$backgroundColourLuminance: luminance( $backgroundColour );
+	$lightColourLuminance: luminance( $lightColour );
+
+	@if contrastRatio( $backgroundColour, $colourOption1 ) >= 4.5 {
+		@return $colourOption1;
+	}
+	@else if contrastRatio( $backgroundColour, $colourOption2 ) >= 4.5 {
+		@return $colourOption2;
+	}
+	@else if contrastRatio( $backgroundColour, #000000 ) >= 4.5 {
+		@return #000000;
+	}
+	@else if contrastRatio( $backgroundColour, #FFFFFF ) >= 4.5 {
+		@return #FFFFFF;
+	}
+}
