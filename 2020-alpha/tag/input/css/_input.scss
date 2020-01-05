@@ -5,7 +5,7 @@
  * Description:define <input></input> styles
  */
 
-input {
+input, .input {
 	width:100%;
 	display:block;
 	box-sizing: border-box;
@@ -22,8 +22,11 @@ input {
 	background-color:$colour1stAccent;
 }
 input[type="submit"],
+.input[type="submit"],
 input[type="button"],
-input[type="file"] {
+.input[type="button"],
+input[type="file"],
+.input[type="file"] {
 	color:$colourActionDark;
 	background-color:transparent;
 	border-color:$colourActionDark;

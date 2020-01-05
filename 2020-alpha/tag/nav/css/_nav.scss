@@ -5,27 +5,28 @@ Date Created: 2016-08-20
 Description: define <nav></nav> attributes
 */
 
-nav:first-child {
-	display:block;
-	
-	text-align:left;
-}
-nav:last-child {
-	@include responsive( text-align, right, right, center );
-}
-nav a {
-	background-color:transparent;
-	color:$colourActionDark;
-	padding:10px;
-	padding-bottom:5px;
-	margin:2px;
-	text-transform:$transformTitle;
-	@include responsive( display, inline-block, inline-block, block );
-	@include browserSupport( transition-duration, 0.3s );
-	
-	&:hover, :focus, :active {
-		background-color:$colourActionDark;
-		color:$colour1stBackground;
-		@include browserSupport( transition-duration, 0.3s );
+nav, .nav {
+	&:first-child {
+		display:block;
+		
+		text-align:left;
 	}
+	&:last-child {
+		@include responsive( text-align, right, right, center );
+	}
+	& a {
+		background-color:transparent;
+		color:$colourActionDark;
+		padding:10px;
+		padding-bottom:5px;
+		margin:2px;
+		text-transform:$transformTitle;
+		@include responsive( display, inline-block, inline-block, block );
+		@include browserSupport( transition-duration, 0.3s );
+		
+		&:hover, :focus, :active {
+			background-color:$colourActionDark;
+			color:$colour1stBackground;
+			@include browserSupport( transition-duration, 0.3s );
+		}
 }

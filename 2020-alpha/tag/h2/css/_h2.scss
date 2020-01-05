@@ -5,7 +5,7 @@
  * Description:define <h2></h2> attributes
  */
 
-h2 {
+h2, .h2 {
 	display:block;
 	line-height:140%;
 	font-size:( $defaultFontSize * $fontSmall );

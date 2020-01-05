@@ -1,10 +1,10 @@
 /*
 Author:Joshua Balsillie
 Date Created:2016-09-07
-Description:define <img></img> attributes
+Description:define <video></video> attributes
 */
 
-img {
+video, .video {
 	max-width:100%;
 	max-height:inherit;
 	object-fit:contain;

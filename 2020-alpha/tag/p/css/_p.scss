@@ -5,7 +5,7 @@
  * Description:define <p></p> attributes
  */
 
-p {
+p, .p {
 	display:block;
 	line-height:140%;
 	font-size:( $defaultFontSize * $fontSmallest );

@@ -5,7 +5,7 @@
  * Description:define <h1></h1> attributes
  */
 
-h1 {
+h1, .h1 {
 	display:block;
 	font-size:( $defaultFontSize * $fontLarge );
 	line-height:140%;

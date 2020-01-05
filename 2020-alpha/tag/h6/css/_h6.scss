@@ -5,7 +5,7 @@
  * Description:define <h6></h6> attributes
  */
 
-h6 {
+h6, .h6 {
 	display:block;
 	line-height:180%;
 	font-size:( $defaultFontSize * $fontSmallest );
