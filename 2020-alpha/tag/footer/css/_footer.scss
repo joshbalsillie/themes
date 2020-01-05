@@ -5,34 +5,27 @@ Date Created: 2015-05-20
 Description: define <footer></footer> attributes
 */
 
-footer {
+footer, .footer {
 	display:block;
 	margin-left:auto;
 	margin-right:auto;
 }
-body > footer:last-child {
-	color:$colour1stBackground;
-	background:$colour1stForeground;
-	overflow-y:hidden;
-	vertical-align:middle;
-	
-	padding-left:10%;
-	padding-right:10%;
-	
-	padding-top:$sizeMedium;
-	padding-bottom:$sizeMedium;
-	
-	/* Uniform tag sizing */
-	@include browserSupport( box-sizing, border-box );
-}
-body > footer > first-child {
-	& > *:nth-child(3n+1) {
-		text-align:left;
-	}
-	& > *:nth-child(3n+2) {
-		text-align:center;
-	}
-	& > *:nth-child(3n+3) {
-		text-align:right;
+body {
+	& > footer, .footer {
+		&:last-child {
+			color:$colour1stBackground;
+			background:$colour1stForeground;
+			overflow-y:hidden;
+			vertical-align:middle;
+			
+			padding-left:10%;
+			padding-right:10%;
+			
+			padding-top:$sizeMedium;
+			padding-bottom:$sizeMedium;
+			
+			/* Uniform tag sizing */
+			@include browserSupport( box-sizing, border-box );
+		}
 	}
 }

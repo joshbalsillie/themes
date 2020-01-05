@@ -5,7 +5,7 @@
  * Description:define <h4></h4> attributes
  */
 
-h4 {
+h4, .h4 {
 	display:block;
 	line-height:180%;
 	font-size:( $defaultFontSize * $fontSmallest );

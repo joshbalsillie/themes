@@ -5,8 +5,7 @@ Date Created:2016-08-22
 Description:define <button></button> styles
 */
 
-button
-.button {
+button, .button {
 	font-size:( $defaultFontSize * $fontSmallest );
 	display:inline-flex;
 	cursor:pointer;

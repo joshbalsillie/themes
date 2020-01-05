@@ -5,7 +5,7 @@
  * Description:define <a></a> styles
  */
 
-a {
+a, .a {
 	font-size:( $defaultFontSize * $fontSmallest );
 	text-decoration:none;
 	display:inline;

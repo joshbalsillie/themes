@@ -5,7 +5,7 @@
  * Description:define <h3></h3> attributes
  */
 
-h3 {
+h3, .h3 {
 	display:block;
 	line-height:180%;
 	font-size:( $defaultFontSize * $fontSmallest );

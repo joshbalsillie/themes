@@ -5,7 +5,7 @@
  * Description: define <header></header> attributes
 */
 
-header {
+header, .header {
 	border-width:0;
 	border-bottom-width:$defaultBorderWidth;
 	border-bottom-style:$defaultBorderStyle;

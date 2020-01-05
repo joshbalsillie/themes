@@ -5,7 +5,7 @@
  * Description:define <fieldset></fieldset> styles
  */
 
-fieldset {
+fieldset, .fieldset {
 	@include browserSupport( margin-start, 0 );
 	@include browserSupport( margin-end, 0 );
 	@include browserSupport( padding-before, 0 );
