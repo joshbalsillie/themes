@@ -6,20 +6,25 @@
  */
 
 textarea, .textarea {
-	width:100%;
+	overflow-y:scroll;
+	resize:vertical;
+	outline: none;
 	display:block;
+
+	width:100%;
+	max-height:8em;
+
 	box-sizing: border-box;
-	height:8em;
-	resize:none;
-	border-style:none;
-	border-width:0;
 	border:0;
+	border-style:$defaultBorderStyle;
+	border-bottom-width:$defaultBorderWidth;
+	border-color:$colourActionDark;
 	
 	margin-bottom:$marginItemsUnrelated;
 	padding-top:$cellPadding;
 	padding-bottom:$cellPadding;
 	padding-left:$cellPadding;
 	padding-right:$cellPadding;
-	color:$colour1stBackground;
-	background-color:$colour1stAccent;
+	color:$colourActionDark;
+	background-color:transparent;
 }
