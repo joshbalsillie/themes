@@ -6,13 +6,11 @@
  */
 
 main, .main {
-	text-align:center;
-	
-	color:$colour1stForeground;
-	background-color:$colour1stBackground;
-	border-color:$colour1stAccent;
-	
+	/* Overwrite Defaults */
 	display:block;
+}
+body > main, .main {
+	text-align:center;
 	
 	padding-left:10%;
 	padding-right:10%;
@@ -23,41 +21,9 @@ main, .main {
 	margin-right:auto;
 	border:0;
 	
-	/* Uniform tag sizing */
-	@include browserSupport( box-sizing, border-box );
+	@include browserSupport( box-sizing, border-box ); // Uniform tag sizing
 	
-	& > .highlight {
-		color:$colour1stBackground;
-		background-color:$colour1stForeground;
-		border-color:$colour2ndAccent;
-		
-		border-width:$defaultBorderWidth;
-		border-style:$defaultBorderStyle;
-	}
-	& input, textarea {
-		color:$colour1stBackground;
-		background-color:$colour1stAccent;
-	}
-	& button,
-	input[type="submit"],
-	input[type="button"],
-	input[type="file"],
-	.button {
-		color:$colourActionDark;
-		background-color:transparent;
-		border-color:$colourActionDark;
-		
-		border-width:$defaultBorderWidth;
-		border-style:$defaultBorderStyle;
-		
-		&:hover, :focus, :active, .selected {
-			color:$colour1stBackground;
-			background-color:$colourActionDark;
-		}
-		&.deselected {
-			color:$colourActionDark;
-			background-color:transparent;
-			border-color:$colourActionDark;
-		}
-	}
+	color:$colour1stForeground;
+	background-color:$colour1stBackground;
+	border-color:$colour1stAccent;
 }
