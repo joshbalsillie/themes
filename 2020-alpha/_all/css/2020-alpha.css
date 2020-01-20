@@ -95,7 +95,7 @@
  * Date Created:2016-08-18
  * Description:define <a></a> styles
  */
-a {
+a, .a {
   font-size: 1rem;
   text-decoration: none;
   display: inline;
@@ -129,7 +129,7 @@ a {
  * Date Created: 2016-08-18
  * Description: define <body></body> styles
 */
-body {
+body, .body {
   display: block;
   margin: 0;
   padding: 0;
@@ -152,7 +152,7 @@ Author:Joshua Balsillie
 Date Created:2016-08-22
 Description:define <button></button> styles
 */
-button .button {
+button, .button {
   font-size: 1rem;
   display: inline-flex;
   cursor: pointer;
@@ -177,11 +177,11 @@ button .button {
   transition-duration: 0.3s;
   margin-bottom: 1rem;
 }
-button .button:hover, button .button :focus, button .button :active, button .button .selected {
+button:hover, button :focus, button :active, button .selected, .button:hover, .button :focus, .button :active, .button .selected {
   color: white;
   background-color: #003e47;
 }
-button .button.deselected {
+button.deselected, .button.deselected {
   color: #003e47;
   background-color: transparent;
   border-color: #003e47;
@@ -192,12 +192,12 @@ button .button.deselected {
  * Date Created: 2016-08-20
  * Description: define <div></div> styles
  */
-div {
-  text-align: center;
-  color: #323e42;
-  background-color: transparent;
-  border-color: #add7e7;
+div, .div {
+  /* Overwrite Defaults */
   display: block;
+}
+
+body > div {
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 1rem;
@@ -205,17 +205,31 @@ div {
   margin-left: auto;
   margin-right: auto;
   border: 0;
-  /* Uniform tag sizing */
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-div > .highlight {
-  color: white;
+body > div:nth-child(odd) {
+  color: #323e42;
+  background-color: #b3f4d4;
+}
+body > div:nth-child(odd) > .highlight {
+  color: #b3f4d4;
   background-color: #323e42;
   border-color: #3a4f45;
+  border-width: 0.15rem;
+  border-style: solid;
+}
+body > div:nth-child(even) {
+  color: #323e42;
+  background-color: #add7e7;
+}
+body > div:nth-child(even) > .highlight {
+  color: #add7e7;
+  background-color: #323e42;
+  border-color: #323e42;
   border-width: 0.15rem;
   border-style: solid;
 }
@@ -225,7 +239,7 @@ div > .highlight {
  * Date Created:2019-02-16
  * Description:define <fieldset></fieldset> styles
  */
-fieldset {
+fieldset, .fieldset {
   -ms-margin-start: 0;
   -o-margin-start: 0;
   -moz-margin-start: 0;
@@ -268,11 +282,11 @@ fieldset {
   border-style: none;
   border-width: 0;
 }
-fieldset:last-child {
+fieldset:last-child, .fieldset:last-child {
   margin-bottom: 0;
   text-align: right;
 }
-fieldset > *:last-child {
+fieldset > *:last-child, .fieldset > *:last-child {
   margin-bottom: 0;
 }
 
@@ -281,13 +295,13 @@ Author: Joshua Balsillie
 Date Created: 2015-05-20
 Description: define <footer></footer> attributes
 */
-footer {
+footer, .footer {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-body > footer:last-child {
+body > footer:last-child, body .footer:last-child {
   color: white;
   background: #323e42;
   overflow-y: hidden;
@@ -304,22 +318,12 @@ body > footer:last-child {
   box-sizing: border-box;
 }
 
-body > footer > first-child > *:nth-child(3n+1) {
-  text-align: left;
-}
-body > footer > first-child > *:nth-child(3n+2) {
-  text-align: center;
-}
-body > footer > first-child > *:nth-child(3n+3) {
-  text-align: right;
-}
-
 /*
  * Author:Joshua Balsillie
  * Date Created:2016-08-19
  * Description:define <form></form> styles
  */
-form {
+form, .form {
   margin: 0;
   padding: 0;
 }
@@ -329,7 +333,7 @@ form {
  * Date Created:2016-08-18
  * Description:define <h1></h1> attributes
  */
-h1 {
+h1, .h1 {
   display: block;
   font-size: 2rem;
   line-height: 140%;
@@ -362,7 +366,7 @@ h1 {
  * Date Created:2016-08-18
  * Description:define <h2></h2> attributes
  */
-h2 {
+h2, .h2 {
   display: block;
   line-height: 140%;
   font-size: 1.25rem;
@@ -395,7 +399,7 @@ h2 {
  * Date Created:2016-08-18
  * Description:define <h3></h3> attributes
  */
-h3 {
+h3, .h3 {
   display: block;
   line-height: 180%;
   font-size: 1rem;
@@ -428,7 +432,7 @@ h3 {
  * Date Created:2016-08-18
  * Description:define <h4></h4> attributes
  */
-h4 {
+h4, .h4 {
   display: block;
   line-height: 180%;
   font-size: 1rem;
@@ -461,7 +465,7 @@ h4 {
  * Date Created:2016-08-18
  * Description:define <h5></h5> attributes
  */
-h5 {
+h5, .h5 {
   display: block;
   line-height: 180%;
   font-size: 1rem;
@@ -494,7 +498,7 @@ h5 {
  * Date Created:2016-08-18
  * Description:define <h6></h6> attributes
  */
-h6 {
+h6, .h6 {
   display: block;
   line-height: 180%;
   font-size: 1rem;
@@ -527,7 +531,7 @@ h6 {
  * Date Created: 2016-08-20
  * Description: define <head></head> styles
 */
-head {
+head, .head {
   display: none;
 }
 
@@ -536,7 +540,7 @@ head {
  * Date Created: 2016-08-20
  * Description: define <header></header> attributes
 */
-header {
+header, .header {
   border-width: 0;
   border-bottom-width: 0.15rem;
   border-bottom-style: solid;
@@ -563,7 +567,7 @@ header {
  * Date Created: 2019-02-09
  * Description: define <html></html> styles
 */
-html {
+html, .html {
   display: block;
   margin: 0;
   padding: 0;
@@ -574,7 +578,7 @@ Author:Joshua Balsillie
 Date Created:2016-09-07
 Description:define <img></img> attributes
 */
-img {
+img, .img {
   max-width: 100%;
   max-height: inherit;
   border-color: #323e42;
@@ -586,7 +590,7 @@ img {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-img.circle {
+img.circle, .img.circle {
   border-radius: 50%;
 }
 
@@ -595,46 +599,47 @@ img.circle {
  * Date Created:2016-08-20
  * Description:define <input></input> styles
  */
-input {
+input, .input {
   width: 100%;
   display: block;
   box-sizing: border-box;
   border: 0;
-  border-style: none;
-  border-width: 0;
+  border-style: solid;
+  border-bottom-width: 0.15rem;
+  border-color: #003e47;
   margin-bottom: 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  color: white;
-  background-color: #add7e7;
+  color: #003e47;
+  background-color: transparent;
 }
 
-input[type=submit],
-input[type=button],
-input[type=file] {
+input[type=submit], .input[type=submit],
+input[type=button], .input[type=button],
+input[type=file], .input[type=file] {
   color: #003e47;
   background-color: transparent;
   border-color: #003e47;
   border-width: 0.15rem;
   border-style: solid;
 }
-input[type=submit]:hover, input[type=submit] :focus, input[type=submit] :active, input[type=submit] .selected,
+input[type=submit]:hover, input[type=submit]:focus, input[type=submit]:active, input[type=submit].selected, .input[type=submit]:hover, .input[type=submit]:focus, .input[type=submit]:active, .input[type=submit].selected,
 input[type=button]:hover,
-input[type=button] :focus,
-input[type=button] :active,
-input[type=button] .selected,
+input[type=button]:focus,
+input[type=button]:active,
+input[type=button].selected, .input[type=button]:hover, .input[type=button]:focus, .input[type=button]:active, .input[type=button].selected,
 input[type=file]:hover,
-input[type=file] :focus,
-input[type=file] :active,
-input[type=file] .selected {
-  color: white;
-  background-color: #003e47;
+input[type=file]:focus,
+input[type=file]:active,
+input[type=file].selected, .input[type=file]:hover, .input[type=file]:focus, .input[type=file]:active, .input[type=file].selected {
+  color: #003e47;
+  background-color: transparent;
 }
-input[type=submit].deselected,
-input[type=button].deselected,
-input[type=file].deselected {
+input[type=submit].deselected, .input[type=submit].deselected,
+input[type=button].deselected, .input[type=button].deselected,
+input[type=file].deselected, .input[type=file].deselected {
   color: #003e47;
   background-color: transparent;
   border-color: #003e47;
@@ -645,7 +650,7 @@ input[type=file].deselected {
  * Date Created:2019-02-16
  * Description:define <label></label> styles
  */
-label {
+label, .label {
   width: 100%;
   display: block;
   box-sizing: border-box;
@@ -656,7 +661,7 @@ label {
  * Date Created: 2016-08-20
  * Description: define <link></link> attributes
 */
-link {
+link, .link {
   display: none;
 }
 
@@ -665,12 +670,13 @@ link {
  * Date Created: 2016-08-20
  * Description: define <main></main> attributes
  */
-main {
-  text-align: center;
-  color: #323e42;
-  background-color: white;
-  border-color: #add7e7;
+main, .main {
+  /* Overwrite Defaults */
   display: block;
+}
+
+body > main, .main {
+  text-align: center;
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 1rem;
@@ -678,63 +684,14 @@ main {
   margin-left: auto;
   margin-right: auto;
   border: 0;
-  /* Uniform tag sizing */
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-}
-main > .highlight {
-  color: white;
-  background-color: #323e42;
-  border-color: #3a4f45;
-  border-width: 0.15rem;
-  border-style: solid;
-}
-main input, main textarea {
-  color: white;
-  background-color: #add7e7;
-}
-main button,
-main input[type=submit],
-main input[type=button],
-main input[type=file],
-main .button {
-  color: #003e47;
-  background-color: transparent;
-  border-color: #003e47;
-  border-width: 0.15rem;
-  border-style: solid;
-}
-main button:hover, main button :focus, main button :active, main button .selected,
-main input[type=submit]:hover,
-main input[type=submit] :focus,
-main input[type=submit] :active,
-main input[type=submit] .selected,
-main input[type=button]:hover,
-main input[type=button] :focus,
-main input[type=button] :active,
-main input[type=button] .selected,
-main input[type=file]:hover,
-main input[type=file] :focus,
-main input[type=file] :active,
-main input[type=file] .selected,
-main .button:hover,
-main .button :focus,
-main .button :active,
-main .button .selected {
-  color: white;
-  background-color: #003e47;
-}
-main button.deselected,
-main input[type=submit].deselected,
-main input[type=button].deselected,
-main input[type=file].deselected,
-main .button.deselected {
-  color: #003e47;
-  background-color: transparent;
-  border-color: #003e47;
+  color: #323e42;
+  background-color: white;
+  border-color: #add7e7;
 }
 
 /*
@@ -742,7 +699,7 @@ main .button.deselected {
  * Date Created: 2016-08-20
  * Description: define <meta></meta> styles
 */
-meta {
+meta, .meta {
   display: none;
 }
 
@@ -751,28 +708,26 @@ Author: Joshua Balsillie
 Date Created: 2016-08-20
 Description: define <nav></nav> attributes
 */
-nav:first-child {
+nav:first-child, .nav:first-child {
   display: block;
   text-align: left;
 }
-
 @media screen and (max-width: 600px) {
-  nav:last-child {
+  nav:last-child, .nav:last-child {
     text-align: center;
   }
 }
 @media screen and (max-width: 800px) and (min-width: 600px) {
-  nav:last-child {
+  nav:last-child, .nav:last-child {
     text-align: right;
   }
 }
 @media screen and (min-width: 800px) {
-  nav:last-child {
+  nav:last-child, .nav:last-child {
     text-align: right;
   }
 }
-
-nav a {
+nav a, .nav a {
   background-color: transparent;
   color: #003e47;
   padding: 10px;
@@ -786,21 +741,21 @@ nav a {
   transition-duration: 0.3s;
 }
 @media screen and (max-width: 600px) {
-  nav a {
+  nav a, .nav a {
     display: block;
   }
 }
 @media screen and (max-width: 800px) and (min-width: 600px) {
-  nav a {
+  nav a, .nav a {
     display: inline-block;
   }
 }
 @media screen and (min-width: 800px) {
-  nav a {
+  nav a, .nav a {
     display: inline-block;
   }
 }
-nav a:hover, nav a :focus, nav a :active {
+nav a:hover, nav a :focus, nav a :active, .nav a:hover, .nav a :focus, .nav a :active {
   background-color: #003e47;
   color: white;
   -ms-transition-duration: 0.3s;
@@ -815,7 +770,7 @@ nav a:hover, nav a :focus, nav a :active {
  * Date Created:2016-08-18
  * Description:define <p></p> attributes
  */
-p {
+p, .p {
   display: block;
   line-height: 140%;
   font-size: 1rem;
@@ -847,7 +802,7 @@ p {
  * Date Created: 2016-08-20
  * Description: define <script></script> styles
 */
-script {
+script, .script {
   display: none;
 }
 
@@ -856,166 +811,9 @@ script {
  * Date Created: 2016-05-24
  * Description: define <section></section> attributes
 */
-section {
+section, .section {
+  /* Overwrite Defaults */
   display: block;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  margin-left: auto;
-  margin-right: auto;
-  border: 0;
-  /* Uniform tag sizing */
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-section > :first-child {
-  text-align: center;
-}
-section:nth-child(odd) {
-  color: #323e42;
-  background-color: #b3f4d4;
-}
-section:nth-child(odd) > .highlight {
-  color: #b3f4d4;
-  background-color: #323e42;
-  border-color: #3a4f45;
-  border-width: 0.15rem;
-  border-style: solid;
-}
-section:nth-child(odd) input, section:nth-child(odd) textarea {
-  color: white;
-  background-color: #3a4f45;
-}
-section:nth-child(odd) button,
-section:nth-child(odd) input[type=submit],
-section:nth-child(odd) input[type=button],
-section:nth-child(odd) input[type=file],
-section:nth-child(odd) .button {
-  color: #003e47;
-  background-color: transparent;
-  border-color: #003e47;
-  border-width: 0.15rem;
-  border-style: solid;
-}
-section:nth-child(odd) button:hover, section:nth-child(odd) button :focus, section:nth-child(odd) button :active, section:nth-child(odd) button .selected,
-section:nth-child(odd) input[type=submit]:hover,
-section:nth-child(odd) input[type=submit] :focus,
-section:nth-child(odd) input[type=submit] :active,
-section:nth-child(odd) input[type=submit] .selected,
-section:nth-child(odd) input[type=button]:hover,
-section:nth-child(odd) input[type=button] :focus,
-section:nth-child(odd) input[type=button] :active,
-section:nth-child(odd) input[type=button] .selected,
-section:nth-child(odd) input[type=file]:hover,
-section:nth-child(odd) input[type=file] :focus,
-section:nth-child(odd) input[type=file] :active,
-section:nth-child(odd) input[type=file] .selected,
-section:nth-child(odd) .button:hover,
-section:nth-child(odd) .button :focus,
-section:nth-child(odd) .button :active,
-section:nth-child(odd) .button .selected {
-  color: #b3f4d4;
-  background-color: #003e47;
-}
-section:nth-child(odd) button.deselected,
-section:nth-child(odd) input[type=submit].deselected,
-section:nth-child(odd) input[type=button].deselected,
-section:nth-child(odd) input[type=file].deselected,
-section:nth-child(odd) .button.deselected {
-  color: #003e47;
-  background-color: transparent;
-  border-color: #003e47;
-}
-section:nth-child(odd) button.deselected:hover, section:nth-child(odd) button.deselected :focus, section:nth-child(odd) button.deselected :active,
-section:nth-child(odd) input[type=submit].deselected:hover,
-section:nth-child(odd) input[type=submit].deselected :focus,
-section:nth-child(odd) input[type=submit].deselected :active,
-section:nth-child(odd) input[type=button].deselected:hover,
-section:nth-child(odd) input[type=button].deselected :focus,
-section:nth-child(odd) input[type=button].deselected :active,
-section:nth-child(odd) input[type=file].deselected:hover,
-section:nth-child(odd) input[type=file].deselected :focus,
-section:nth-child(odd) input[type=file].deselected :active,
-section:nth-child(odd) .button.deselected:hover,
-section:nth-child(odd) .button.deselected :focus,
-section:nth-child(odd) .button.deselected :active {
-  color: #b3f4d4;
-  background-color: #003e47;
-}
-section:nth-child(even) {
-  color: #323e42;
-  background-color: #add7e7;
-}
-section:nth-child(even) > .highlight {
-  color: #add7e7;
-  background-color: #323e42;
-  border-color: #323e42;
-  border-width: 0.15rem;
-  border-style: solid;
-}
-section:nth-child(even) input, section:nth-child(even) textarea {
-  color: #add7e7;
-  background-color: #323e42;
-}
-section:nth-child(even) button,
-section:nth-child(even) input[type=submit],
-section:nth-child(even) input[type=button],
-section:nth-child(even) input[type=file],
-section:nth-child(even) .button {
-  color: #003e47;
-  background-color: transparent;
-  border-color: #003e47;
-  border-width: 0.15rem;
-  border-style: solid;
-}
-section:nth-child(even) button:hover, section:nth-child(even) button :focus, section:nth-child(even) button :active, section:nth-child(even) button .selected,
-section:nth-child(even) input[type=submit]:hover,
-section:nth-child(even) input[type=submit] :focus,
-section:nth-child(even) input[type=submit] :active,
-section:nth-child(even) input[type=submit] .selected,
-section:nth-child(even) input[type=button]:hover,
-section:nth-child(even) input[type=button] :focus,
-section:nth-child(even) input[type=button] :active,
-section:nth-child(even) input[type=button] .selected,
-section:nth-child(even) input[type=file]:hover,
-section:nth-child(even) input[type=file] :focus,
-section:nth-child(even) input[type=file] :active,
-section:nth-child(even) input[type=file] .selected,
-section:nth-child(even) .button:hover,
-section:nth-child(even) .button :focus,
-section:nth-child(even) .button :active,
-section:nth-child(even) .button .selected {
-  color: #add7e7;
-  background-color: #003e47;
-}
-section:nth-child(even) button.deselected,
-section:nth-child(even) input[type=submit].deselected,
-section:nth-child(even) input[type=button].deselected,
-section:nth-child(even) input[type=file].deselected,
-section:nth-child(even) .button.deselected {
-  color: #003e47;
-  background-color: transparent;
-  border-color: #003e47;
-}
-section:nth-child(even) button.deselected:hover, section:nth-child(even) button.deselected :focus, section:nth-child(even) button.deselected :active,
-section:nth-child(even) input[type=submit].deselected:hover,
-section:nth-child(even) input[type=submit].deselected :focus,
-section:nth-child(even) input[type=submit].deselected :active,
-section:nth-child(even) input[type=button].deselected:hover,
-section:nth-child(even) input[type=button].deselected :focus,
-section:nth-child(even) input[type=button].deselected :active,
-section:nth-child(even) input[type=file].deselected:hover,
-section:nth-child(even) input[type=file].deselected :focus,
-section:nth-child(even) input[type=file].deselected :active,
-section:nth-child(even) .button.deselected:hover,
-section:nth-child(even) .button.deselected :focus,
-section:nth-child(even) .button.deselected :active {
-  color: #add7e7;
-  background-color: #003e47;
 }
 
 /*
@@ -1023,7 +821,7 @@ section:nth-child(even) .button.deselected :active {
  * Date Created: 2016-08-20
  * Description: define <style></style> styles
 */
-style {
+style, .style {
   display: none;
 }
 
@@ -1032,22 +830,25 @@ style {
  * Date Created: 2016-08-20
  * Description: define <textarea></textarea> styles
  */
-textarea {
-  width: 100%;
+textarea, .textarea {
+  overflow-y: scroll;
+  resize: vertical;
+  outline: none;
   display: block;
+  width: 100%;
+  max-height: 8em;
   box-sizing: border-box;
-  height: 8em;
-  resize: none;
-  border-style: none;
-  border-width: 0;
   border: 0;
+  border-style: solid;
+  border-bottom-width: 0.15rem;
+  border-color: #003e47;
   margin-bottom: 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  color: white;
-  background-color: #add7e7;
+  color: #003e47;
+  background-color: transparent;
 }
 
 /*
@@ -1055,16 +856,16 @@ textarea {
  * Date Created: 2016-08-20
  * Description: define <title></title> styles
 */
-title {
+title, .title {
   display: none;
 }
 
 /*
 Author:Joshua Balsillie
 Date Created:2016-09-07
-Description:define <img></img> attributes
+Description:define <video></video> attributes
 */
-img {
+video, .video {
   max-width: 100%;
   max-height: inherit;
   object-fit: contain;
@@ -1744,6 +1545,30 @@ img {
   .fourColumn > *:nth-child(4n+4) {
     padding-right: 0;
   }
+}
+
+/*
+Author:Joshua Balsillie
+Date Created:2016-09-07
+Description:define media attributes
+*/
+.icons {
+  display: inline-block;
+}
+.icons > a {
+  display: inline-block;
+}
+.icons > a > img {
+  border-radius: 50%;
+  max-width: 2rem;
+  border-width: 0;
+  border-style: none;
+}
+.icons.left > * {
+  margin-left: 0;
+}
+.icons.right > * {
+  margin-right: 0;
 }
 
 /*

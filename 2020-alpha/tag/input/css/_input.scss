@@ -9,6 +9,7 @@ input, .input {
 	width:100%;
 	display:block;
 	box-sizing: border-box;
+	
 	border:0;
 	border-style:$defaultBorderStyle;
 	border-bottom-width:$defaultBorderWidth;
@@ -19,6 +20,7 @@ input, .input {
 	padding-bottom:$cellPadding;
 	padding-left:$cellPadding;
 	padding-right:$cellPadding;
+	
 	color:$colourActionDark;
 	background-color:transparent;
 }
@@ -27,12 +29,12 @@ input[type="button"], .input[type="button"],
 input[type="file"], .input[type="file"] {
 	color:$colourActionDark;
 	background-color:transparent;
-	border-color:$colourActionDark;
 	
+	border-color:$colourActionDark;
 	border-width:$defaultBorderWidth;
 	border-style:$defaultBorderStyle;
 	
-	&:hover, :focus, :active, .selected {
+	&:hover, &:focus, &:active, &.selected {
 		color:$colourActionDark;
 		background-color:transparent;
 	}
