@@ -29,4 +29,5 @@ nav, .nav {
 			color:$colour1stBackground;
 			@include browserSupport( transition-duration, 0.3s );
 		}
+	}
 }
