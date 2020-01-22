@@ -1552,22 +1552,22 @@ Author:Joshua Balsillie
 Date Created:2016-09-07
 Description:define media attributes
 */
-.icons {
+.icon {
   display: inline-block;
 }
-.icons > a {
+.icon > a {
   display: inline-block;
 }
-.icons > a > img {
+.icon > a > img {
   border-radius: 50%;
   max-width: 2rem;
   border-width: 0;
   border-style: none;
 }
-.icons.left > * {
+.icon.left > * {
   margin-left: 0;
 }
-.icons.right > * {
+.icon.right > * {
   margin-right: 0;
 }
 
