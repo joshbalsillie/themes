@@ -17,4 +17,8 @@ a, .a {
 	@include browserSupport( margin-end, $fontMargin );
 	@include browserSupport( margin-before, $fontMargin );
 	@include browserSupport( margin-after, $fontMargin );
+
+	&:-webkit-any-link {
+		color:inherit;
+	}
 }

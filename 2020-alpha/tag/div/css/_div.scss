@@ -21,30 +21,20 @@ body > div {
 	
 	@include browserSupport( box-sizing, border-box ); // Uniform tag sizing
 	
-	&:nth-child(odd) {
+	&:nth-of-type(2n+1) {
 		color:$colour2ndForeground;
 		background-color:$colour2ndBackground;
-	
-		& > .highlight {
-			color:$colour2ndBackground;
-			background-color:$colour2ndForeground;
-			border-color:$colour2ndAccent;
-			
-			border-width:$defaultBorderWidth;
-			border-style:$defaultBorderStyle;
-		}
 	}
-	&:nth-child(even) {
+	&:nth-of-type(2n) {
 		color:$colour3rdForeground;
 		background-color:$colour3rdBackground;
-	
-		& > .highlight {
-			color:$colour3rdBackground;
-			background-color:$colour3rdForeground;
-			border-color:$colour3rdAccent;
-			
-			border-width:$defaultBorderWidth;
-			border-style:$defaultBorderStyle;
-		}
+	}
+	&:first-of-type {
+		color:$colour1stForeground;
+		background-color:transparent;
+	}
+	&:last-of-type {
+		color:$colour1stForeground;
+		background-color:transparent;
 	}
 }

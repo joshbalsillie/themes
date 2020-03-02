@@ -16,7 +16,7 @@ nav, .nav {
 	}
 	& a {
 		background-color:transparent;
-		color:$colourActionDark;
+		color:$colourActionLight;
 		padding:10px;
 		padding-bottom:5px;
 		margin:2px;
@@ -25,8 +25,8 @@ nav, .nav {
 		@include browserSupport( transition-duration, 0.3s );
 		
 		&:hover, :focus, :active {
-			background-color:$colourActionDark;
-			color:$colour1stBackground;
+			background-color:$colourActionLight;
+			color:$colourActionDark;
 			@include browserSupport( transition-duration, 0.3s );
 		}
 	}

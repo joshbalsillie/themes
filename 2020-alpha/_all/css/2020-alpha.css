@@ -123,6 +123,9 @@ a, .a {
   -webkit-margin-after: 0.5em;
   margin-after: 0.5em;
 }
+a:-webkit-any-link, .a:-webkit-any-link {
+  color: inherit;
+}
 
 /*
  * Author: Joshua Balsillie
@@ -136,7 +139,7 @@ body, .body {
   border: 0;
   width: 100%;
   cursor: auto;
-  background: white;
+  background: #323e42;
   /* Remove default font styles */
   font-style: normal;
   font-weight: normal;
@@ -158,9 +161,9 @@ button, .button {
   cursor: pointer;
   align-items: flex-start;
   width: auto;
-  color: #003e47;
+  color: #323e42;
   background-color: transparent;
-  border-color: #003e47;
+  border-color: #323e42;
   border-width: 0.15rem;
   border-style: solid;
   text-transform: uppercase;
@@ -179,12 +182,12 @@ button, .button {
 }
 button:hover, button :focus, button :active, button .selected, .button:hover, .button :focus, .button :active, .button .selected {
   color: white;
-  background-color: #003e47;
+  background-color: #323e42;
 }
 button.deselected, .button.deselected {
-  color: #003e47;
+  color: #323e42;
   background-color: transparent;
-  border-color: #003e47;
+  border-color: #323e42;
 }
 
 /*
@@ -211,27 +214,21 @@ body > div {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-body > div:nth-child(odd) {
+body > div:nth-of-type(2n+1) {
   color: #323e42;
   background-color: #b3f4d4;
 }
-body > div:nth-child(odd) > .highlight {
-  color: #b3f4d4;
-  background-color: #323e42;
-  border-color: #3a4f45;
-  border-width: 0.15rem;
-  border-style: solid;
-}
-body > div:nth-child(even) {
+body > div:nth-of-type(2n) {
   color: #323e42;
   background-color: #add7e7;
 }
-body > div:nth-child(even) > .highlight {
-  color: #add7e7;
-  background-color: #323e42;
-  border-color: #323e42;
-  border-width: 0.15rem;
-  border-style: solid;
+body > div:first-of-type {
+  color: white;
+  background-color: transparent;
+}
+body > div:last-of-type {
+  color: white;
+  background-color: transparent;
 }
 
 /*
@@ -301,16 +298,15 @@ footer, .footer {
   margin-right: auto;
 }
 
-body > footer:last-child, body .footer:last-child {
+body footer:last-child, body .footer:last-child {
   color: white;
-  background: #323e42;
+  background: transparent;
   overflow-y: hidden;
   vertical-align: middle;
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  /* Uniform tag sizing */
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -543,18 +539,14 @@ head, .head {
 header, .header {
   border-width: 0;
   border-bottom-width: 0.15rem;
-  border-bottom-style: solid;
-  color: #323e42;
-  background: white;
+  color: white;
+  background: #323e42;
   overflow-y: hidden;
   display: block;
-  padding-left: 10%;
-  padding-right: 10%;
   padding-top: 1rem;
   padding-bottom: 1rem;
   margin-left: auto;
   margin-right: auto;
-  /* Uniform tag sizing */
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -580,8 +572,8 @@ Description:define <img></img> attributes
 */
 img, .img {
   max-width: 100%;
-  max-height: inherit;
-  border-color: #323e42;
+  max-height: 20rem;
+  border-color: white;
   border-style: solid;
   /* Uniform tag sizing */
   -ms-box-sizing: border-box;
@@ -606,22 +598,22 @@ input, .input {
   border: 0;
   border-style: solid;
   border-bottom-width: 0.15rem;
-  border-color: #003e47;
+  border-color: #323e42;
   margin-bottom: 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  color: #003e47;
+  color: #323e42;
   background-color: transparent;
 }
 
 input[type=submit], .input[type=submit],
 input[type=button], .input[type=button],
 input[type=file], .input[type=file] {
-  color: #003e47;
+  color: #323e42;
   background-color: transparent;
-  border-color: #003e47;
+  border-color: #323e42;
   border-width: 0.15rem;
   border-style: solid;
 }
@@ -634,15 +626,15 @@ input[type=file]:hover,
 input[type=file]:focus,
 input[type=file]:active,
 input[type=file].selected, .input[type=file]:hover, .input[type=file]:focus, .input[type=file]:active, .input[type=file].selected {
-  color: #003e47;
+  color: #323e42;
   background-color: transparent;
 }
 input[type=submit].deselected, .input[type=submit].deselected,
 input[type=button].deselected, .input[type=button].deselected,
 input[type=file].deselected, .input[type=file].deselected {
-  color: #003e47;
+  color: #323e42;
   background-color: transparent;
-  border-color: #003e47;
+  border-color: #323e42;
 }
 
 /*
@@ -689,8 +681,8 @@ body > main, .main {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  color: #323e42;
-  background-color: white;
+  color: white;
+  background-color: #323e42;
   border-color: #add7e7;
 }
 
@@ -729,7 +721,7 @@ nav:first-child, .nav:first-child {
 }
 nav a, .nav a {
   background-color: transparent;
-  color: #003e47;
+  color: white;
   padding: 10px;
   padding-bottom: 5px;
   margin: 2px;
@@ -756,8 +748,8 @@ nav a, .nav a {
   }
 }
 nav a:hover, nav a :focus, nav a :active, .nav a:hover, .nav a :focus, .nav a :active {
-  background-color: #003e47;
-  color: white;
+  background-color: white;
+  color: #323e42;
   -ms-transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
   -moz-transition-duration: 0.3s;
@@ -841,13 +833,13 @@ textarea, .textarea {
   border: 0;
   border-style: solid;
   border-bottom-width: 0.15rem;
-  border-color: #003e47;
+  border-color: #323e42;
   margin-bottom: 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  color: #003e47;
+  color: #323e42;
   background-color: transparent;
 }
 
@@ -1581,7 +1573,7 @@ Description: define scrollbar formatting
   width: 1rem;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: red;
+  background-color: white;
   border-color: transparent;
   border-radius: 0.4rem;
   border-width: 0.15rem;
