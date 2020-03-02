@@ -11,10 +11,10 @@ footer, .footer {
 	margin-right:auto;
 }
 body {
-	& > footer, .footer {
+	& footer, .footer {
 		&:last-child {
-			color:$colour1stBackground;
-			background:$colour1stForeground;
+			color:$colour1stForeground;
+			background:transparent;
 			overflow-y:hidden;
 			vertical-align:middle;
 			
@@ -24,8 +24,7 @@ body {
 			padding-top:$sizeMedium;
 			padding-bottom:$sizeMedium;
 			
-			/* Uniform tag sizing */
-			@include browserSupport( box-sizing, border-box );
+			@include browserSupport( box-sizing, border-box ); // Uniform tag sizing
 		}
 	}
 }

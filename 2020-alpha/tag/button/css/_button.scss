@@ -31,7 +31,7 @@ button, .button {
 	margin-bottom:$paddingAroundItems;
 
 	&:hover, :focus, :active, .selected {
-			color:$colour1stBackground;
+			color:$colourActionLight;
 			background-color:$colourActionDark;
 		}
 	&.deselected {

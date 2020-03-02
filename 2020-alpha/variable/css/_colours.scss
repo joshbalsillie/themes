@@ -20,8 +20,8 @@ $blueDark:rgba(0,62,71,1); /* 003E47 */
 $blackTranslucent:rgba(0,0,0,0.5); /* 000000 */
 
 /* Use */
-$colour1stForeground:$greyDark;
-$colour1stBackground:$white;
+$colour1stForeground:$white;
+$colour1stBackground:$greyDark;
 $colour1stAccent:$greyLight;
 
 $colour2ndForeground:$greyDark;
@@ -32,7 +32,7 @@ $colour3rdForeground:$greyDark;
 $colour3rdBackground:$greyLight;
 $colour3rdAccent:$greyDark;
 
-$colourActionLight:$blueLight;
-$colourActionDark:$blueDark;
+$colourActionLight:$white;
+$colourActionDark:$greyDark;
 
 $colourDisabled:$blackTranslucent;
