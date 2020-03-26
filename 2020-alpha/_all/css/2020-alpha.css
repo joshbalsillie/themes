@@ -297,6 +297,9 @@ footer, .footer {
   margin-left: auto;
   margin-right: auto;
 }
+footer .icon > a > img, .footer .icon > a > img {
+  fill: #323e42;
+}
 
 body footer:last-child, body .footer:last-child {
   color: white;
@@ -1552,7 +1555,7 @@ Description:define media attributes
 }
 .icon > a > img {
   border-radius: 50%;
-  max-width: 2rem;
+  width: 2rem;
   border-width: 0;
   border-style: none;
 }
