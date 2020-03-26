@@ -9,6 +9,11 @@ footer, .footer {
 	display:block;
 	margin-left:auto;
 	margin-right:auto;
+
+	& .icon > a > img {
+		// style for footer icons
+		fill:$colour1stBackground;
+	}
 }
 body {
 	& footer, .footer {
