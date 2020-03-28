@@ -576,7 +576,7 @@ Description:define <img></img> attributes
 img, .img {
   max-width: 100%;
   max-height: 20rem;
-  border-color: white;
+  border-color: #323e42;
   border-style: solid;
   /* Uniform tag sizing */
   -ms-box-sizing: border-box;
