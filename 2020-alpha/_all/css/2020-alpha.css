@@ -866,6 +866,23 @@ video, .video {
 /* Other Elements */
 /*
  * Author:Joshua Balsillie
+ * Date Created:2020-03-28
+ * Description:define alignment settings
+ */
+.alignLeft {
+  text-align: left;
+}
+
+.alignCenter {
+  text-align: center;
+}
+
+.alignRight {
+  text-align: right;
+}
+
+/*
+ * Author:Joshua Balsillie
  * Date Created:2016-08-20
  * Description:define column styles
  */
@@ -874,15 +891,6 @@ video, .video {
   padding-bottom: 1rem;
   vertical-align: top;
   font-size: 0;
-}
-.oneColumn.alignLeft, .twoColumn.alignLeft, .threeColumn.alignLeft, .fourColumn.alignLeft {
-  text-align: left;
-}
-.oneColumn.alignCenter, .twoColumn.alignCenter, .threeColumn.alignCenter, .fourColumn.alignCenter {
-  text-align: center;
-}
-.oneColumn.alignRight, .twoColumn.alignRight, .threeColumn.alignRight, .fourColumn.alignRight {
-  text-align: right;
 }
 .oneColumn > *, .twoColumn > *, .threeColumn > *, .fourColumn > * {
   display: inline-block;

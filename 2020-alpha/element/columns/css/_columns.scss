@@ -15,15 +15,6 @@
 	// Clear defaults
 	font-size: 0; // fixes spacing issues
 
-	&.alignLeft {
-		text-align: left;
-	}
-	&.alignCenter {
-		text-align: center;
-	}
-	&.alignRight {
-		text-align: right;
-	}
 	& > * {
 		// Individual column definition
 		display: inline-block;
