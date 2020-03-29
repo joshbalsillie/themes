@@ -37,19 +37,19 @@
   vertical-align: top;
   font-size: 0;
 }
+.oneColumn.alignLeft, .twoColumn.alignLeft, .threeColumn.alignLeft, .fourColumn.alignLeft {
+  text-align: left;
+}
+.oneColumn.alignCenter, .twoColumn.alignCenter, .threeColumn.alignCenter, .fourColumn.alignCenter {
+  text-align: center;
+}
+.oneColumn.alignRight, .twoColumn.alignRight, .threeColumn.alignRight, .fourColumn.alignRight {
+  text-align: right;
+}
 .oneColumn > *, .twoColumn > *, .threeColumn > *, .fourColumn > * {
   display: inline-block;
   vertical-align: top;
   box-sizing: border-box;
-}
-.oneColumn > *.alignLeft, .twoColumn > *.alignLeft, .threeColumn > *.alignLeft, .fourColumn > *.alignLeft {
-  text-align: left;
-}
-.oneColumn > *.alignCenter, .twoColumn > *.alignCenter, .threeColumn > *.alignCenter, .fourColumn > *.alignCenter {
-  text-align: center;
-}
-.oneColumn > *.alignRight, .twoColumn > *.alignRight, .threeColumn > *.alignRight, .fourColumn > *.alignRight {
-  text-align: right;
 }
 @media screen and (max-width: 600px) {
   .oneColumn > *.oneHalf, .twoColumn > *.oneHalf, .threeColumn > *.oneHalf, .fourColumn > *.oneHalf {
