@@ -15,21 +15,21 @@
 	// Clear defaults
 	font-size: 0; // fixes spacing issues
 
+	&.alignLeft {
+		text-align: left;
+	}
+	&.alignCenter {
+		text-align: center;
+	}
+	&.alignRight {
+		text-align: right;
+	}
 	& > * {
 		// Individual column definition
 		display: inline-block;
 		vertical-align: top;
 		box-sizing: border-box;
 		
-		&.alignLeft {
-			text-align: left;
-		}
-		&.alignCenter {
-			text-align: center;
-		}
-		&.alignRight {
-			text-align: right;
-		}
 		&.oneHalf {
 			// Individual column definition for half width
 			@include responsive( width, 100% * ( 1 / 2 ), 100% * ( 1 / 2 ), 100% ); // 1/2, 1/2, 1
