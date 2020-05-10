@@ -1,0 +1,48 @@
+@charset "utf-8";
+/*
+ * Author:Joshua Balsillie
+ * Date Created:2016-08-20
+ * Description:global spatial formatting used across the site
+ */
+
+/* Universal variables */
+$defaultBorderStyle:solid;
+
+/* Variables with different uses */
+$sizeSmallest:0.15rem;
+$sizeSmaller:0.2rem;
+$sizeSmall:0.4rem;
+$sizeMedium:1rem;
+$sizeLarge:2rem;
+
+$fontMargin:0.5em;
+
+/* Button padding ratios */
+$ratioTop:1.4;
+$ratioBottom:1;
+$ratioLeft:1.8;
+$ratioRight:1.8;
+
+/* Uses */
+$defaultBorderWidth:$sizeSmallest;
+
+$marginItemsRelated:$sizeSmall;
+$marginItemsUnrelated:$sizeMedium;
+
+$paddingAroundItem:$sizeSmall;
+$paddingAroundItems:$sizeMedium;
+$cellPadding:$sizeMedium;
+
+$columnPadding:$sizeLarge;
+$rowPadding:$sizeMedium;
+
+$trackWidth:$sizeSmaller;
+$scrollbarWidth:$sizeSmall;
+
+$iconSize:$sizeLarge;
+
+* {
+	/* Remove default spacing */
+	@include browserSupport( margin-before, 0 );
+	@include browserSupport( margin-after, 0 );
+}

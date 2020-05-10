@@ -1,0 +1,1599 @@
+/*
+ * Author: Joshua Balsillie
+ * Date Created: 2016-08-17
+ * Description: Import tag styles
+ * 
+ * References
+ * Define ID: #id {
+ * Define class: .class {
+ * Define all: * {
+ * Define child: > {
+ * Define import css: @import "folder/_file.scss";
+ * Setup and use: http://sass-lang.com/guide
+ *
+ * Important
+ * Order files for inheritance
+ */
+/* Functions and Mixins */
+/*
+ * Author: Joshua Balsillie
+ * Date Created: 2016-08-18
+ * Description: define mixins for css files
+ */
+/* Browser attribute support */
+/* Animation transition */
+/* Responsive value assignment */
+/* Responsive settings */
+/* Variables */
+/*
+ * Author:Joshua Balsillie
+ * Date Created:2016-08-18
+ * Description:define animation and other special actions
+ */
+/*
+ * Author:Joshua Balsillie
+ * Date Created:2016-08-17
+ * Description:global colours used across the site
+ */
+/* Opaque */
+/* FFFFFF */
+/* 000000 */
+/* 95B3C2 */
+/* 293136 */
+/* 00DDFF */
+/* 003E47 */
+/* Translucent */
+/* 000000 */
+/* Use */
+/*
+ * Author:Joshua Balsillie
+ * Date Created:2016-08-20
+ * Description:global spatial formatting used across the site
+ */
+/* Universal variables */
+/* Variables with different uses */
+/* Button padding ratios */
+/* Uses */
+* {
+  /* Remove default spacing */
+  -ms-margin-before: 0;
+  -o-margin-before: 0;
+  -moz-margin-before: 0;
+  -webkit-margin-before: 0;
+  margin-before: 0;
+  -ms-margin-after: 0;
+  -o-margin-after: 0;
+  -moz-margin-after: 0;
+  -webkit-margin-after: 0;
+  margin-after: 0;
+}
+
+/*
+ * Author: Joshua Balsillie
+ * Date Created: 2016-08-17
+ * Description: define typeface styles
+ */
+/* Font attributes */
+/* Font ratios */
+:lang(en) {
+  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+
+/* Tags */
+/*
+ * Author:Joshua Balsillie
+ * Date Created:2016-08-18
+ * Description:define <a></a> styles
+ */
+a, .a {
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline;
+  cursor: pointer;
+  line-height: 140%;
+  /* Remove defaults */
+  -ms-margin-start: 0.5em;
+  -o-margin-start: 0.5em;
+  -moz-margin-start: 0.5em;
+  -webkit-margin-start: 0.5em;
+  margin-start: 0.5em;
+  -ms-margin-end: 0.5em;
+  -o-margin-end: 0.5em;
+  -moz-margin-end: 0.5em;
+  -webkit-margin-end: 0.5em;
+  margin-end: 0.5em;
+  -ms-margin-before: 0.5em;
+  -o-margin-before: 0.5em;
+  -moz-margin-before: 0.5em;
+  -webkit-margin-before: 0.5em;
+  margin-before: 0.5em;
+  -ms-margin-after: 0.5em;
+  -o-margin-after: 0.5em;
+  -moz-margin-after: 0.5em;
+  -webkit-margin-after: 0.5em;
+  margin-after: 0.5em;
+}
+a:-webkit-any-link, .a:-webkit-any-link {
+  color: inherit;
+}
+
+/*
+ * Author: Joshua Balsillie
+ * Date Created: 2016-08-18
+ * Description: define <body></body> styles
+*/
+body, .body {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 100%;
+  cursor: auto;
+  background: #293136;
+  /* Remove default font styles */
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  font-variant: normal;
+  line-height: 1rem;
+  font-size: 1rem;
+  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+
+/*
+Author:Joshua Balsillie
+Date Created:2016-08-22
+Description:define <button></button> styles
+*/
+button, .button {
+  font-size: 1rem;
+  display: inline-flex;
+  cursor: pointer;
+  align-items: flex-start;
+  width: auto;
+  color: #11435c;
+  background-color: transparent;
+  border-color: #11435c;
+  border-width: 0.15rem;
+  border-style: solid;
+  text-transform: uppercase;
+  text-align: center;
+  justify-content: center;
+  padding-top: 0.56rem;
+  padding-bottom: 0.4rem;
+  padding-left: 0.72rem;
+  padding-right: 0.72rem;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  margin-bottom: 1rem;
+}
+button:hover, button :focus, button :active, button .selected, .button:hover, .button :focus, .button :active, .button .selected {
+  color: white;
+  background-color: #11435c;
+}
+button.deselected, .button.deselected {
+  color: #11435c;
+  background-color: transparent;
+  border-color: #11435c;
+}
+
+/*
+ * Author: Joshua Balsillie
+ * Date Created: 2016-08-20
+ * Description: define <div></div> styles
+ */
+div, .div {
+  /* Overwrite Defaults */
+  display: block;
+}
+
+body > div {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body > div:nth-of-type(2n+1) {
+  color: #293136;
+  background-color: #95b3c2;
+}
+body > div:nth-of-type(2n) {
+  color: #293136;
+  background-color: #b5d9eb;
+}
+body > div:first-of-type {
+  color: white;
+  background-color: transparent;
+}
+body > div:last-of-type {
+  color: white;
+  background-color: transparent;
+}
+
+/*
+ * Author:Joshua Balsillie
+ * Date Created:2019-02-16
+ * Description:define <fieldset></fieldset> styles
+ */
+fieldset, .fieldset {
+  -ms-margin-start: 0;
+  -o-margin-start: 0;
+  -moz-margin-start: 0;
+  -webkit-margin-start: 0;
+  margin-start: 0;
+  -ms-margin-end: 0;
+  -o-margin-end: 0;
+  -moz-margin-end: 0;
+  -webkit-margin-end: 0;
+  margin-end: 0;
+  -ms-padding-before: 0;
+  -o-padding-before: 0;
+  -moz-padding-before: 0;
+  -webkit-padding-before: 0;
+  padding-before: 0;
+  -ms-padding-start: 0;
+  -o-padding-start: 0;
+  -moz-padding-start: 0;
+  -webkit-padding-start: 0;
+  padding-start: 0;
+  -ms-padding-end: 0;
+  -o-padding-end: 0;
+  -moz-padding-end: 0;
+  -webkit-padding-end: 0;
+  padding-end: 0;
+  -ms-padding-after: 0;
+  -o-padding-after: 0;
+  -moz-padding-after: 0;
+  -webkit-padding-after: 0;
+  padding-after: 0;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  border-style: none;
+  border-width: 0;
+}
+fieldset:last-child, .fieldset:last-child {
+  margin-bottom: 0;
+  text-align: right;
+}
+fieldset > *:last-child, .fieldset > *:last-child {
+  margin-bottom: 0;
+}
+
+/*
+Author: Joshua Balsillie
+Date Created: 2015-05-20
+Description: define <footer></footer> attributes
+*/
+footer, .footer {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer .icon > a > img, .footer .icon > a > img {
+  fill: #293136;
+}
+
+body footer:last-child, body .footer:last-child {
+  color: white;
+  background: transparent;
+  overflow-y: hidden;
+  vertical-align: middle;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*
+ * Author:Joshua Balsillie
+ * Date Created:2016-08-19
+ * Description:define <form></form> styles
+ */
+form, .form {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Author:Joshua Balsillie
+ * Date Created:2016-08-18
+ * Description:define <h1></h1> attributes
+ */
+h1, .h1 {
+  display: block;
+  font-size: 2rem;
+  line-height: 140%;
+  text-transform: uppercase;
+  /* Remove defaults */
+  -ms-margin-start: 0.5em;
+  -o-margin-start: 0.5em;
+  -moz-margin-start: 0.5em;
+  -webkit-margin-start: 0.5em;
+  margin-start: 0.5em;
+  -ms-margin-end: 0.5em;
+  -o-margin-end: 0.5em;
+  -moz-margin-end: 0.5em;
+  -webkit-margin-end: 0.5em;
+  margin-end: 0.5em;
+  -ms-margin-before: 0.5em;
+  -o-margin-before: 0.5em;
+  -moz-margin-before: 0.5em;
+  -webkit-margin-before: 0.5em;
+  margin-before: 0.5em;
+  -ms-margin-after: 0.5em;
+  -o-margin-after: 0.5em;
+  -moz-margin-after: 0.5em;
+  -webkit-margin-after: 0.5em;
+  margin-after: 0.5em;
+}
+
+/*
+ * Author:Joshua Balsillie
+ * Date Created:2016-08-18
+ * Description:define <h2></h2> attributes
+ */
+h2, .h2 {
+  display: block;
+  line-height: 140%;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  /* Remove defaults */
+  -ms-margin-start: 0.5em;
+  -o-margin-start: 0.5em;
+  -moz-margin-start: 0.5em;
+  -webkit-margin-start: 0.5em;
+  margin-start: 0.5em;
+  -ms-margin-end: 0.5em;
+  -o-margin-end: 0.5em;
+  -moz-margin-end: 0.5em;
+  -webkit-margin-end: 0.5em;
+  margin-end: 0.5em;
+  -ms-margin-before: 0.5em;
+  -o-margin-before: 0.5em;
+  -moz-margin-before: 0.5em;
+  -webkit-margin-before: 0.5em;
+  margin-before: 0.5em;
+  -ms-margin-after: 0.5em;
+  -o-margin-after: 0.5em;
+  -moz-margin-after: 0.5em;
+  -webkit-margin-after: 0.5em;
+  margin-after: 0.5em;
+}
+
+/*
+ * Author:Joshua Balsillie
+ * Date Created:2016-08-18
+ * Description:define <h3></h3> attributes
+ */
+h3, .h3 {
+  display: block;
+  line-height: 180%;
+  font-size: 1rem;
+  font-weight: 100;
+  /* Remove defaults */
+  -ms-margin-start: 0.5em;
+  -o-margin-start: 0.5em;
+  -moz-margin-start: 0.5em;
+  -webkit-margin-start: 0.5em;
+  margin-start: 0.5em;
+  -ms-margin-end: 0.5em;
+  -o-margin-end: 0.5em;
+  -moz-margin-end: 0.5em;
+  -webkit-margin-end: 0.5em;
+  margin-end: 0.5em;
+  -ms-margin-before: 0.5em;
+  -o-margin-before: 0.5em;
+  -moz-margin-before: 0.5em;
+  -webkit-margin-before: 0.5em;
+  margin-before: 0.5em;
+  -ms-margin-after: 0.5em;
+  -o-margin-after: 0.5em;
+  -moz-margin-after: 0.5em;
+  -webkit-margin-after: 0.5em;
+  margin-after: 0.5em;
+}
+
+/*
+ * Author:Joshua Balsillie
+ * Date Created:2016-08-18
+ * Description:define <h4></h4> attributes
+ */
+h4, .h4 {
+  display: block;
+  line-height: 180%;
+  font-size: 1rem;
+  font-weight: 100;
+  /* Remove defaults */
+  -ms-margin-start: 0.5em;
+  -o-margin-start: 0.5em;
+  -moz-margin-start: 0.5em;
+  -webkit-margin-start: 0.5em;
+  margin-start: 0.5em;
+  -ms-margin-end: 0.5em;
+  -o-margin-end: 0.5em;
+  -moz-margin-end: 0.5em;
+  -webkit-margin-end: 0.5em;
+  margin-end: 0.5em;
+  -ms-margin-before: 0.5em;
+  -o-margin-before: 0.5em;
+  -moz-margin-before: 0.5em;
+  -webkit-margin-before: 0.5em;
+  margin-before: 0.5em;
+  -ms-margin-after: 0.5em;
+  -o-margin-after: 0.5em;
+  -moz-margin-after: 0.5em;
+  -webkit-margin-after: 0.5em;
+  margin-after: 0.5em;
+}
+
+/*
+ * Author:Joshua Balsillie
+ * Date Created:2016-08-18
+ * Description:define <h5></h5> attributes
+ */
+h5, .h5 {
+  display: block;
+  line-height: 180%;
+  font-size: 1rem;
+  font-weight: 100;
+  /* Remove defaults */
+  -ms-margin-start: 0.5em;
+  -o-margin-start: 0.5em;
+  -moz-margin-start: 0.5em;
+  -webkit-margin-start: 0.5em;
+  margin-start: 0.5em;
+  -ms-margin-end: 0.5em;
+  -o-margin-end: 0.5em;
+  -moz-margin-end: 0.5em;
+  -webkit-margin-end: 0.5em;
+  margin-end: 0.5em;
+  -ms-margin-before: 0.5em;
+  -o-margin-before: 0.5em;
+  -moz-margin-before: 0.5em;
+  -webkit-margin-before: 0.5em;
+  margin-before: 0.5em;
+  -ms-margin-after: 0.5em;
+  -o-margin-after: 0.5em;
+  -moz-margin-after: 0.5em;
+  -webkit-margin-after: 0.5em;
+  margin-after: 0.5em;
+}
+
+/*
+ * Author:Joshua Balsillie
+ * Date Created:2016-08-18
+ * Description:define <h6></h6> attributes
+ */
+h6, .h6 {
+  display: block;
+  line-height: 180%;
+  font-size: 1rem;
+  font-weight: 100;
+  /* Remove defaults */
+  -ms-margin-start: 0.5em;
+  -o-margin-start: 0.5em;
+  -moz-margin-start: 0.5em;
+  -webkit-margin-start: 0.5em;
+  margin-start: 0.5em;
+  -ms-margin-end: 0.5em;
+  -o-margin-end: 0.5em;
+  -moz-margin-end: 0.5em;
+  -webkit-margin-end: 0.5em;
+  margin-end: 0.5em;
+  -ms-margin-before: 0.5em;
+  -o-margin-before: 0.5em;
+  -moz-margin-before: 0.5em;
+  -webkit-margin-before: 0.5em;
+  margin-before: 0.5em;
+  -ms-margin-after: 0.5em;
+  -o-margin-after: 0.5em;
+  -moz-margin-after: 0.5em;
+  -webkit-margin-after: 0.5em;
+  margin-after: 0.5em;
+}
+
+/*
+ * Author: Joshua Balsillie
+ * Date Created: 2016-08-20
+ * Description: define <head></head> styles
+*/
+head, .head {
+  display: none;
+}
+
+/*
+ * Author: Joshua Balsillie
+ * Date Created: 2016-08-20
+ * Description: define <header></header> attributes
+*/
+header, .header {
+  border-width: 0;
+  border-bottom-width: 0.15rem;
+  color: white;
+  background: #293136;
+  overflow-y: hidden;
+  display: block;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*
+ * Author: Joshua Balsillie
+ * Date Created: 2019-02-09
+ * Description: define <html></html> styles
+*/
+html, .html {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Author:Joshua Balsillie
+Date Created:2016-09-07
+Description:define <img></img> attributes
+*/
+img, .img {
+  max-width: 100%;
+  max-height: 20rem;
+  border-color: #293136;
+  border-style: solid;
+  /* Uniform tag sizing */
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+img.circle, .img.circle {
+  border-radius: 50%;
+}
+
+/*
+ * Author:Joshua Balsillie
+ * Date Created:2016-08-20
+ * Description:define <input></input> styles
+ */
+input, .input {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  border: 0;
+  border-style: solid;
+  border-bottom-width: 0.15rem;
+  border-color: #11435c;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: #11435c;
+  background-color: transparent;
+}
+
+input[type=submit], .input[type=submit],
+input[type=button], .input[type=button],
+input[type=file], .input[type=file] {
+  color: #11435c;
+  background-color: transparent;
+  border-color: #11435c;
+  border-width: 0.15rem;
+  border-style: solid;
+}
+input[type=submit]:hover, input[type=submit]:focus, input[type=submit]:active, input[type=submit].selected, .input[type=submit]:hover, .input[type=submit]:focus, .input[type=submit]:active, .input[type=submit].selected,
+input[type=button]:hover,
+input[type=button]:focus,
+input[type=button]:active,
+input[type=button].selected, .input[type=button]:hover, .input[type=button]:focus, .input[type=button]:active, .input[type=button].selected,
+input[type=file]:hover,
+input[type=file]:focus,
+input[type=file]:active,
+input[type=file].selected, .input[type=file]:hover, .input[type=file]:focus, .input[type=file]:active, .input[type=file].selected {
+  color: #11435c;
+  background-color: transparent;
+}
+input[type=submit].deselected, .input[type=submit].deselected,
+input[type=button].deselected, .input[type=button].deselected,
+input[type=file].deselected, .input[type=file].deselected {
+  color: #11435c;
+  background-color: transparent;
+  border-color: #11435c;
+}
+
+/*
+ * Author:Joshua Balsillie
+ * Date Created:2019-02-16
+ * Description:define <label></label> styles
+ */
+label, .label {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+}
+
+/*
+ * Author: Joshua Balsillie
+ * Date Created: 2016-08-20
+ * Description: define <link></link> attributes
+*/
+link, .link {
+  display: none;
+}
+
+/*
+ * Author: Joshua Balsillie
+ * Date Created: 2016-08-20
+ * Description: define <main></main> attributes
+ */
+main, .main {
+  /* Overwrite Defaults */
+  display: block;
+}
+
+body > main, .main {
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: white;
+  background-color: #293136;
+  border-color: #95b3c2;
+}
+
+/*
+ * Author: Joshua Balsillie
+ * Date Created: 2016-08-20
+ * Description: define <meta></meta> styles
+*/
+meta, .meta {
+  display: none;
+}
+
+/*
+Author: Joshua Balsillie
+Date Created: 2016-08-20
+Description: define <nav></nav> attributes
+*/
+nav:first-child, .nav:first-child {
+  display: block;
+  text-align: left;
+}
+@media screen and (max-width: 600px) {
+  nav:last-child, .nav:last-child {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  nav:last-child, .nav:last-child {
+    text-align: right;
+  }
+}
+@media screen and (min-width: 800px) {
+  nav:last-child, .nav:last-child {
+    text-align: right;
+  }
+}
+nav a, .nav a {
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+  padding-bottom: 5px;
+  margin: 2px;
+  text-transform: uppercase;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+@media screen and (max-width: 600px) {
+  nav a, .nav a {
+    display: block;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  nav a, .nav a {
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 800px) {
+  nav a, .nav a {
+    display: inline-block;
+  }
+}
+nav a:hover, nav a :focus, nav a :active, .nav a:hover, .nav a :focus, .nav a :active {
+  background-color: white;
+  color: #11435c;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+/*
+ * Author:Joshua Balsillie
+ * Date Created:2016-08-18
+ * Description:define <p></p> attributes
+ */
+p, .p {
+  display: block;
+  line-height: 140%;
+  font-size: 1rem;
+  /* Remove defaults */
+  -ms-margin-start: 0.5em;
+  -o-margin-start: 0.5em;
+  -moz-margin-start: 0.5em;
+  -webkit-margin-start: 0.5em;
+  margin-start: 0.5em;
+  -ms-margin-end: 0.5em;
+  -o-margin-end: 0.5em;
+  -moz-margin-end: 0.5em;
+  -webkit-margin-end: 0.5em;
+  margin-end: 0.5em;
+  -ms-margin-before: 0.5em;
+  -o-margin-before: 0.5em;
+  -moz-margin-before: 0.5em;
+  -webkit-margin-before: 0.5em;
+  margin-before: 0.5em;
+  -ms-margin-after: 0.5em;
+  -o-margin-after: 0.5em;
+  -moz-margin-after: 0.5em;
+  -webkit-margin-after: 0.5em;
+  margin-after: 0.5em;
+}
+
+/*
+ * Author: Joshua Balsillie
+ * Date Created: 2016-08-20
+ * Description: define <script></script> styles
+*/
+script, .script {
+  display: none;
+}
+
+/*
+ * Author: Joshua Balsillie
+ * Date Created: 2016-05-24
+ * Description: define <section></section> attributes
+*/
+section, .section {
+  /* Overwrite Defaults */
+  display: block;
+}
+
+/*
+ * Author: Joshua Balsillie
+ * Date Created: 2016-08-20
+ * Description: define <style></style> styles
+*/
+style, .style {
+  display: none;
+}
+
+/*
+ * Author: Joshua Balsillie
+ * Date Created: 2016-08-20
+ * Description: define <textarea></textarea> styles
+ */
+textarea, .textarea {
+  overflow-y: scroll;
+  resize: vertical;
+  outline: none;
+  display: block;
+  width: 100%;
+  max-height: 8em;
+  box-sizing: border-box;
+  border: 0;
+  border-style: solid;
+  border-bottom-width: 0.15rem;
+  border-color: #11435c;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: #11435c;
+  background-color: transparent;
+}
+
+/*
+ * Author: Joshua Balsillie
+ * Date Created: 2016-08-20
+ * Description: define <title></title> styles
+*/
+title, .title {
+  display: none;
+}
+
+/*
+Author:Joshua Balsillie
+Date Created:2016-09-07
+Description:define <video></video> attributes
+*/
+video, .video {
+  max-width: 100%;
+  max-height: inherit;
+  object-fit: contain;
+  /* Uniform tag sizing */
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* Other Elements */
+/*
+ * Author:Joshua Balsillie
+ * Date Created:2020-03-28
+ * Description:define alignment settings
+ */
+.alignLeft {
+  text-align: left;
+}
+
+.alignCenter {
+  text-align: center;
+}
+
+.alignRight {
+  text-align: right;
+}
+
+/*
+ * Author:Joshua Balsillie
+ * Date Created:2016-08-20
+ * Description:define column styles
+ */
+.oneColumn, .twoColumn, .threeColumn, .fourColumn {
+  display: block;
+  padding-bottom: 1rem;
+  vertical-align: top;
+  font-size: 0;
+}
+.oneColumn > *, .twoColumn > *, .threeColumn > *, .fourColumn > * {
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 600px) {
+  .oneColumn > *.oneHalf, .twoColumn > *.oneHalf, .threeColumn > *.oneHalf, .fourColumn > *.oneHalf {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .oneColumn > *.oneHalf, .twoColumn > *.oneHalf, .threeColumn > *.oneHalf, .fourColumn > *.oneHalf {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .oneColumn > *.oneHalf, .twoColumn > *.oneHalf, .threeColumn > *.oneHalf, .fourColumn > *.oneHalf {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .oneColumn > *.oneThird, .twoColumn > *.oneThird, .threeColumn > *.oneThird, .fourColumn > *.oneThird {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .oneColumn > *.oneThird, .twoColumn > *.oneThird, .threeColumn > *.oneThird, .fourColumn > *.oneThird {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .oneColumn > *.oneThird, .twoColumn > *.oneThird, .threeColumn > *.oneThird, .fourColumn > *.oneThird {
+    width: 33.3333333333%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .oneColumn > *.twoThirds, .twoColumn > *.twoThirds, .threeColumn > *.twoThirds, .fourColumn > *.twoThirds {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .oneColumn > *.twoThirds, .twoColumn > *.twoThirds, .threeColumn > *.twoThirds, .fourColumn > *.twoThirds {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .oneColumn > *.twoThirds, .twoColumn > *.twoThirds, .threeColumn > *.twoThirds, .fourColumn > *.twoThirds {
+    width: 66.6666666667%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .oneColumn > *.oneQuarter, .twoColumn > *.oneQuarter, .threeColumn > *.oneQuarter, .fourColumn > *.oneQuarter {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .oneColumn > *.oneQuarter, .twoColumn > *.oneQuarter, .threeColumn > *.oneQuarter, .fourColumn > *.oneQuarter {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .oneColumn > *.oneQuarter, .twoColumn > *.oneQuarter, .threeColumn > *.oneQuarter, .fourColumn > *.oneQuarter {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .oneColumn > *.threeQuarters, .twoColumn > *.threeQuarters, .threeColumn > *.threeQuarters, .fourColumn > *.threeQuarters {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .oneColumn > *.threeQuarters, .twoColumn > *.threeQuarters, .threeColumn > *.threeQuarters, .fourColumn > *.threeQuarters {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .oneColumn > *.threeQuarters, .twoColumn > *.threeQuarters, .threeColumn > *.threeQuarters, .fourColumn > *.threeQuarters {
+    width: 75%;
+  }
+}
+
+.oneColumn > * {
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .twoColumn > * {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .twoColumn > * {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .twoColumn > * {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .twoColumn > *:nth-child(2n+1) {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .twoColumn > *:nth-child(2n+1) {
+    padding-left: 0;
+  }
+}
+@media screen and (min-width: 800px) {
+  .twoColumn > *:nth-child(2n+1) {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .twoColumn > *:nth-child(2n+1) {
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .twoColumn > *:nth-child(2n+1) {
+    padding-right: 1rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  .twoColumn > *:nth-child(2n+1) {
+    padding-right: 1rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .twoColumn > *:nth-child(2n+2) {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .twoColumn > *:nth-child(2n+2) {
+    padding-left: 1rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  .twoColumn > *:nth-child(2n+2) {
+    padding-left: 1rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .twoColumn > *:nth-child(2n+2) {
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .twoColumn > *:nth-child(2n+2) {
+    padding-right: 0;
+  }
+}
+@media screen and (min-width: 800px) {
+  .twoColumn > *:nth-child(2n+2) {
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .twoColumn.ratio_1-2 > *:nth-child(2n+1) {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .twoColumn.ratio_1-2 > *:nth-child(2n+1) {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .twoColumn.ratio_1-2 > *:nth-child(2n+1) {
+    width: 33.3333333333%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .twoColumn.ratio_1-2 > *:nth-child(2n+2) {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .twoColumn.ratio_1-2 > *:nth-child(2n+2) {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .twoColumn.ratio_1-2 > *:nth-child(2n+2) {
+    width: 66.6666666667%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .twoColumn.ratio_2-1 > *:nth-child(2n+1) {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .twoColumn.ratio_2-1 > *:nth-child(2n+1) {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .twoColumn.ratio_2-1 > *:nth-child(2n+1) {
+    width: 66.6666666667%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .twoColumn.ratio_2-1 > *:nth-child(2n+2) {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .twoColumn.ratio_2-1 > *:nth-child(2n+2) {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .twoColumn.ratio_2-1 > *:nth-child(2n+2) {
+    width: 33.3333333333%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .twoColumn.ratio_1-3 > *:nth-child(2n+1) {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .twoColumn.ratio_1-3 > *:nth-child(2n+1) {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .twoColumn.ratio_1-3 > *:nth-child(2n+1) {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .twoColumn.ratio_1-3 > *:nth-child(2n+2) {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .twoColumn.ratio_1-3 > *:nth-child(2n+2) {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .twoColumn.ratio_1-3 > *:nth-child(2n+2) {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .twoColumn.ratio_3-1 > *:nth-child(2n+1) {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .twoColumn.ratio_3-1 > *:nth-child(2n+1) {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .twoColumn.ratio_3-1 > *:nth-child(2n+1) {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .twoColumn.ratio_3-1 > *:nth-child(2n+2) {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .twoColumn.ratio_3-1 > *:nth-child(2n+2) {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .twoColumn.ratio_3-1 > *:nth-child(2n+2) {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .threeColumn > * {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .threeColumn > * {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .threeColumn > * {
+    width: 33.3333333333%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .threeColumn > *:nth-child(3n+1) {
+    padding-left: 0;
+  }
+}
+@media screen and (min-width: 800px) {
+  .threeColumn > *:nth-child(3n+1) {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .threeColumn > *:nth-child(3n+1) {
+    padding-right: 0;
+  }
+}
+@media screen and (min-width: 800px) {
+  .threeColumn > *:nth-child(3n+1) {
+    padding-right: 1.3333333333rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .threeColumn > *:nth-child(3n+2) {
+    padding-left: 0;
+  }
+}
+@media screen and (min-width: 800px) {
+  .threeColumn > *:nth-child(3n+2) {
+    padding-left: 0.6666666667rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .threeColumn > *:nth-child(3n+2) {
+    padding-right: 0;
+  }
+}
+@media screen and (min-width: 800px) {
+  .threeColumn > *:nth-child(3n+2) {
+    padding-right: 0.6666666667rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .threeColumn > *:nth-child(3n+3) {
+    padding-left: 0;
+  }
+}
+@media screen and (min-width: 800px) {
+  .threeColumn > *:nth-child(3n+3) {
+    padding-left: 1.3333333333rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .threeColumn > *:nth-child(3n+3) {
+    padding-right: 0;
+  }
+}
+@media screen and (min-width: 800px) {
+  .threeColumn > *:nth-child(3n+3) {
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .threeColumn > *:nth-child(2n+1) {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .threeColumn > *:nth-child(2n+1) {
+    padding-right: 1rem;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .threeColumn > *:nth-child(2n+2) {
+    padding-left: 1rem;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .threeColumn > *:nth-child(2n+2) {
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .threeColumn.ratio_1-1-2 > *:nth-child(3n+1) {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .threeColumn.ratio_1-1-2 > *:nth-child(3n+1) {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .threeColumn.ratio_1-1-2 > *:nth-child(3n+1) {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .threeColumn.ratio_1-1-2 > *:nth-child(3n+2) {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .threeColumn.ratio_1-1-2 > *:nth-child(3n+2) {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .threeColumn.ratio_1-1-2 > *:nth-child(3n+2) {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .threeColumn.ratio_1-1-2 > *:nth-child(3n+3) {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .threeColumn.ratio_1-1-2 > *:nth-child(3n+3) {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .threeColumn.ratio_1-1-2 > *:nth-child(3n+3) {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .threeColumn.ratio_1-2-1 > *:nth-child(3n+1) {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .threeColumn.ratio_1-2-1 > *:nth-child(3n+1) {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .threeColumn.ratio_1-2-1 > *:nth-child(3n+1) {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .threeColumn.ratio_1-2-1 > *:nth-child(3n+2) {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .threeColumn.ratio_1-2-1 > *:nth-child(3n+2) {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .threeColumn.ratio_1-2-1 > *:nth-child(3n+2) {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .threeColumn.ratio_1-2-1 > *:nth-child(3n+3) {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .threeColumn.ratio_1-2-1 > *:nth-child(3n+3) {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .threeColumn.ratio_1-2-1 > *:nth-child(3n+3) {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .threeColumn.ratio_2-1-1 > *:nth-child(3n+1) {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .threeColumn.ratio_2-1-1 > *:nth-child(3n+1) {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .threeColumn.ratio_2-1-1 > *:nth-child(3n+1) {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .threeColumn.ratio_2-1-1 > *:nth-child(3n+2) {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .threeColumn.ratio_2-1-1 > *:nth-child(3n+2) {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .threeColumn.ratio_2-1-1 > *:nth-child(3n+2) {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .threeColumn.ratio_2-1-1 > *:nth-child(3n+3) {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .threeColumn.ratio_2-1-1 > *:nth-child(3n+3) {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .threeColumn.ratio_2-1-1 > *:nth-child(3n+3) {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .fourColumn > * {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .fourColumn > * {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .fourColumn > * {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .fourColumn > *:nth-child(4n+1) {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .fourColumn > *:nth-child(4n+1) {
+    padding-left: 0;
+  }
+}
+@media screen and (min-width: 800px) {
+  .fourColumn > *:nth-child(4n+1) {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .fourColumn > *:nth-child(4n+1) {
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .fourColumn > *:nth-child(4n+1) {
+    padding-right: 1rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  .fourColumn > *:nth-child(4n+1) {
+    padding-right: 1.5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .fourColumn > *:nth-child(4n+2) {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .fourColumn > *:nth-child(4n+2) {
+    padding-left: 1rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  .fourColumn > *:nth-child(4n+2) {
+    padding-left: 0.5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .fourColumn > *:nth-child(4n+2) {
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .fourColumn > *:nth-child(4n+2) {
+    padding-right: 0;
+  }
+}
+@media screen and (min-width: 800px) {
+  .fourColumn > *:nth-child(4n+2) {
+    padding-right: 1rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .fourColumn > *:nth-child(4n+3) {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .fourColumn > *:nth-child(4n+3) {
+    padding-left: 0;
+  }
+}
+@media screen and (min-width: 800px) {
+  .fourColumn > *:nth-child(4n+3) {
+    padding-left: 1rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .fourColumn > *:nth-child(4n+3) {
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .fourColumn > *:nth-child(4n+3) {
+    padding-right: 1rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  .fourColumn > *:nth-child(4n+3) {
+    padding-right: 0.5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .fourColumn > *:nth-child(4n+4) {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .fourColumn > *:nth-child(4n+4) {
+    padding-left: 1rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  .fourColumn > *:nth-child(4n+4) {
+    padding-left: 1.5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .fourColumn > *:nth-child(4n+4) {
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .fourColumn > *:nth-child(4n+4) {
+    padding-right: 0;
+  }
+}
+@media screen and (min-width: 800px) {
+  .fourColumn > *:nth-child(4n+4) {
+    padding-right: 0;
+  }
+}
+
+/*
+Author:Joshua Balsillie
+Date Created:2016-09-07
+Description:define media attributes
+*/
+.icon {
+  display: inline-block;
+}
+.icon > a {
+  display: inline-block;
+}
+.icon > a > img {
+  border-radius: 50%;
+  width: 2rem;
+  border-width: 0;
+  border-style: none;
+}
+.icon.left > * {
+  margin-left: 0;
+}
+.icon.right > * {
+  margin-right: 0;
+}
+
+/*
+Author: Joshua Balsillie
+Date Created: 2016-05-24
+Description: define scrollbar formatting
+*/
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 1rem;
+}
+::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-color: transparent;
+  border-radius: 0.4rem;
+  border-width: 0.15rem;
+  border-style: solid;
+  background-clip: content-box;
+}
+::-webkit-scrollbar-track {
+  display: none;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 0.4rem;
+  border-width: 0.15rem;
+  border-style: solid;
+  background-clip: content-box;
+}
+::-webkit-scrollbar-button {
+  display: none;
+}
+::-webkit-scrollbar-corner {
+  display: none;
+}
+
+/*# sourceMappingURL=2020-alpha.css.map */

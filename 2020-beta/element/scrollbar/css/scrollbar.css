@@ -1,0 +1,64 @@
+/*
+ * Author: Joshua Balsillie
+ * Date Created: 2019-01-06
+ * Description: Import scss styles into the website
+ * 
+ * References
+ * Define ID: #id {
+ * Define class: .class {
+ * Define all: * {
+ * Define child: > {
+ * Define import css: @import "folder/_file.scss";
+ * Setup and use: http://sass-lang.com/guide
+*/
+/* Functions and Mixins */
+/* Variables */
+/*
+ * Author:Joshua Balsillie
+ * Date Created:2016-08-17
+ * Description:global colours used across the site
+ */
+/* Opaque */
+/* FFFFFF */
+/* 000000 */
+/* 95B3C2 */
+/* 293136 */
+/* 00DDFF */
+/* 003E47 */
+/* Translucent */
+/* 000000 */
+/* Use */
+/* Styles */
+/*
+Author: Joshua Balsillie
+Date Created: 2016-05-24
+Description: define scrollbar formatting
+*/
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 1rem;
+}
+::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-color: transparent;
+  border-radius: 0.4rem;
+  border-width: 0.15rem;
+  border-style: solid;
+  background-clip: content-box;
+}
+::-webkit-scrollbar-track {
+  display: none;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 0.4rem;
+  border-width: 0.15rem;
+  border-style: solid;
+  background-clip: content-box;
+}
+::-webkit-scrollbar-button {
+  display: none;
+}
+::-webkit-scrollbar-corner {
+  display: none;
+}
+
+/*# sourceMappingURL=scrollbar.css.map */

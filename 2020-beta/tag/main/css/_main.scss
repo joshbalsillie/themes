@@ -1,0 +1,29 @@
+@charset "utf-8";
+/*
+ * Author: Joshua Balsillie
+ * Date Created: 2016-08-20
+ * Description: define <main></main> attributes
+ */
+
+main, .main {
+	/* Overwrite Defaults */
+	display:block;
+}
+body > main, .main {
+	text-align:center;
+	
+	padding-left:10%;
+	padding-right:10%;
+	
+	padding-top:$sizeMedium;
+	padding-bottom:$sizeMedium;
+	margin-left:auto;
+	margin-right:auto;
+	border:0;
+	
+	@include browserSupport( box-sizing, border-box ); // Uniform tag sizing
+	
+	color:$colour1stForeground;
+	background-color:$colour1stBackground;
+	border-color:$colour1stAccent;
+}

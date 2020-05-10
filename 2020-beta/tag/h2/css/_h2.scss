@@ -1,0 +1,19 @@
+@charset "utf-8";
+/*
+ * Author:Joshua Balsillie
+ * Date Created:2016-08-18
+ * Description:define <h2></h2> attributes
+ */
+
+h2, .h2 {
+	display:block;
+	line-height:140%;
+	font-size:( $defaultFontSize * $fontSmall );
+	text-transform:$transformTitle;
+
+	/* Remove defaults */
+	@include browserSupport( margin-start, $fontMargin );
+	@include browserSupport( margin-end, $fontMargin );
+	@include browserSupport( margin-before, $fontMargin );
+	@include browserSupport( margin-after, $fontMargin );
+}

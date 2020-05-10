@@ -1,0 +1,19 @@
+@charset "utf-8";
+/*
+ * Author:Joshua Balsillie
+ * Date Created:2016-08-18
+ * Description:define <h1></h1> attributes
+ */
+
+h1, .h1 {
+	display:block;
+	font-size:( $defaultFontSize * $fontLarge );
+	line-height:140%;
+	text-transform:$transformTitle;
+	
+	/* Remove defaults */
+	@include browserSupport( margin-start, $fontMargin );
+	@include browserSupport( margin-end, $fontMargin );
+	@include browserSupport( margin-before, $fontMargin );
+	@include browserSupport( margin-after, $fontMargin );
+}
