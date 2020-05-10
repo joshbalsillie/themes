@@ -1,0 +1,11 @@
+@charset "utf-8";
+/*
+ * Author: Joshua Balsillie
+ * Date Created: 2016-05-24
+ * Description: define <section></section> attributes
+*/
+
+section, .section {
+	/* Overwrite Defaults */
+	display:block;
+}

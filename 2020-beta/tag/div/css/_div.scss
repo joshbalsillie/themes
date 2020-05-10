@@ -1,0 +1,40 @@
+@charset "utf-8";
+/*
+ * Author: Joshua Balsillie
+ * Date Created: 2016-08-20
+ * Description: define <div></div> styles
+ */
+
+div, .div {
+	/* Overwrite Defaults */
+	display:block;
+}
+body > div {
+	padding-left:10%;
+	padding-right:10%;
+	
+	padding-top:$sizeMedium;
+	padding-bottom:$sizeMedium;
+	margin-left:auto;
+	margin-right:auto;
+	border:0;
+	
+	@include browserSupport( box-sizing, border-box ); // Uniform tag sizing
+	
+	&:nth-of-type(2n+1) {
+		color:$colour2ndForeground;
+		background-color:$colour2ndBackground;
+	}
+	&:nth-of-type(2n) {
+		color:$colour3rdForeground;
+		background-color:$colour3rdBackground;
+	}
+	&:first-of-type {
+		color:$colour1stForeground;
+		background-color:transparent;
+	}
+	&:last-of-type {
+		color:$colour1stForeground;
+		background-color:transparent;
+	}
+}

@@ -1,0 +1,36 @@
+@charset "utf-8";
+/*
+ * Author:Joshua Balsillie
+ * Date Created:2016-08-17
+ * Description:global colours used across the site
+ */
+
+/* Opaque */
+$white:rgba(255,255,255,1); /* FFFFFF */
+$black:rgba(0,0,0,1); /* 000000 */
+
+$greyLight:rgba(149,179,194,1); /* 95B3C2 */
+$greyDark:rgba(41,49,54,1); /* 293136 */
+$blueLight:rgba(181,217,235,1); /* 00DDFF */
+$blueDark:rgba(17,67,92,1); /* 003E47 */
+
+/* Translucent */
+$blackTranslucent:rgba(0,0,0,0.5); /* 000000 */
+
+/* Use */
+$colour1stForeground:$white;
+$colour1stBackground:$greyDark;
+$colour1stAccent:$greyLight;
+
+$colour2ndForeground:$greyDark;
+$colour2ndBackground:$greyLight;
+$colour2ndAccent:$blueDark;
+
+$colour3rdForeground:$greyDark;
+$colour3rdBackground:$blueLight;
+$colour3rdAccent:$blueDark;
+
+$colourActionLight:$white;
+$colourActionDark:$blueDark;
+
+$colourDisabled:$blackTranslucent;

@@ -1,0 +1,42 @@
+@charset "utf-8";
+/*
+Author:Joshua Balsillie
+Date Created:2016-08-22
+Description:define <button></button> styles
+*/
+
+button, .button {
+	font-size:( $defaultFontSize * $fontSmallest );
+	display:inline-flex;
+	cursor:pointer;
+	align-items:flex-start;
+	width:auto;
+
+	color:$colourActionDark;
+	background-color:transparent;
+	border-color:$colourActionDark;
+	
+	border-width:$defaultBorderWidth;
+	border-style:$defaultBorderStyle;
+	
+	text-transform:$transformTitle;
+	text-align:center;
+	justify-content:center;
+	padding-top:$paddingAroundItem * $ratioTop;
+	padding-bottom:$paddingAroundItem * $ratioBottom;
+	padding-left:$paddingAroundItem * $ratioLeft;
+	padding-right:$paddingAroundItem * $ratioRight;
+	@include browserSupport( transition-duration, 0.3s );
+	
+	margin-bottom:$paddingAroundItems;
+
+	&:hover, :focus, :active, .selected {
+			color:$colourActionLight;
+			background-color:$colourActionDark;
+		}
+	&.deselected {
+		color:$colourActionDark;
+		background-color:transparent;
+		border-color:$colourActionDark;
+	}
+}
