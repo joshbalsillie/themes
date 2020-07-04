@@ -22,3 +22,11 @@ header, .header {
 	
 	@include browserSupport( box-sizing, border-box ); // Uniform tag sizing
 }
+#header {
+	// optional container
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	background-color: $colour1stBackground;
+	z-index: 99;
+}
