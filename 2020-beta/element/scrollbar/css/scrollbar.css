@@ -38,6 +38,7 @@ Description: define scrollbar formatting
   -webkit-appearance: none;
   width: 1rem;
 }
+
 ::-webkit-scrollbar-thumb {
   background-color: white;
   border-color: transparent;
@@ -46,6 +47,7 @@ Description: define scrollbar formatting
   border-style: solid;
   background-clip: content-box;
 }
+
 ::-webkit-scrollbar-track {
   display: none;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
@@ -54,11 +56,30 @@ Description: define scrollbar formatting
   border-style: solid;
   background-clip: content-box;
 }
+
 ::-webkit-scrollbar-button {
   display: none;
 }
+
 ::-webkit-scrollbar-corner {
   display: none;
 }
+
+/*# sourceMappingURL=scrollbar.css.map */
+/*# sourceMappingURL=scrollbar.css.map */
+/*# sourceMappingURL=scrollbar.css.map */
+/*# sourceMappingURL=scrollbar.css.map */
+/*# sourceMappingURL=scrollbar.css.map */
+/*# sourceMappingURL=scrollbar.css.map */
+/*# sourceMappingURL=scrollbar.css.map */
+/*# sourceMappingURL=scrollbar.css.map */
+/*# sourceMappingURL=scrollbar.css.map */
+/*# sourceMappingURL=scrollbar.css.map */
+/*# sourceMappingURL=scrollbar.css.map */
+/*# sourceMappingURL=scrollbar.css.map */
+/*# sourceMappingURL=scrollbar.css.map */
+/*# sourceMappingURL=scrollbar.css.map */
+/*# sourceMappingURL=scrollbar.css.map */
+/*# sourceMappingURL=scrollbar.css.map */
 
 /*# sourceMappingURL=scrollbar.css.map */
