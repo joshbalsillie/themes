@@ -115,6 +115,7 @@ a, .a {
   -webkit-margin-after: 0.5em;
   margin-after: 0.5em;
 }
+
 a:-webkit-any-link, .a:-webkit-any-link {
   color: inherit;
 }
@@ -172,10 +173,12 @@ button, .button {
   transition-duration: 0.3s;
   margin-bottom: 1rem;
 }
+
 button:hover, button :focus, button :active, button .selected, .button:hover, .button :focus, .button :active, .button .selected {
   color: white;
   background-color: #323e42;
 }
+
 button.deselected, .button.deselected {
   color: #323e42;
   background-color: transparent;
@@ -206,18 +209,22 @@ body > div {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 body > div:nth-of-type(2n+1) {
   color: #323e42;
   background-color: #b3f4d4;
 }
+
 body > div:nth-of-type(2n) {
   color: #323e42;
   background-color: #add7e7;
 }
+
 body > div:first-of-type {
   color: white;
   background-color: transparent;
 }
+
 body > div:last-of-type {
   color: white;
   background-color: transparent;
@@ -271,10 +278,12 @@ fieldset, .fieldset {
   border-style: none;
   border-width: 0;
 }
+
 fieldset:last-child, .fieldset:last-child {
   margin-bottom: 0;
   text-align: right;
 }
+
 fieldset > *:last-child, .fieldset > *:last-child {
   margin-bottom: 0;
 }
@@ -289,6 +298,7 @@ footer, .footer {
   margin-left: auto;
   margin-right: auto;
 }
+
 footer .icon > a > img, .footer .icon > a > img {
   fill: #323e42;
 }
@@ -577,6 +587,7 @@ img, .img {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 img.circle, .img.circle {
   border-radius: 50%;
 }
@@ -612,6 +623,7 @@ input[type=file], .input[type=file] {
   border-width: 0.15rem;
   border-style: solid;
 }
+
 input[type=submit]:hover, input[type=submit]:focus, input[type=submit]:active, input[type=submit].selected, .input[type=submit]:hover, .input[type=submit]:focus, .input[type=submit]:active, .input[type=submit].selected,
 input[type=button]:hover,
 input[type=button]:focus,
@@ -624,6 +636,7 @@ input[type=file].selected, .input[type=file]:hover, .input[type=file]:focus, .in
   color: #323e42;
   background-color: transparent;
 }
+
 input[type=submit].deselected, .input[type=submit].deselected,
 input[type=button].deselected, .input[type=button].deselected,
 input[type=file].deselected, .input[type=file].deselected {
@@ -699,6 +712,7 @@ nav:first-child, .nav:first-child {
   display: block;
   text-align: left;
 }
+
 @media screen and (max-width: 600px) {
   nav:last-child, .nav:last-child {
     text-align: center;
@@ -727,6 +741,7 @@ nav a, .nav a {
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
+
 @media screen and (max-width: 600px) {
   nav a, .nav a {
     display: block;
@@ -863,6 +878,7 @@ video, .video {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 /* Other Elements */
 /*
  * Author:Joshua Balsillie
@@ -892,11 +908,13 @@ video, .video {
   vertical-align: top;
   font-size: 0;
 }
+
 .oneColumn > *, .twoColumn > *, .threeColumn > *, .fourColumn > * {
   display: inline-block;
   vertical-align: top;
   box-sizing: border-box;
 }
+
 @media screen and (max-width: 600px) {
   .oneColumn > *.oneHalf, .twoColumn > *.oneHalf, .threeColumn > *.oneHalf, .fourColumn > *.oneHalf {
     width: 100%;
@@ -972,7 +990,6 @@ video, .video {
     width: 75%;
   }
 }
-
 .oneColumn > * {
   padding-left: 0;
   padding-right: 0;
@@ -1174,7 +1191,6 @@ video, .video {
     width: 25%;
   }
 }
-
 @media screen and (max-width: 600px) {
   .threeColumn > * {
     width: 100%;
@@ -1405,7 +1421,6 @@ video, .video {
     width: 25%;
   }
 }
-
 @media screen and (max-width: 600px) {
   .fourColumn > * {
     width: 100%;
@@ -1541,7 +1556,6 @@ video, .video {
     padding-right: 0;
   }
 }
-
 /*
 Author:Joshua Balsillie
 Date Created:2016-09-07
@@ -1550,18 +1564,22 @@ Description:define media attributes
 .icon {
   display: inline-block;
 }
+
 .icon > a {
   display: inline-block;
 }
+
 .icon > a > img {
   border-radius: 50%;
   width: 2rem;
   border-width: 0;
   border-style: none;
 }
+
 .icon.left > * {
   margin-left: 0;
 }
+
 .icon.right > * {
   margin-right: 0;
 }
@@ -1575,6 +1593,7 @@ Description: define scrollbar formatting
   -webkit-appearance: none;
   width: 1rem;
 }
+
 ::-webkit-scrollbar-thumb {
   background-color: white;
   border-color: transparent;
@@ -1583,6 +1602,7 @@ Description: define scrollbar formatting
   border-style: solid;
   background-clip: content-box;
 }
+
 ::-webkit-scrollbar-track {
   display: none;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
@@ -1591,11 +1611,30 @@ Description: define scrollbar formatting
   border-style: solid;
   background-clip: content-box;
 }
+
 ::-webkit-scrollbar-button {
   display: none;
 }
+
 ::-webkit-scrollbar-corner {
   display: none;
 }
+
+/*# sourceMappingURL=2020-alpha.css.map */
+/*# sourceMappingURL=2020-alpha.css.map */
+/*# sourceMappingURL=2020-alpha.css.map */
+/*# sourceMappingURL=2020-alpha.css.map */
+/*# sourceMappingURL=2020-alpha.css.map */
+/*# sourceMappingURL=2020-alpha.css.map */
+/*# sourceMappingURL=2020-alpha.css.map */
+/*# sourceMappingURL=2020-alpha.css.map */
+/*# sourceMappingURL=2020-alpha.css.map */
+/*# sourceMappingURL=2020-alpha.css.map */
+/*# sourceMappingURL=2020-alpha.css.map */
+/*# sourceMappingURL=2020-alpha.css.map */
+/*# sourceMappingURL=2020-alpha.css.map */
+/*# sourceMappingURL=2020-alpha.css.map */
+/*# sourceMappingURL=2020-alpha.css.map */
+/*# sourceMappingURL=2020-alpha.css.map */
 
 /*# sourceMappingURL=2020-alpha.css.map */
