@@ -547,6 +547,14 @@ header, .header {
   box-sizing: border-box;
 }
 
+#header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #293136;
+  z-index: 99;
+}
+
 /*
  * Author: Joshua Balsillie
  * Date Created: 2019-02-09
