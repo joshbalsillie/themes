@@ -23,7 +23,7 @@ header, .header {
 	@include browserSupport( box-sizing, border-box ); // Uniform tag sizing
 }
 #header {
-	// optional container
+	/* optional container */
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
