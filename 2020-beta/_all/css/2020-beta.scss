@@ -26,6 +26,9 @@
 @import "../../variable/css/_spacial.scss";
 @import "../../variable/css/_typefaces.scss";
 
+/* !Default Overrides */
+@import "../../widget/menu/css/_menu.scss";
+
 /* Tags */
 @import "../../tag/a/css/_a.scss";
 @import "../../tag/body/css/_body.scss";

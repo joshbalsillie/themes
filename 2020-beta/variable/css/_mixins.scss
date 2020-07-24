@@ -2,51 +2,65 @@
 /*
  * Author: Joshua Balsillie
  * Date Created: 2016-08-18
- * Description: define mixins for css files
+ * Description: define mixins for sass/scss files
  */
 
-/* Browser attribute support */
 @mixin browserSupport( $property, $value ) {
+	// Browser attribute support
+	#{ -webkit- + $property }: $value;
+	#{ -moz- + $property }: $value;
 	#{ -ms- + $property }: $value;
 	#{ -o- + $property }: $value;
-	#{ -moz- + $property }: $value;
-	#{ -webkit- + $property }: $value;
 	#{ $property }: $value;
 }
 
-/* Animation transition */
-@mixin transition() {
-	@include browserSupport( transition-duration, $transitionDuration );
-	@include browserSupport( transition-property, $transitionProperty );
-	@include browserSupport( transition-timing-function, $speedCurve );
-}
-
-/* Responsive value assignment */
-@mixin responsive( $property, $valueDesktop, $valueTablet, $valuePhone ) {
-	@include phone() {
-		#{ $property }: $valuePhone;
+@mixin languageSupport( $language, $property, $valueLtr, $valueRtl ) {
+	// Defining text direction for different languages
+	@if ($language == "english") or ($language == "eng") or ($language == "en") {
+		#{ $property }: $valueLtr;
 	}
-	@include tablet() {
-		#{ $property }: $valueTablet;
-	}
-	@include desktop() {
-		#{ $property }: $valueDesktop;
+	@else if ($language == "french") or ($language == "fra") or ($language == "fre") or ($language == "fr") {
+		#{ $property }: $valueLtr;
 	}
 }
 
-/* Responsive settings */
-@mixin phone() {
-	@media screen and ( max-width:600px ) {
+@mixin flip( $property, $valueLtr, $valueRtl ) {
+	// Text direction affected property value assignment
+	@if $defaultTextDirection == "ltr" {
+		#{ $property }: $valueLtr;
+	}
+	@else if $defaultTextDirection == "rtl" {
+		#{ $property }: $valueRtl;
+	}
+}
+
+@mixin responsive( $property, $valueDispayLarge: null, $valueDispayMedium: null, $valueDisplaySmall: null ) {
+	// Responsive value assignment
+	@include display-large() {
+		#{ $property }: $valueDispayLarge;
+	}
+	@include display-medium() {
+		#{ $property }: $valueDispayMedium;
+	}
+	@include display-small() {
+		#{ $property }: $valueDisplaySmall;
+	}
+}
+@mixin display-large() {
+	// Large screen definition
+	@media only screen and ( min-width:800px ) {
 		@content;
 	}
 }
-@mixin tablet() {
-	@media screen and ( max-width:800px ) and ( min-width: 600px ) {
+@mixin display-medium() {
+	// Medium screen definition
+	@media only screen and ( max-width:800px ) and ( min-width: 480px ) {
 		@content;
 	}
 }
-@mixin desktop() {
-	@media screen and ( min-width:800px ) {
+@mixin display-small() {
+	// Small screen definition
+	@media only screen and ( max-width:480px ) {
 		@content;
 	}
 }
