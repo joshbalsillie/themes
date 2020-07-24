@@ -1,10 +1,9 @@
 @charset "utf-8";
 /*
-Author: Joshua Balsillie
-Date Created: 2016-08-20
-Description: define <nav></nav> attributes
-*/
-
+ * Author: Joshua Balsillie
+ * Date Created: 2016-08-20
+ * Description: define <nav></nav> attributes
+ */
 nav, .nav {
 	&:first-child {
 		display:block;
@@ -17,9 +16,8 @@ nav, .nav {
 	& a {
 		background-color:transparent;
 		color:$colourActionLight;
-		padding:10px;
-		padding-bottom:5px;
-		margin:2px;
+		padding: 10px;
+		margin: 2px;
 		text-transform:$transformTitle;
 		@include responsive( display, inline-block, inline-block, block );
 		@include browserSupport( transition-duration, 0.3s );
