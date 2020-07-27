@@ -4,28 +4,30 @@
  * Date Created: 2016-08-20
  * Description: define <nav></nav> attributes
  */
+@use '../../../variable/_all/css/variable';
+
 nav, .nav {
 	&:first-child {
-		display:block;
+		display: block;
 		
-		text-align:left;
+		text-align: left;
 	}
 	&:last-child {
-		@include responsive( text-align, right, right, center );
+		@include variable.responsive( text-align, right, right, center );
 	}
 	& a {
-		background-color:transparent;
-		color:$colourActionLight;
+		background-color: transparent;
+		color: variable.$colourActionLight;
 		padding: 10px;
 		margin: 2px;
-		text-transform:$transformTitle;
-		@include responsive( display, inline-block, inline-block, block );
-		@include browserSupport( transition-duration, 0.3s );
+		text-transform: variable.$transformTitle;
+		@include variable.responsive( display, inline-block, inline-block, block );
+		@include variable.browserSupport( transition-duration, 0.3s );
 		
 		&:hover, :focus, :active {
-			background-color:$colourActionLight;
-			color:$colourActionDark;
-			@include browserSupport( transition-duration, 0.3s );
+			background-color: variable.$colourActionLight;
+			color: variable.$colourActionDark;
+			@include variable.browserSupport( transition-duration, 0.3s );
 		}
 	}
 }

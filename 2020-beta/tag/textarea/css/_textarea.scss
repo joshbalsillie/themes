@@ -4,28 +4,29 @@
  * Date Created: 2016-08-20
  * Description: define <textarea></textarea> styles
  */
+@use '../../../variable/_all/css/variable';
 
 textarea, .textarea {
-	overflow-y:scroll;
-	resize:vertical;
+	overflow-y: scroll;
+	resize: vertical;
 	outline: none;
-	display:block;
+	display: block;
 
-	width:100%;
-	max-height:8em;
+	width: 100%;
+	max-height: 8em;
 	box-sizing: border-box;
 	
-	border:0;
-	border-style:$defaultBorderStyle;
-	border-bottom-width:$defaultBorderWidth;
-	border-color:$colourActionDark;
+	border: 0;
+	border-style: variable.$defaultBorderStyle;
+	border-bottom-width: variable.$defaultBorderWidth;
+	border-color: variable.$colourActionDark;
 	
-	margin-bottom:$marginItemsUnrelated;
-	padding-top:$cellPadding;
-	padding-bottom:$cellPadding;
-	padding-left:$cellPadding;
-	padding-right:$cellPadding;
+	margin-bottom: variable.$marginItemsUnrelated;
+	padding-top: variable.$cellPadding;
+	padding-bottom: variable.$cellPadding;
+	padding-left: variable.$cellPadding;
+	padding-right: variable.$cellPadding;
 	
-	color:$colourActionDark;
-	background-color:transparent;
+	color: variable.$colourActionDark;
+	background-color: transparent;
 }

@@ -1,24 +1,25 @@
 @charset "utf-8";
 /*
- * Author:Joshua Balsillie
- * Date Created:2016-08-18
- * Description:define <a></a> styles
+ * Author: Joshua Balsillie
+ * Date Created: 2016-08-18
+ * Description: define <a></a> styles
  */
+@use '../../../variable/_all/css/variable';
 
 a, .a {
-	font-size:( $defaultFontSize * $fontSmallest );
-	text-decoration:none;
-	display:inline;
-	cursor:pointer;
-	line-height:140%;
+	font-size: ( variable.$defaultFontSize * variable.$fontSmallest );
+	text-decoration: none;
+	display: inline;
+	cursor: pointer;
+	line-height: 140%;
 	
 	/* Remove defaults */
-	@include browserSupport( margin-start, $fontMargin );
-	@include browserSupport( margin-end, $fontMargin );
-	@include browserSupport( margin-before, $fontMargin );
-	@include browserSupport( margin-after, $fontMargin );
+	@include variable.browserSupport( margin-start, variable.$fontMargin );
+	@include variable.browserSupport( margin-end, variable.$fontMargin );
+	@include variable.browserSupport( margin-before, variable.$fontMargin );
+	@include variable.browserSupport( margin-after, variable.$fontMargin );
 
 	&:-webkit-any-link {
-		color:inherit;
+		color: inherit;
 	}
 }

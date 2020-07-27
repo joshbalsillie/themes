@@ -1,20 +1,21 @@
 /*
-Author:Joshua Balsillie
-Date Created:2016-09-07
-Description:define <img></img> attributes
-*/
+ * Author: Joshua Balsillie
+ * Date Created: 2016-09-07
+ * Description: define <img></img> attributes
+ */
+@use '../../../variable/_all/css/variable';
 
 img, .img {
-	max-width:100%;
-	max-height:20rem;
+	max-width: 100%;
+	max-height: 20rem;
 	
-	border-color:$colour1stBackground;
-	border-style:$defaultBorderStyle;
+	border-color: variable.$colour1stBackground;
+	border-style: variable.$defaultBorderStyle;
 	
 	&.circle {
-		border-radius:50%;
+		border-radius: 50%;
 	}
 
 	/* Uniform tag sizing */
-	@include browserSupport( box-sizing, border-box );
+	@include variable.browserSupport( box-sizing, border-box );
 }

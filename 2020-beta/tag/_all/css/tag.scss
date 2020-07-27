@@ -1,14 +1,9 @@
 @charset 'utf-8';
 /*
  * Author: Joshua Balsillie
- * Date Created: 2016-08-17
- * Description: Import tag styles
+ * Date Created: 2020-07-26
+ * Description: Import HTML tag styles
  */
-
-/* !Default Overrides */
-@forward '../../widget/menu/css/menu-override';
-
-/* Tags */
 @forward '../../tag/a/css/a';
 @forward '../../tag/body/css/body';
 @forward '../../tag/button/css/button';
@@ -39,9 +34,3 @@
 @forward '../../tag/textarea/css/textarea';
 @forward '../../tag/title/css/title';
 @forward '../../tag/video/css/video';
-
-/* Other Elements */
-@forward '../../element/align/css/align';
-@forward '../../element/columns/css/columns';
-@forward '../../element/icon/css/icon';
-@forward '../../element/scrollbar/css/scrollbar';

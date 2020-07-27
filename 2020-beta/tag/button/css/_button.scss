@@ -1,42 +1,43 @@
 @charset "utf-8";
 /*
-Author:Joshua Balsillie
-Date Created:2016-08-22
-Description:define <button></button> styles
-*/
+ * Author: Joshua Balsillie
+ * Date Created: 2016-08-22
+ * Description: define <button></button> styles
+ */
+@use '../../../variable/_all/css/variable';
 
 button, .button {
-	font-size:( $defaultFontSize * $fontSmallest );
-	display:inline-flex;
-	cursor:pointer;
-	align-items:flex-start;
-	width:auto;
+	font-size: ( variable.$defaultFontSize * variable.$fontSmallest );
+	display: inline-flex;
+	cursor: pointer;
+	align-items: flex-start;
+	width: auto;
 
-	color:$colourActionDark;
-	background-color:transparent;
-	border-color:$colourActionDark;
+	color: variable.$colourActionDark;
+	background-color: transparent;
+	border-color: variable.$colourActionDark;
 	
-	border-width:$defaultBorderWidth;
-	border-style:$defaultBorderStyle;
+	border-width: variable.$defaultBorderWidth;
+	border-style: variable.$defaultBorderStyle;
 	
-	text-transform:$transformTitle;
-	text-align:center;
-	justify-content:center;
-	padding-top:$paddingAroundItem * $ratioTop;
-	padding-bottom:$paddingAroundItem * $ratioBottom;
-	padding-left:$paddingAroundItem * $ratioLeft;
-	padding-right:$paddingAroundItem * $ratioRight;
-	@include browserSupport( transition-duration, 0.3s );
+	text-transform: variable.$transformTitle;
+	text-align: center;
+	justify-content: center;
+	padding-top: variable.$paddingAroundItem * variable.$ratioTop;
+	padding-bottom: variable.$paddingAroundItem * variable.$ratioBottom;
+	padding-left: variable.$paddingAroundItem * variable.$ratioLeft;
+	padding-right: variable.$paddingAroundItem * variable.$ratioRight;
+	@include variable.browserSupport( transition-duration, 0.3s );
 	
-	margin-bottom:$paddingAroundItems;
+	margin-bottom: variable.$paddingAroundItems;
 
 	&:hover, :focus, :active, .selected {
-			color:$colourActionLight;
-			background-color:$colourActionDark;
+			color: variable.$colourActionLight;
+			background-color: variable.$colourActionDark;
 		}
 	&.deselected {
-		color:$colourActionDark;
-		background-color:transparent;
-		border-color:$colourActionDark;
+		color: variable.$colourActionDark;
+		background-color: transparent;
+		border-color: variable.$colourActionDark;
 	}
 }

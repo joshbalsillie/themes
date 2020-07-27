@@ -1,27 +1,4 @@
 /*
- * Author: Joshua Balsillie
- * Date Created: 2016-08-17
- * Description: Import tag styles
- * 
- * References
- * Define ID: #id {
- * Define class: .class {
- * Define all: * {
- * Define child: > {
- * Define import css: @import "folder/_file.scss";
- * Setup and use: http://sass-lang.com/guide
- *
- * Important
- * Order files for inheritance
- */
-/* Functions and Mixins */
-/*
- * Author: Joshua Balsillie
- * Date Created: 2016-08-18
- * Description: define mixins for sass/scss files
- */
-/* Variables */
-/*
  * Author:Joshua Balsillie
  * Date Created:2016-08-18
  * Description:define animation and other special actions
@@ -41,6 +18,11 @@
 /* Translucent */
 /* 000000 */
 /* Use */
+/*
+ * Author: Joshua Balsillie
+ * Date Created: 2016-08-18
+ * Description: define mixins for sass/scss files
+ */
 /*
  * Author:Joshua Balsillie
  * Date Created:2016-08-20
@@ -75,17 +57,342 @@
   font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
 }
 
-/* !Default Overrides */
+/*
+ * Author: Joshua Balsillie
+ * Date Created: 2020-07-26
+ * Description: forward all files found in variable directory
+ * Instructions: add @use '../variable/css/variable' before CSS styles;
+ */
+/* Collection of variable files to be used in other files */
+/*
+ * Author: Joshua Balsillie
+ * Date Created: 2016-08-18
+ * Description: define mixins for sass/scss files
+ */
+/*
+ * Author:Joshua Balsillie
+ * Date Created:2020-07-08
+ * Description:define menu widget styles
+ */
+.menu {
+  display: inline-block;
+  float: right;
+  right: 0;
+}
+.menu > .showOrHide {
+  cursor: pointer;
+  width: 3rem;
+  height: 3rem;
+  background-color: white;
+  mask-image: url(../../menu/svg/icon_rgb_menu-hamburger_bg-max_fg-opaque.svg);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  -webkit-mask-image: url(../../menu/svg/icon_rgb_menu-hamburger_bg-max_fg-opaque.svg);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+}
+@media only screen and (min-width: 800px) {
+  .menu > .showOrHide {
+    display: none;
+  }
+}
+@media only screen and (max-width: 800px) and (min-width: 480px) {
+  .menu > .showOrHide {
+    display: inline-block;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .menu > .showOrHide {
+    display: inline-block;
+  }
+}
+.menu > div {
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+@media only screen and (min-width: 800px) {
+  .menu > div {
+    display: block;
+  }
+}
+@media only screen and (max-width: 800px) and (min-width: 480px) {
+  .menu > div {
+    display: none;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .menu > div {
+    display: none;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .menu > div {
+    position: static;
+  }
+}
+@media only screen and (max-width: 800px) and (min-width: 480px) {
+  .menu > div {
+    position: fixed;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .menu > div {
+    position: fixed;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .menu > div {
+    z-index: auto;
+  }
+}
+@media only screen and (max-width: 800px) and (min-width: 480px) {
+  .menu > div {
+    z-index: 997;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .menu > div {
+    z-index: 997;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .menu > div {
+    width: auto;
+  }
+}
+@media only screen and (max-width: 800px) and (min-width: 480px) {
+  .menu > div {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .menu > div {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .menu > div {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 800px) and (min-width: 480px) {
+  .menu > div {
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .menu > div {
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .menu > div {
+    background-color: transparent;
+  }
+}
+@media only screen and (max-width: 800px) and (min-width: 480px) {
+  .menu > div {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+@media only screen and (max-width: 480px) {
+  .menu > div {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+.menu > div > div {
+  z-index: calc( $menu_backgroundIndex + 1 );
+  color: #293136;
+  background-color: white;
+  border-style: solid;
+  border-width: 0;
+}
+@media only screen and (min-width: 800px) {
+  .menu > div > div {
+    overflow-y: hidden;
+  }
+}
+@media only screen and (max-width: 800px) and (min-width: 480px) {
+  .menu > div > div {
+    overflow-y: scroll;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .menu > div > div {
+    overflow-y: scroll;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .menu > div > div {
+    display: inline-block;
+  }
+}
+@media only screen and (max-width: 800px) and (min-width: 480px) {
+  .menu > div > div {
+    display: inline-block;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .menu > div > div {
+    display: inline-block;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .menu > div > div {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 800px) and (min-width: 480px) {
+  .menu > div > div {
+    height: calc( 100% - 2rem );
+  }
+}
+@media only screen and (max-width: 480px) {
+  .menu > div > div {
+    height: calc( 100% - 2rem );
+  }
+}
+@media only screen and (min-width: 800px) {
+  .menu > div > div {
+    right: 10;
+  }
+}
+@media only screen and (max-width: 800px) and (min-width: 480px) {
+  .menu > div > div {
+    right: 0;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .menu > div > div {
+    right: 0;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .menu > div > div {
+    position: static;
+  }
+}
+@media only screen and (max-width: 800px) and (min-width: 480px) {
+  .menu > div > div {
+    position: absolute;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .menu > div > div {
+    position: absolute;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .menu > div > div {
+    border-color: transparent;
+  }
+}
+@media only screen and (max-width: 800px) and (min-width: 480px) {
+  .menu > div > div {
+    border-color: #293136;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .menu > div > div {
+    border-color: #293136;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .menu > div > div {
+    box-shadow: 0;
+  }
+}
+@media only screen and (max-width: 800px) and (min-width: 480px) {
+  .menu > div > div {
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  }
+}
+@media only screen and (max-width: 480px) {
+  .menu > div > div {
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  }
+}
+@media only screen and (min-width: 800px) {
+  .menu > div > div {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 800px) and (min-width: 480px) {
+  .menu > div > div {
+    padding: 1rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .menu > div > div {
+    padding: 1rem;
+  }
+}
+.menu > div > div > * {
+  padding: 0.2rem;
+  margin: 2px;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 800px) {
+  .menu > div > div > * {
+    display: none;
+  }
+}
+@media only screen and (max-width: 800px) and (min-width: 480px) {
+  .menu > div > div > * {
+    display: block;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .menu > div > div > * {
+    display: block;
+  }
+}
+.menu > div > div > a {
+  background-color: white;
+  color: #293136;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+@media only screen and (min-width: 800px) {
+  .menu > div > div > a {
+    display: inline-block;
+  }
+}
+@media only screen and (max-width: 800px) and (min-width: 480px) {
+  .menu > div > div > a {
+    display: block;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .menu > div > div > a {
+    display: block;
+  }
+}
+.menu > div > div > a:hover, .menu > div > div > a :focus, .menu > div > div > a :active {
+  background-color: #293136;
+  color: white;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
 /*
  * Author: Joshua Balsillie
  * Date Created: 2020-07-23
  * Description: define <nav></nav> attributes
  */
-/* Tags */
 /*
- * Author:Joshua Balsillie
- * Date Created:2016-08-18
- * Description:define <a></a> styles
+ * Author: Joshua Balsillie
+ * Date Created: 2016-08-18
+ * Description: define <a></a> styles
  */
 a, .a {
   font-size: 1rem;
@@ -143,10 +450,10 @@ body, .body {
 }
 
 /*
-Author:Joshua Balsillie
-Date Created:2016-08-22
-Description:define <button></button> styles
-*/
+ * Author: Joshua Balsillie
+ * Date Created: 2016-08-22
+ * Description: define <button></button> styles
+ */
 button, .button {
   font-size: 1rem;
   display: inline-flex;
@@ -224,9 +531,9 @@ body > div:last-of-type {
 }
 
 /*
- * Author:Joshua Balsillie
- * Date Created:2019-02-16
- * Description:define <fieldset></fieldset> styles
+ * Author: Joshua Balsillie
+ * Date Created: 2019-02-16
+ * Description: define <fieldset></fieldset> styles
  */
 fieldset, .fieldset {
   -webkit-margin-start: 0;
@@ -280,9 +587,9 @@ fieldset > *:last-child, .fieldset > *:last-child {
 }
 
 /*
-Author: Joshua Balsillie
-Date Created: 2015-05-20
-Description: define <footer></footer> attributes
+Author:  Joshua Balsillie
+Date Created:  2015-05-20
+Description:  define <footer></footer> attributes
 */
 footer, .footer {
   display: block;
@@ -320,9 +627,9 @@ form, .form {
 }
 
 /*
- * Author:Joshua Balsillie
- * Date Created:2016-08-18
- * Description:define <h1></h1> attributes
+ * Author: Joshua Balsillie
+ * Date Created: 2016-08-18
+ * Description: define <h1></h1> attributes
  */
 h1, .h1 {
   display: block;
@@ -353,9 +660,9 @@ h1, .h1 {
 }
 
 /*
- * Author:Joshua Balsillie
- * Date Created:2016-08-18
- * Description:define <h2></h2> attributes
+ * Author: Joshua Balsillie
+ * Date Created: 2016-08-18
+ * Description: define <h2></h2> attributes
  */
 h2, .h2 {
   display: block;
@@ -386,9 +693,9 @@ h2, .h2 {
 }
 
 /*
- * Author:Joshua Balsillie
- * Date Created:2016-08-18
- * Description:define <h3></h3> attributes
+ * Author: Joshua Balsillie
+ * Date Created: 2016-08-18
+ * Description: define <h3></h3> attributes
  */
 h3, .h3 {
   display: block;
@@ -419,9 +726,9 @@ h3, .h3 {
 }
 
 /*
- * Author:Joshua Balsillie
- * Date Created:2016-08-18
- * Description:define <h4></h4> attributes
+ * Author: Joshua Balsillie
+ * Date Created: 2016-08-18
+ * Description: define <h4></h4> attributes
  */
 h4, .h4 {
   display: block;
@@ -452,9 +759,9 @@ h4, .h4 {
 }
 
 /*
- * Author:Joshua Balsillie
- * Date Created:2016-08-18
- * Description:define <h5></h5> attributes
+ * Author: Joshua Balsillie
+ * Date Created: 2016-08-18
+ * Description: define <h5></h5> attributes
  */
 h5, .h5 {
   display: block;
@@ -485,9 +792,9 @@ h5, .h5 {
 }
 
 /*
- * Author:Joshua Balsillie
- * Date Created:2016-08-18
- * Description:define <h6></h6> attributes
+ * Author: Joshua Balsillie
+ * Date Created: 2016-08-18
+ * Description: define <h6></h6> attributes
  */
 h6, .h6 {
   display: block;
@@ -570,10 +877,10 @@ html, .html {
 }
 
 /*
-Author:Joshua Balsillie
-Date Created:2016-09-07
-Description:define <img></img> attributes
-*/
+ * Author: Joshua Balsillie
+ * Date Created: 2016-09-07
+ * Description: define <img></img> attributes
+ */
 img, .img {
   max-width: 100%;
   max-height: 20rem;
@@ -591,9 +898,9 @@ img.circle, .img.circle {
 }
 
 /*
- * Author:Joshua Balsillie
- * Date Created:2016-08-20
- * Description:define <input></input> styles
+ * Author: Joshua Balsillie
+ * Date Created: 2016-08-20
+ * Description: define <input></input> styles
  */
 input, .input {
   width: 100%;
@@ -761,9 +1068,9 @@ nav a:hover, nav a :focus, nav a :active, .nav a:hover, .nav a :focus, .nav a :a
 }
 
 /*
- * Author:Joshua Balsillie
- * Date Created:2016-08-18
- * Description:define <p></p> attributes
+ * Author: Joshua Balsillie
+ * Date Created: 2016-08-18
+ * Description: define <p></p> attributes
  */
 p, .p {
   display: block;
@@ -856,10 +1163,10 @@ title, .title {
 }
 
 /*
-Author:Joshua Balsillie
-Date Created:2016-09-07
-Description:define <video></video> attributes
-*/
+ * Author: Joshua Balsillie
+ * Date Created: 2016-09-07
+ * Description: define <video></video> attributes
+ */
 video, .video {
   max-width: 100%;
   max-height: inherit;
@@ -871,7 +1178,6 @@ video, .video {
   -o-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* Other Elements */
 /*
  * Author:Joshua Balsillie
  * Date Created:2020-03-28
@@ -890,9 +1196,9 @@ video, .video {
 }
 
 /*
- * Author:Joshua Balsillie
- * Date Created:2016-08-20
- * Description:define column styles
+ * Author: Joshua Balsillie
+ * Date Created: 2016-08-20
+ * Description: define column styles
  */
 .oneColumn, .twoColumn, .threeColumn, .fourColumn {
   display: block;
@@ -1575,10 +1881,10 @@ Description:define media attributes
 }
 
 /*
-Author: Joshua Balsillie
-Date Created: 2016-05-24
-Description: define scrollbar formatting
-*/
+ * Author: Joshua Balsillie
+ * Date Created: 2016-05-24
+ * Description: define scrollbar formatting
+ */
 ::-webkit-scrollbar {
   -webkit-appearance: none;
   width: 1rem;
@@ -1605,5 +1911,14 @@ Description: define scrollbar formatting
 ::-webkit-scrollbar-corner {
   display: none;
 }
+
+/*
+ * Author: Joshua Balsillie
+ * Date Created: 2016-08-17
+ * Description: Import tag styles
+ */
+/* !Default Overrides */
+/* Tags */
+/* Other Elements */
 
 /*# sourceMappingURL=2020-beta.css.map */
