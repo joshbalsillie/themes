@@ -209,6 +209,9 @@
   background-color: white;
   border-style: solid;
   border-width: 0;
+  min-width: 25%;
+  max-width: 50%;
+  overflow-x: hidden;
 }
 @media only screen and (min-width: 800px) {
   .menu > div > div {
@@ -387,7 +390,7 @@
 /*
  * Author: Joshua Balsillie
  * Date Created: 2020-07-23
- * Description: define <nav></nav> attributes
+ * Description: define the menu widget attributes
  */
 /*
  * Author: Joshua Balsillie
