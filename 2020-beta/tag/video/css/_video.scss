@@ -1,18 +1,19 @@
 /*
-Author:Joshua Balsillie
-Date Created:2016-09-07
-Description:define <video></video> attributes
-*/
+ * Author: Joshua Balsillie
+ * Date Created: 2016-09-07
+ * Description: define <video></video> attributes
+ */
+@use '../../../variable/_all/css/variable';
 
 video, .video {
-	max-width:100%;
-	max-height:inherit;
-	object-fit:contain;
+	max-width: 100%;
+	max-height: inherit;
+	object-fit: contain;
 	
 	&.portrait_9x16 {
 		
 	}
 
 	/* Uniform tag sizing */
-	@include browserSupport( box-sizing, border-box );
+	@include variable.browserSupport( box-sizing, border-box );
 }

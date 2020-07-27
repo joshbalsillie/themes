@@ -1,35 +1,36 @@
 @charset "utf-8";
 /*
-Author: Joshua Balsillie
-Date Created: 2015-05-20
-Description: define <footer></footer> attributes
+Author:  Joshua Balsillie
+Date Created:  2015-05-20
+Description:  define <footer></footer> attributes
 */
+@use '../../../variable/_all/css/variable';
 
 footer, .footer {
-	display:block;
-	margin-left:auto;
-	margin-right:auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 
 	& .icon > a > img {
 		// style for footer icons
-		fill:$colour1stBackground;
+		fill: variable.$colour1stBackground;
 	}
 }
 body {
 	& footer, .footer {
 		&:last-child {
-			color:$colour1stForeground;
-			background:transparent;
-			overflow-y:hidden;
-			vertical-align:middle;
+			color: variable.$colour1stForeground;
+			background: transparent;
+			overflow-y: hidden;
+			vertical-align: middle;
 			
-			padding-left:10%;
-			padding-right:10%;
+			padding-left: 10%;
+			padding-right: 10%;
 			
-			padding-top:$sizeMedium;
-			padding-bottom:$sizeMedium;
+			padding-top: variable.$sizeMedium;
+			padding-bottom: variable.$sizeMedium;
 			
-			@include browserSupport( box-sizing, border-box ); // Uniform tag sizing
+			@include variable.browserSupport( box-sizing, border-box ); // Uniform tag sizing
 		}
 	}
 }

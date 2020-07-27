@@ -4,29 +4,30 @@
  * Date Created: 2016-08-20
  * Description: define <header></header> attributes
 */
+@use '../../../variable/_all/css/variable';
 
 header, .header {
-	border-width:0;
-	border-bottom-width:$defaultBorderWidth;
+	border-width: 0;
+	border-bottom-width: variable.$defaultBorderWidth;
 	
-	color:$colour1stForeground;
-	background:$colour1stBackground;
-	overflow-y:hidden;
+	color: variable.$colour1stForeground;
+	background: variable.$colour1stBackground;
+	overflow-y: hidden;
 	
-	display:block;
+	display: block;
 	
-	padding-top:$sizeMedium;
-	padding-bottom:$sizeMedium;
-	margin-left:auto;
-	margin-right:auto;
+	padding-top: variable.$sizeMedium;
+	padding-bottom: variable.$sizeMedium;
+	margin-left: auto;
+	margin-right: auto;
 	
-	@include browserSupport( box-sizing, border-box ); // Uniform tag sizing
+	@include variable.browserSupport( box-sizing, border-box ); // Uniform tag sizing
 }
 #header {
 	/* optional container */
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
-	background-color: $colour1stBackground;
+	background-color: variable.$colour1stBackground;
 	z-index: 99;
 }

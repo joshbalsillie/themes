@@ -5,6 +5,8 @@
  * Description:global spatial formatting used across the site
  */
 
+@use '../../mixins/css/mixins';
+
 /* Universal variables */
 $defaultBorderStyle:solid;
 
@@ -43,6 +45,6 @@ $iconSize:$sizeLarge;
 
 * {
 	/* Remove default spacing */
-	@include browserSupport( margin-before, 0 );
-	@include browserSupport( margin-after, 0 );
+	@include mixins.browserSupport( margin-before, 0 );
+	@include mixins.browserSupport( margin-after, 0 );
 }

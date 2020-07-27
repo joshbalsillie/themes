@@ -1,46 +1,47 @@
 @charset "utf-8";
 /*
- * Author:Joshua Balsillie
- * Date Created:2016-08-20
- * Description:define <input></input> styles
+ * Author: Joshua Balsillie
+ * Date Created: 2016-08-20
+ * Description: define <input></input> styles
  */
+@use '../../../variable/_all/css/variable';
 
 input, .input {
-	width:100%;
-	display:block;
-	box-sizing: border-box;
+	width: 100%;
+	display: block;
+	box-sizing:  border-box;
 	
-	border:0;
-	border-style:$defaultBorderStyle;
-	border-bottom-width:$defaultBorderWidth;
-	border-color:$colourActionDark;
+	border: 0;
+	border-style: variable.$defaultBorderStyle;
+	border-bottom-width: variable.$defaultBorderWidth;
+	border-color: variable.$colourActionDark;
 	
-	margin-bottom:$marginItemsUnrelated;
-	padding-top:$cellPadding;
-	padding-bottom:$cellPadding;
-	padding-left:$cellPadding;
-	padding-right:$cellPadding;
+	margin-bottom: variable.$marginItemsUnrelated;
+	padding-top: variable.$cellPadding;
+	padding-bottom: variable.$cellPadding;
+	padding-left: variable.$cellPadding;
+	padding-right: variable.$cellPadding;
 	
-	color:$colourActionDark;
-	background-color:transparent;
+	color: variable.$colourActionDark;
+	background-color: transparent;
 }
 input[type="submit"], .input[type="submit"],
 input[type="button"], .input[type="button"],
 input[type="file"], .input[type="file"] {
-	color:$colourActionDark;
-	background-color:transparent;
+	color: variable.$colourActionDark;
+	background-color: transparent;
 	
-	border-color:$colourActionDark;
-	border-width:$defaultBorderWidth;
-	border-style:$defaultBorderStyle;
+	border-color: variable.$colourActionDark;
+	border-width: variable.$defaultBorderWidth;
+	border-style: variable.$defaultBorderStyle;
 	
 	&:hover, &:focus, &:active, &.selected {
-		color:$colourActionDark;
-		background-color:transparent;
+		color: variable.$colourActionDark;
+		background-color: transparent;
 	}
 	&.deselected {
-		color:$colourActionDark;
-		background-color:transparent;
-		border-color:$colourActionDark;
+		color: variable.$colourActionDark;
+		background-color: transparent;
+		border-color: variable.$colourActionDark;
 	}
 }

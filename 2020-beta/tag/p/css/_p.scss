@@ -1,18 +1,19 @@
 @charset "utf-8";
 /*
- * Author:Joshua Balsillie
- * Date Created:2016-08-18
- * Description:define <p></p> attributes
+ * Author: Joshua Balsillie
+ * Date Created: 2016-08-18
+ * Description: define <p></p> attributes
  */
+@use '../../../variable/_all/css/variable';
 
 p, .p {
-	display:block;
-	line-height:140%;
-	font-size:( $defaultFontSize * $fontSmallest );
+	display: block;
+	line-height: 140%;
+	font-size: ( variable.$defaultFontSize * variable.$fontSmallest );
 
 	/* Remove defaults */
-	@include browserSupport( margin-start, $fontMargin );
-	@include browserSupport( margin-end, $fontMargin );
-	@include browserSupport( margin-before, $fontMargin );
-	@include browserSupport( margin-after, $fontMargin );
+	@include variable.browserSupport( margin-start, variable.$fontMargin );
+	@include variable.browserSupport( margin-end, variable.$fontMargin );
+	@include variable.browserSupport( margin-before, variable.$fontMargin );
+	@include variable.browserSupport( margin-after, variable.$fontMargin );
 }
