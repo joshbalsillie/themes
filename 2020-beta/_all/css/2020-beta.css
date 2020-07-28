@@ -205,7 +205,7 @@
 }
 .menu > div > div {
   z-index: calc( $menu_backgroundIndex + 1 );
-  color: #293136;
+  color: white;
   background-color: white;
   border-style: solid;
   border-width: 0;
@@ -295,12 +295,12 @@
 }
 @media only screen and (max-width: 800px) and (min-width: 480px) {
   .menu > div > div {
-    border-color: #293136;
+    border-color: white;
   }
 }
 @media only screen and (max-width: 480px) {
   .menu > div > div {
-    border-color: #293136;
+    border-color: white;
   }
 }
 @media only screen and (min-width: 800px) {
@@ -355,7 +355,7 @@
 }
 .menu > div > div > a {
   background-color: white;
-  color: #293136;
+  color: white;
   -webkit-transition-duration: 0.3s;
   -moz-transition-duration: 0.3s;
   -ms-transition-duration: 0.3s;
