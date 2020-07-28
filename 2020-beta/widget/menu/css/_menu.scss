@@ -8,7 +8,7 @@
 
 @use '../../../../../widgets/menu/css/menu' with(
 	$menu_colourForeground: white,
-	//$menu_colourForeground: variable.$colour1stBackground,
+	
 	$menu_colourBackground: variable.$colour1stForeground,
 	$menu_colourActionForeground: variable.$colour1stForeground,
 	$menu_colourActionBackground: variable.$colour1stBackground,

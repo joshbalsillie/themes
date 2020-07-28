@@ -394,6 +394,11 @@
  */
 /*
  * Author: Joshua Balsillie
+ * Date Created: 2020-07-28
+ * Description: Import HTML widget styles
+ */
+/*
+ * Author: Joshua Balsillie
  * Date Created: 2016-08-18
  * Description: define <a></a> styles
  */
@@ -1182,6 +1187,11 @@ video, .video {
   box-sizing: border-box;
 }
 /*
+ * Author: Joshua Balsillie
+ * Date Created: 2020-07-26
+ * Description: Import HTML tag styles
+ */
+/*
  * Author:Joshua Balsillie
  * Date Created:2020-03-28
  * Description:define alignment settings
@@ -1915,6 +1925,11 @@ Description:define media attributes
   display: none;
 }
 
+/*
+ * Author: Joshua Balsillie
+ * Date Created: 2020-07-28
+ * Description: Import element styles
+ */
 /*
  * Author: Joshua Balsillie
  * Date Created: 2016-08-17
