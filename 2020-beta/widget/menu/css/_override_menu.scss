@@ -2,13 +2,12 @@
 /*
  * Author: Joshua Balsillie
  * Date Created: 2020-07-23
- * Description: define the menu widget attributes
+ * Description: override the menu widget attributes
  */
 @use '../../../variable/_all/css/variable';
 
 @use '../../../../../widgets/menu/css/menu' with(
-	$menu_colourForeground: white,
-	
+	$menu_colourForeground: variable.$colour1stBackground,
 	$menu_colourBackground: variable.$colour1stForeground,
 	$menu_colourActionForeground: variable.$colour1stForeground,
 	$menu_colourActionBackground: variable.$colour1stBackground,

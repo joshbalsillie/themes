@@ -205,8 +205,7 @@
 }
 .menu > div > div {
   z-index: calc( $menu_backgroundIndex + 1 );
-  color: white;
-  background-color: white;
+  color: #293136;
   border-style: solid;
   border-width: 0;
   min-width: 25%;
@@ -290,17 +289,32 @@
 }
 @media only screen and (min-width: 800px) {
   .menu > div > div {
+    background-color: transparent;
+  }
+}
+@media only screen and (max-width: 800px) and (min-width: 480px) {
+  .menu > div > div {
+    background-color: white;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .menu > div > div {
+    background-color: white;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .menu > div > div {
     border-color: transparent;
   }
 }
 @media only screen and (max-width: 800px) and (min-width: 480px) {
   .menu > div > div {
-    border-color: white;
+    border-color: #293136;
   }
 }
 @media only screen and (max-width: 480px) {
   .menu > div > div {
-    border-color: white;
+    border-color: #293136;
   }
 }
 @media only screen and (min-width: 800px) {
@@ -354,8 +368,8 @@
   }
 }
 .menu > div > div > a {
-  background-color: white;
-  color: white;
+  background-color: transparent;
+  color: #293136;
   -webkit-transition-duration: 0.3s;
   -moz-transition-duration: 0.3s;
   -ms-transition-duration: 0.3s;
@@ -390,7 +404,7 @@
 /*
  * Author: Joshua Balsillie
  * Date Created: 2020-07-23
- * Description: define the menu widget attributes
+ * Description: override the menu widget attributes
  */
 /*
  * Author: Joshua Balsillie
