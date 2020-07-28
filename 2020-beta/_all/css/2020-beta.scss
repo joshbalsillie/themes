@@ -5,11 +5,11 @@
  * Description: Import tag styles
  */
 
-/* !Default Overrides */
-@forward '../../widget/_all/css/widget';
-
 /* Tags */
 @forward '../../tag/_all/css/tag';
 
 /* Other Elements */
 @forward '../../element/_all/css/element';
+
+/* !Default Overrides */
+@forward '../../widget/_all/css/widget';
