@@ -1858,12 +1858,12 @@ Description:define media attributes
 }
 @media only screen and (max-width: 800px) and (min-width: 480px) {
   .menu > div > div {
-    background-color: white;
+    background-color: #293136;
   }
 }
 @media only screen and (max-width: 480px) {
   .menu > div > div {
-    background-color: white;
+    background-color: #293136;
   }
 }
 @media only screen and (min-width: 800px) {
@@ -1980,17 +1980,17 @@ Description:define media attributes
 }
 @media only screen and (min-width: 800px) {
   .menu > div > div > a:hover, .menu > div > div > a :focus, .menu > div > div > a :active {
-    color: white;
+    color: #293136;
   }
 }
 @media only screen and (max-width: 800px) and (min-width: 480px) {
   .menu > div > div > a:hover, .menu > div > div > a :focus, .menu > div > div > a :active {
-    color: #293136;
+    color: #11435c;
   }
 }
 @media only screen and (max-width: 480px) {
   .menu > div > div > a:hover, .menu > div > div > a :focus, .menu > div > div > a :active {
-    color: #293136;
+    color: #11435c;
   }
 }
 @media only screen and (min-width: 800px) {
