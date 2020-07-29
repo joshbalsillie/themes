@@ -697,12 +697,12 @@ nav:first-child, .nav:first-child {
 }
 @media only screen and (max-width: 800px) and (min-width: 480px) {
   nav:last-child, .nav:last-child {
-    text-align: right;
+    text-align: left;
   }
 }
 @media only screen and (max-width: 480px) {
   nav:last-child, .nav:last-child {
-    text-align: center;
+    text-align: left;
   }
 }
 nav a, .nav a {
@@ -1738,7 +1738,7 @@ Description:define media attributes
 }
 .menu > div > div {
   z-index: calc( $menu_backgroundIndex + 1 );
-  color: #293136;
+  color: white;
   border-style: solid;
   border-width: 0;
   min-width: 25%;
@@ -1856,12 +1856,12 @@ Description:define media attributes
 }
 @media only screen and (max-width: 800px) and (min-width: 480px) {
   .menu > div > div {
-    border-color: #293136;
+    border-color: white;
   }
 }
 @media only screen and (max-width: 480px) {
   .menu > div > div {
-    border-color: #293136;
+    border-color: white;
   }
 }
 @media only screen and (min-width: 800px) {
@@ -1926,7 +1926,7 @@ Description:define media attributes
 }
 @media only screen and (min-width: 800px) {
   .menu > div > div > a {
-    color: #293136;
+    color: white;
   }
 }
 @media only screen and (max-width: 800px) and (min-width: 480px) {
