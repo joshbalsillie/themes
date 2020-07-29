@@ -20,6 +20,11 @@
 /* Use */
 /*
  * Author: Joshua Balsillie
+ * Date Created: 2020-07-29
+ * Description: define icon paths
+ */
+/*
+ * Author: Joshua Balsillie
  * Date Created: 2016-08-18
  * Description: define mixins for sass/scss files
  */
@@ -1617,13 +1622,25 @@ Description:define media attributes
   width: 3rem;
   height: 3rem;
   background-color: white;
-  -webkit-mask-image: url(../../menu/svg/icon_rgb_menu-hamburger_bg-max_fg-opaque.svg);
-  mask-image: url(../../menu/svg/icon_rgb_menu-hamburger_bg-max_fg-opaque.svg);
+  -webkit-mask-image: url(../../../asset/image/icon/menu/svg/icon_rgb_menu-hamburger_bg-max_fg-opaque.svg);
+  -moz-mask-image: url(../../../asset/image/icon/menu/svg/icon_rgb_menu-hamburger_bg-max_fg-opaque.svg);
+  -ms-mask-image: url(../../../asset/image/icon/menu/svg/icon_rgb_menu-hamburger_bg-max_fg-opaque.svg);
+  -o-mask-image: url(../../../asset/image/icon/menu/svg/icon_rgb_menu-hamburger_bg-max_fg-opaque.svg);
+  mask-image: url(../../../asset/image/icon/menu/svg/icon_rgb_menu-hamburger_bg-max_fg-opaque.svg);
   -webkit-mask-repeat: no-repeat;
+  -moz-mask-repeat: no-repeat;
+  -ms-mask-repeat: no-repeat;
+  -o-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-position: center;
+  -moz-mask-position: center;
+  -ms-mask-position: center;
+  -o-mask-position: center;
   mask-position: center;
   -webkit-mask-size: contain;
+  -moz-mask-size: contain;
+  -ms-mask-size: contain;
+  -o-mask-size: contain;
   mask-size: contain;
 }
 @media only screen and (min-width: 800px) {
