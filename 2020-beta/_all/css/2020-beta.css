@@ -140,9 +140,9 @@ button, .button {
   cursor: pointer;
   align-items: flex-start;
   width: auto;
-  color: #11435c;
+  color: #293136;
   background-color: transparent;
-  border-color: #11435c;
+  border-color: #293136;
   border-width: 0.15rem;
   border-style: solid;
   text-transform: uppercase;
@@ -161,12 +161,12 @@ button, .button {
 }
 button:hover, button :focus, button :active, button .selected, .button:hover, .button :focus, .button :active, .button .selected {
   color: white;
-  background-color: #11435c;
+  background-color: #293136;
 }
 button.deselected, .button.deselected {
-  color: #11435c;
+  color: #293136;
   background-color: transparent;
-  border-color: #11435c;
+  border-color: #293136;
 }
 
 /*
@@ -589,22 +589,22 @@ input, .input {
   border: 0;
   border-style: solid;
   border-bottom-width: 0.15rem;
-  border-color: #11435c;
+  border-color: #293136;
   margin-bottom: 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  color: #11435c;
+  color: #293136;
   background-color: transparent;
 }
 
 input[type=submit], .input[type=submit],
 input[type=button], .input[type=button],
 input[type=file], .input[type=file] {
-  color: #11435c;
+  color: #293136;
   background-color: transparent;
-  border-color: #11435c;
+  border-color: #293136;
   border-width: 0.15rem;
   border-style: solid;
 }
@@ -617,15 +617,15 @@ input[type=file]:hover,
 input[type=file]:focus,
 input[type=file]:active,
 input[type=file].selected, .input[type=file]:hover, .input[type=file]:focus, .input[type=file]:active, .input[type=file].selected {
-  color: #11435c;
+  color: #293136;
   background-color: transparent;
 }
 input[type=submit].deselected, .input[type=submit].deselected,
 input[type=button].deselected, .input[type=button].deselected,
 input[type=file].deselected, .input[type=file].deselected {
-  color: #11435c;
+  color: #293136;
   background-color: transparent;
-  border-color: #11435c;
+  border-color: #293136;
 }
 
 /*
@@ -739,7 +739,7 @@ nav a, .nav a {
 }
 nav a:hover, nav a :focus, nav a :active, .nav a:hover, .nav a :focus, .nav a :active {
   background-color: white;
-  color: #11435c;
+  color: #293136;
   -webkit-transition-duration: 0.3s;
   -moz-transition-duration: 0.3s;
   -ms-transition-duration: 0.3s;
@@ -823,13 +823,13 @@ textarea, .textarea {
   border: 0;
   border-style: solid;
   border-bottom-width: 0.15rem;
-  border-color: #11435c;
+  border-color: #293136;
   margin-bottom: 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  color: #11435c;
+  color: #293136;
   background-color: transparent;
 }
 
@@ -1858,12 +1858,12 @@ Description:define media attributes
 }
 @media only screen and (max-width: 800px) and (min-width: 480px) {
   .menu > div > div {
-    background-color: #293136;
+    background-color: white;
   }
 }
 @media only screen and (max-width: 480px) {
   .menu > div > div {
-    background-color: #293136;
+    background-color: white;
   }
 }
 @media only screen and (min-width: 800px) {
@@ -1873,12 +1873,12 @@ Description:define media attributes
 }
 @media only screen and (max-width: 800px) and (min-width: 480px) {
   .menu > div > div {
-    border-color: white;
+    border-color: #293136;
   }
 }
 @media only screen and (max-width: 480px) {
   .menu > div > div {
-    border-color: white;
+    border-color: #293136;
   }
 }
 @media only screen and (min-width: 800px) {
@@ -1948,12 +1948,12 @@ Description:define media attributes
 }
 @media only screen and (max-width: 800px) and (min-width: 480px) {
   .menu > div > div > a {
-    color: white;
+    color: #293136;
   }
 }
 @media only screen and (max-width: 480px) {
   .menu > div > div > a {
-    color: white;
+    color: #293136;
   }
 }
 @media only screen and (min-width: 800px) {
@@ -1980,22 +1980,22 @@ Description:define media attributes
 }
 @media only screen and (min-width: 800px) {
   .menu > div > div > a:hover, .menu > div > div > a :focus, .menu > div > div > a :active {
-    color: #293136;
+    color: white;
   }
 }
 @media only screen and (max-width: 800px) and (min-width: 480px) {
   .menu > div > div > a:hover, .menu > div > div > a :focus, .menu > div > div > a :active {
-    color: #11435c;
+    color: #293136;
   }
 }
 @media only screen and (max-width: 480px) {
   .menu > div > div > a:hover, .menu > div > div > a :focus, .menu > div > div > a :active {
-    color: #11435c;
+    color: #293136;
   }
 }
 @media only screen and (min-width: 800px) {
   .menu > div > div > a:hover, .menu > div > div > a :focus, .menu > div > div > a :active {
-    background-color: white;
+    background-color: #293136;
   }
 }
 @media only screen and (max-width: 800px) and (min-width: 480px) {

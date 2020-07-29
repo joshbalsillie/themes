@@ -7,10 +7,14 @@
 @use '../../../variable/_all/css/variable';
 
 @use '../../../../../widgets/menu/css/menu' with(
-	$menu_colourForeground: variable.$colour1stForeground,
-	$menu_colourBackground: variable.$colour1stBackground,
-	$menu_colourActionForeground: variable.$colourActionDark,
-	$menu_colourActionBackground: variable.$colourActionLight,
+	$menu_horizontalColourForeground: variable.$colour1stForeground,
+	$menu_horizontalColourBackground: variable.$colour1stBackground,
+	$menu_horizontalColourForegroundAction: variable.$colourActionDark,
+	$menu_horizontalColourBackgroundAction: variable.$colourActionLight,
+	$menu_verticalColourForeground: variable.$colour1stBackground,
+	$menu_verticalColourBackground: variable.$colour1stForeground,
+	$menu_verticalColourForegroundAction: variable.$colourActionLight,
+	$menu_verticalColourBackgroundAction: variable.$colourActionDark,
 	$menu_iconImage: variable.$icon_menu,
 	$menu_iconColour: variable.$colourActionLight
 );
