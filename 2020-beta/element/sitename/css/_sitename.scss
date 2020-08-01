@@ -6,7 +6,7 @@
  */
  @use '../../../variable/_all/css/variable';
 
-.siteName{
+.sitename{
 	display: inline-block;
 	line-height: 140%;
 	font-size: ( variable.$defaultFontSize * variable.$fontSmall );
