@@ -1599,6 +1599,40 @@ Description:define media attributes
 
 /*
  * Author: Joshua Balsillie
+ * Date Created: 2020-08-01
+ * Description: define the styles for the title of the site
+ */
+.siteName {
+  display: inline-block;
+  line-height: 140%;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  color: white;
+  /* Remove defaults */
+  -webkit-margin-start: 0.5em;
+  -moz-margin-start: 0.5em;
+  -ms-margin-start: 0.5em;
+  -o-margin-start: 0.5em;
+  margin-start: 0.5em;
+  -webkit-margin-end: 0.5em;
+  -moz-margin-end: 0.5em;
+  -ms-margin-end: 0.5em;
+  -o-margin-end: 0.5em;
+  margin-end: 0.5em;
+  -webkit-margin-before: 0.5em;
+  -moz-margin-before: 0.5em;
+  -ms-margin-before: 0.5em;
+  -o-margin-before: 0.5em;
+  margin-before: 0.5em;
+  -webkit-margin-after: 0.5em;
+  -moz-margin-after: 0.5em;
+  -ms-margin-after: 0.5em;
+  -o-margin-after: 0.5em;
+  margin-after: 0.5em;
+}
+
+/*
+ * Author: Joshua Balsillie
  * Date Created: 2020-07-28
  * Description: Import element styles
  */
