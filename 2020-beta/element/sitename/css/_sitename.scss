@@ -4,11 +4,14 @@
  * Date Created: 2020-08-01
  * Description: define the styles for the title of the site
  */
+ @use '../../../variable/_all/css/variable';
+
 .siteName{
 	display: inline-block;
 	line-height: 140%;
 	font-size: ( variable.$defaultFontSize * variable.$fontSmall );
 	text-transform: variable.$transformTitle;
+	color: variable.$colour1stForeground;
 
 	/* Remove defaults */
 	@include variable.browserSupport( margin-start, variable.$fontMargin );
