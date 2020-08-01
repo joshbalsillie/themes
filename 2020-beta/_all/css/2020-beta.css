@@ -1602,7 +1602,7 @@ Description:define media attributes
  * Date Created: 2020-08-01
  * Description: define the styles for the title of the site
  */
-.siteName {
+.sitename {
   display: inline-block;
   line-height: 140%;
   font-size: 1.25rem;
