@@ -9,6 +9,7 @@
 .sitename{
 	display: inline-block;
 	line-height: 140%;
+	float: left;
 	font-size: ( variable.$defaultFontSize * variable.$fontSmall );
 	text-transform: variable.$transformTitle;
 	color: variable.$colour1stForeground;
