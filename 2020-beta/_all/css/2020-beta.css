@@ -524,7 +524,9 @@ header, .header {
   color: white;
   background: #293136;
   overflow-y: hidden;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding-top: 1rem;
   padding-bottom: 1rem;
   margin-left: auto;
@@ -543,6 +545,9 @@ header, .header {
   top: 0;
   background-color: #293136;
   z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /*
