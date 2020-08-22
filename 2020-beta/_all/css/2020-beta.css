@@ -983,6 +983,9 @@ video, .video {
   width: 100%;
 }
 
+.twoColumn > * {
+  padding-bottom: 2rem;
+}
 @media only screen and (min-width: 800px) {
   .twoColumn > * {
     width: 50%;
@@ -997,9 +1000,6 @@ video, .video {
   .twoColumn > * {
     width: 100%;
   }
-}
-.twoColumn > * > * {
-  padding-bottom: 2rem;
 }
 @media only screen and (min-width: 800px) {
   .twoColumn > *:nth-child(2n+1) {
@@ -1182,6 +1182,9 @@ video, .video {
   }
 }
 
+.threeColumn > * {
+  padding-bottom: 2rem;
+}
 @media only screen and (min-width: 800px) {
   .threeColumn > * {
     width: 33.3333333333%;
@@ -1196,9 +1199,6 @@ video, .video {
   .threeColumn > * {
     width: 100%;
   }
-}
-.threeColumn > * > * {
-  padding-bottom: 2rem;
 }
 @media only screen and (min-width: 800px) {
   .threeColumn > *:nth-child(3n+1) {
@@ -1416,6 +1416,9 @@ video, .video {
   }
 }
 
+.fourColumn > * {
+  padding-bottom: 2rem;
+}
 @media only screen and (min-width: 800px) {
   .fourColumn > * {
     width: 25%;
@@ -1430,9 +1433,6 @@ video, .video {
   .fourColumn > * {
     width: 100%;
   }
-}
-.fourColumn > * > * {
-  padding-bottom: 2rem;
 }
 @media only screen and (min-width: 800px) {
   .fourColumn > *:nth-child(4n+1) {
