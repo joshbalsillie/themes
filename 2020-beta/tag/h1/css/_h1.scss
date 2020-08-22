@@ -12,7 +12,7 @@ h1, .h1 {
 	font-size: ( variable.$defaultFontSize * variable.$fontLarge );
 	text-transform: variable.$transformTitle;
 
-	@include variable.responsive( text-align , left, left, center );
+	@include variable.responsive( text-align, left, left, center );
 	
 	/* Remove defaults */
 	@include variable.browserSupport( margin-start, variable.$fontMargin );
