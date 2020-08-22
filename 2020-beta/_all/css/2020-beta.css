@@ -998,6 +998,9 @@ video, .video {
     width: 100%;
   }
 }
+.twoColumn > * > * {
+  padding-bottom: 2rem;
+}
 @media only screen and (min-width: 800px) {
   .twoColumn > *:nth-child(2n+1) {
     padding-left: 0;
@@ -1193,6 +1196,9 @@ video, .video {
   .threeColumn > * {
     width: 100%;
   }
+}
+.threeColumn > * > * {
+  padding-bottom: 2rem;
 }
 @media only screen and (min-width: 800px) {
   .threeColumn > *:nth-child(3n+1) {
@@ -1424,6 +1430,9 @@ video, .video {
   .fourColumn > * {
     width: 100%;
   }
+}
+.fourColumn > * > * {
+  padding-bottom: 2rem;
 }
 @media only screen and (min-width: 800px) {
   .fourColumn > *:nth-child(4n+1) {
