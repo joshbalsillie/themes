@@ -1307,6 +1307,9 @@ video, .video {
     padding-top: 2rem;
   }
 }
+.threeColumn > *:nth-child(3n+4), .threeColumn > *:nth-child(3n+5), .threeColumn > *:nth-child(3n+6) {
+  padding-top: 2rem;
+}
 @media only screen and (max-width: 800px) and (min-width: 480px) {
   .threeColumn > *:nth-child(2n+1) {
     padding-left: 0;
@@ -1326,9 +1329,6 @@ video, .video {
   .threeColumn > *:nth-child(2n+2) {
     padding-right: 0;
   }
-}
-.threeColumn > *:nth-child(3n+4), .threeColumn > *:nth-child(3n+5), .threeColumn > *:nth-child(3n+6) {
-  padding-top: 2rem;
 }
 @media only screen and (min-width: 800px) {
   .threeColumn.ratio_1-1-2 > *:nth-child(3n+1) {
@@ -1489,11 +1489,6 @@ video, .video {
     padding-left: 0;
   }
 }
-@media only screen and (max-width: 800px) and (min-width: 480px) {
-  .fourColumn > *:nth-child(4n+1) {
-    padding-left: 0;
-  }
-}
 @media only screen and (max-width: 480px) {
   .fourColumn > *:nth-child(4n+1) {
     padding-left: 0;
@@ -1504,11 +1499,6 @@ video, .video {
     padding-right: 1.5rem;
   }
 }
-@media only screen and (max-width: 800px) and (min-width: 480px) {
-  .fourColumn > *:nth-child(4n+1) {
-    padding-right: 1rem;
-  }
-}
 @media only screen and (max-width: 480px) {
   .fourColumn > *:nth-child(4n+1) {
     padding-right: 0;
@@ -1517,11 +1507,6 @@ video, .video {
 @media only screen and (min-width: 800px) {
   .fourColumn > *:nth-child(4n+2) {
     padding-left: 0.5rem;
-  }
-}
-@media only screen and (max-width: 800px) and (min-width: 480px) {
-  .fourColumn > *:nth-child(4n+2) {
-    padding-left: 1rem;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -1579,11 +1564,6 @@ video, .video {
     padding-right: 0.5rem;
   }
 }
-@media only screen and (max-width: 800px) and (min-width: 480px) {
-  .fourColumn > *:nth-child(4n+3) {
-    padding-right: 1rem;
-  }
-}
 @media only screen and (max-width: 480px) {
   .fourColumn > *:nth-child(4n+3) {
     padding-right: 0;
@@ -1607,11 +1587,6 @@ video, .video {
 @media only screen and (min-width: 800px) {
   .fourColumn > *:nth-child(4n+4) {
     padding-left: 1.5rem;
-  }
-}
-@media only screen and (max-width: 800px) and (min-width: 480px) {
-  .fourColumn > *:nth-child(4n+4) {
-    padding-left: 1rem;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -1652,7 +1627,26 @@ video, .video {
 .fourColumn > *:nth-child(4n+5), .fourColumn > *:nth-child(4n+6), .fourColumn > *:nth-child(4n+7), .fourColumn > *:nth-child(4n+8) {
   padding-top: 2rem;
 }
-
+@media only screen and (max-width: 800px) and (min-width: 480px) {
+  .fourColumn > *:nth-child(2n+1) {
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 800px) and (min-width: 480px) {
+  .fourColumn > *:nth-child(2n+1) {
+    padding-right: 1rem;
+  }
+}
+@media only screen and (max-width: 800px) and (min-width: 480px) {
+  .fourColumn > *:nth-child(2n+2) {
+    padding-left: 1rem;
+  }
+}
+@media only screen and (max-width: 800px) and (min-width: 480px) {
+  .fourColumn > *:nth-child(2n+2) {
+    padding-right: 0;
+  }
+}
 /*
 Author:Joshua Balsillie
 Date Created:2016-09-07
