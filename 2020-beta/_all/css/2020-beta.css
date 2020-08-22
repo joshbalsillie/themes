@@ -313,8 +313,8 @@ form, .form {
  */
 h1, .h1 {
   display: block;
-  font-size: 2rem;
   line-height: 140%;
+  font-size: 2rem;
   text-transform: uppercase;
   /* Remove defaults */
   -webkit-margin-start: 0.5em;
@@ -337,6 +337,21 @@ h1, .h1 {
   -ms-margin-after: 0.5em;
   -o-margin-after: 0.5em;
   margin-after: 0.5em;
+}
+@media only screen and (min-width: 800px) {
+  h1, .h1 {
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 800px) and (min-width: 480px) {
+  h1, .h1 {
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 480px) {
+  h1, .h1 {
+    text-align: center;
+  }
 }
 
 /*
@@ -370,6 +385,21 @@ h2, .h2 {
   -ms-margin-after: 0.5em;
   -o-margin-after: 0.5em;
   margin-after: 0.5em;
+}
+@media only screen and (min-width: 800px) {
+  h2, .h2 {
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 800px) and (min-width: 480px) {
+  h2, .h2 {
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 480px) {
+  h2, .h2 {
+    text-align: center;
+  }
 }
 
 /*
@@ -568,7 +598,6 @@ html, .html {
  */
 img, .img {
   max-width: 100%;
-  max-height: 20rem;
   border-color: #293136;
   border-style: solid;
   /* Uniform tag sizing */
@@ -580,6 +609,7 @@ img, .img {
 }
 img.circle, .img.circle {
   border-radius: 50%;
+  max-height: 15rem;
 }
 
 /*
