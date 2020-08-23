@@ -13,7 +13,7 @@ h2, .h2 {
 	text-transform: variable.$transformTitle;
 
 	@include variable.responsive( text-align, left, left, center );
-
+	
 	/* Remove defaults */
 	@include variable.browserSupport( margin-start, variable.$fontMargin );
 	@include variable.browserSupport( margin-end, variable.$fontMargin );
