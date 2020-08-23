@@ -1,0 +1,28 @@
+@charset "utf-8";
+/*
+ * Author: Joshua Balsillie
+ * Date Created: 2016-08-22
+ * Description: define <span></span> styles
+ */
+@use '../../../variable/_all/css/variable';
+
+span, .span {
+	&.theButton {
+		// button style font without hovers/animations and button style
+		font-size: ( variable.$defaultFontSize * variable.$fontSmallest );
+		text-transform: variable.$transformTitle;
+		padding-top: variable.$paddingAroundItem * variable.$ratioTop;
+		padding-bottom: variable.$paddingAroundItem * variable.$ratioBottom;
+		margin-bottom: variable.$paddingAroundItems;
+	}
+	&.leftOf {
+		// text positioned left of the button
+		padding-left: variable.$paddingAroundItem * variable.$ratioLeft;
+		padding-right: variable.$paddingAroundItem * variable.$ratioRight / 4;
+	}
+	&.rightOf {
+		// text positioned right of the button
+		padding-left: variable.$paddingAroundItem * variable.$ratioLeft / 4;
+		padding-right: variable.$paddingAroundItem * variable.$ratioRight;
+	}
+}
