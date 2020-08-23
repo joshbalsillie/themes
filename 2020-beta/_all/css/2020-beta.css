@@ -145,6 +145,7 @@ button, .button {
   border-color: #293136;
   border-width: 0.15rem;
   border-style: solid;
+  border-radius: 2rem;
   text-transform: uppercase;
   text-align: center;
   justify-content: center;

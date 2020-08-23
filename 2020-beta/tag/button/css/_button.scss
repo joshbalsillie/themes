@@ -19,6 +19,7 @@ button, .button {
 	
 	border-width: variable.$defaultBorderWidth;
 	border-style: variable.$defaultBorderStyle;
+	border-radius: 2rem;
 	
 	text-transform: variable.$transformTitle;
 	text-align: center;
