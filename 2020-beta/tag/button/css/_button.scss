@@ -33,9 +33,9 @@ button, .button {
 	margin-bottom: variable.$paddingAroundItems;
 
 	&:hover, :focus, :active, .selected {
-			color: variable.$colourActionLight;
-			background-color: variable.$colourActionDark;
-		}
+		color: variable.$colourActionLight;
+		background-color: variable.$colourActionDark;
+	}
 	&.deselected {
 		color: variable.$colourActionDark;
 		background-color: transparent;
