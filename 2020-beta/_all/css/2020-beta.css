@@ -400,7 +400,7 @@ h2, .h2 {
 h3, .h3 {
   display: block;
   line-height: 180%;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: bold;
   /* Remove defaults */
   -webkit-margin-start: 0.5em;
@@ -433,8 +433,8 @@ h3, .h3 {
 h4, .h4 {
   display: block;
   line-height: 180%;
-  font-size: 1rem;
-  font-weight: 100;
+  font-size: 1.25rem;
+  font-weight: bold;
   /* Remove defaults */
   -webkit-margin-start: 0.5em;
   -moz-margin-start: 0.5em;
