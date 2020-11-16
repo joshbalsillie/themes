@@ -81,26 +81,26 @@ a, .a {
   cursor: pointer;
   line-height: 140%;
   /* Remove defaults */
-  -webkit-margin-start: 0.5em;
-  -moz-margin-start: 0.5em;
-  -ms-margin-start: 0.5em;
-  -o-margin-start: 0.5em;
-  margin-start: 0.5em;
-  -webkit-margin-end: 0.5em;
-  -moz-margin-end: 0.5em;
-  -ms-margin-end: 0.5em;
-  -o-margin-end: 0.5em;
-  margin-end: 0.5em;
-  -webkit-margin-before: 0.5em;
-  -moz-margin-before: 0.5em;
-  -ms-margin-before: 0.5em;
-  -o-margin-before: 0.5em;
-  margin-before: 0.5em;
-  -webkit-margin-after: 0.5em;
-  -moz-margin-after: 0.5em;
-  -ms-margin-after: 0.5em;
-  -o-margin-after: 0.5em;
-  margin-after: 0.5em;
+  -webkit-margin-start: 0.5rem;
+  -moz-margin-start: 0.5rem;
+  -ms-margin-start: 0.5rem;
+  -o-margin-start: 0.5rem;
+  margin-start: 0.5rem;
+  -webkit-margin-end: 0.5rem;
+  -moz-margin-end: 0.5rem;
+  -ms-margin-end: 0.5rem;
+  -o-margin-end: 0.5rem;
+  margin-end: 0.5rem;
+  -webkit-margin-before: 0.5rem;
+  -moz-margin-before: 0.5rem;
+  -ms-margin-before: 0.5rem;
+  -o-margin-before: 0.5rem;
+  margin-before: 0.5rem;
+  -webkit-margin-after: 0.5rem;
+  -moz-margin-after: 0.5rem;
+  -ms-margin-after: 0.5rem;
+  -o-margin-after: 0.5rem;
+  margin-after: 0.5rem;
 }
 a:-webkit-any-link, .a:-webkit-any-link {
   color: inherit;
@@ -321,26 +321,26 @@ h1, .h1 {
   text-align: center;
   font-weight: normal;
   /* Remove defaults */
-  -webkit-margin-start: 0.5em;
-  -moz-margin-start: 0.5em;
-  -ms-margin-start: 0.5em;
-  -o-margin-start: 0.5em;
-  margin-start: 0.5em;
-  -webkit-margin-end: 0.5em;
-  -moz-margin-end: 0.5em;
-  -ms-margin-end: 0.5em;
-  -o-margin-end: 0.5em;
-  margin-end: 0.5em;
-  -webkit-margin-before: 0.5em;
-  -moz-margin-before: 0.5em;
-  -ms-margin-before: 0.5em;
-  -o-margin-before: 0.5em;
-  margin-before: 0.5em;
-  -webkit-margin-after: 0.5em;
-  -moz-margin-after: 0.5em;
-  -ms-margin-after: 0.5em;
-  -o-margin-after: 0.5em;
-  margin-after: 0.5em;
+  -webkit-margin-start: 0.5rem;
+  -moz-margin-start: 0.5rem;
+  -ms-margin-start: 0.5rem;
+  -o-margin-start: 0.5rem;
+  margin-start: 0.5rem;
+  -webkit-margin-end: 0.5rem;
+  -moz-margin-end: 0.5rem;
+  -ms-margin-end: 0.5rem;
+  -o-margin-end: 0.5rem;
+  margin-end: 0.5rem;
+  -webkit-margin-before: 0.5rem;
+  -moz-margin-before: 0.5rem;
+  -ms-margin-before: 0.5rem;
+  -o-margin-before: 0.5rem;
+  margin-before: 0.5rem;
+  -webkit-margin-after: 0.5rem;
+  -moz-margin-after: 0.5rem;
+  -ms-margin-after: 0.5rem;
+  -o-margin-after: 0.5rem;
+  margin-after: 0.5rem;
 }
 
 /*
@@ -355,26 +355,26 @@ h2, .h2 {
   text-transform: uppercase;
   font-weight: bold;
   /* Remove defaults */
-  -webkit-margin-start: 0.5em;
-  -moz-margin-start: 0.5em;
-  -ms-margin-start: 0.5em;
-  -o-margin-start: 0.5em;
-  margin-start: 0.5em;
-  -webkit-margin-end: 0.5em;
-  -moz-margin-end: 0.5em;
-  -ms-margin-end: 0.5em;
-  -o-margin-end: 0.5em;
-  margin-end: 0.5em;
-  -webkit-margin-before: 0.5em;
-  -moz-margin-before: 0.5em;
-  -ms-margin-before: 0.5em;
-  -o-margin-before: 0.5em;
-  margin-before: 0.5em;
-  -webkit-margin-after: 0.5em;
-  -moz-margin-after: 0.5em;
-  -ms-margin-after: 0.5em;
-  -o-margin-after: 0.5em;
-  margin-after: 0.5em;
+  -webkit-margin-start: 0.5rem;
+  -moz-margin-start: 0.5rem;
+  -ms-margin-start: 0.5rem;
+  -o-margin-start: 0.5rem;
+  margin-start: 0.5rem;
+  -webkit-margin-end: 0.5rem;
+  -moz-margin-end: 0.5rem;
+  -ms-margin-end: 0.5rem;
+  -o-margin-end: 0.5rem;
+  margin-end: 0.5rem;
+  -webkit-margin-before: 0.5rem;
+  -moz-margin-before: 0.5rem;
+  -ms-margin-before: 0.5rem;
+  -o-margin-before: 0.5rem;
+  margin-before: 0.5rem;
+  -webkit-margin-after: 0.5rem;
+  -moz-margin-after: 0.5rem;
+  -ms-margin-after: 0.5rem;
+  -o-margin-after: 0.5rem;
+  margin-after: 0.5rem;
 }
 @media only screen and (min-width: 800px) {
   h2, .h2 {
@@ -403,26 +403,26 @@ h3, .h3 {
   font-size: 1.5rem;
   font-weight: bold;
   /* Remove defaults */
-  -webkit-margin-start: 0.5em;
-  -moz-margin-start: 0.5em;
-  -ms-margin-start: 0.5em;
-  -o-margin-start: 0.5em;
-  margin-start: 0.5em;
-  -webkit-margin-end: 0.5em;
-  -moz-margin-end: 0.5em;
-  -ms-margin-end: 0.5em;
-  -o-margin-end: 0.5em;
-  margin-end: 0.5em;
-  -webkit-margin-before: 0.5em;
-  -moz-margin-before: 0.5em;
-  -ms-margin-before: 0.5em;
-  -o-margin-before: 0.5em;
-  margin-before: 0.5em;
-  -webkit-margin-after: 0.5em;
-  -moz-margin-after: 0.5em;
-  -ms-margin-after: 0.5em;
-  -o-margin-after: 0.5em;
-  margin-after: 0.5em;
+  -webkit-margin-start: 0.5rem;
+  -moz-margin-start: 0.5rem;
+  -ms-margin-start: 0.5rem;
+  -o-margin-start: 0.5rem;
+  margin-start: 0.5rem;
+  -webkit-margin-end: 0.5rem;
+  -moz-margin-end: 0.5rem;
+  -ms-margin-end: 0.5rem;
+  -o-margin-end: 0.5rem;
+  margin-end: 0.5rem;
+  -webkit-margin-before: 0.5rem;
+  -moz-margin-before: 0.5rem;
+  -ms-margin-before: 0.5rem;
+  -o-margin-before: 0.5rem;
+  margin-before: 0.5rem;
+  -webkit-margin-after: 0.5rem;
+  -moz-margin-after: 0.5rem;
+  -ms-margin-after: 0.5rem;
+  -o-margin-after: 0.5rem;
+  margin-after: 0.5rem;
 }
 
 /*
@@ -436,26 +436,26 @@ h4, .h4 {
   font-size: 1.25rem;
   font-weight: bold;
   /* Remove defaults */
-  -webkit-margin-start: 0.5em;
-  -moz-margin-start: 0.5em;
-  -ms-margin-start: 0.5em;
-  -o-margin-start: 0.5em;
-  margin-start: 0.5em;
-  -webkit-margin-end: 0.5em;
-  -moz-margin-end: 0.5em;
-  -ms-margin-end: 0.5em;
-  -o-margin-end: 0.5em;
-  margin-end: 0.5em;
-  -webkit-margin-before: 0.5em;
-  -moz-margin-before: 0.5em;
-  -ms-margin-before: 0.5em;
-  -o-margin-before: 0.5em;
-  margin-before: 0.5em;
-  -webkit-margin-after: 0.5em;
-  -moz-margin-after: 0.5em;
-  -ms-margin-after: 0.5em;
-  -o-margin-after: 0.5em;
-  margin-after: 0.5em;
+  -webkit-margin-start: 0.5rem;
+  -moz-margin-start: 0.5rem;
+  -ms-margin-start: 0.5rem;
+  -o-margin-start: 0.5rem;
+  margin-start: 0.5rem;
+  -webkit-margin-end: 0.5rem;
+  -moz-margin-end: 0.5rem;
+  -ms-margin-end: 0.5rem;
+  -o-margin-end: 0.5rem;
+  margin-end: 0.5rem;
+  -webkit-margin-before: 0.5rem;
+  -moz-margin-before: 0.5rem;
+  -ms-margin-before: 0.5rem;
+  -o-margin-before: 0.5rem;
+  margin-before: 0.5rem;
+  -webkit-margin-after: 0.5rem;
+  -moz-margin-after: 0.5rem;
+  -ms-margin-after: 0.5rem;
+  -o-margin-after: 0.5rem;
+  margin-after: 0.5rem;
 }
 
 /*
@@ -469,26 +469,26 @@ h5, .h5 {
   font-size: 1rem;
   font-weight: 100;
   /* Remove defaults */
-  -webkit-margin-start: 0.5em;
-  -moz-margin-start: 0.5em;
-  -ms-margin-start: 0.5em;
-  -o-margin-start: 0.5em;
-  margin-start: 0.5em;
-  -webkit-margin-end: 0.5em;
-  -moz-margin-end: 0.5em;
-  -ms-margin-end: 0.5em;
-  -o-margin-end: 0.5em;
-  margin-end: 0.5em;
-  -webkit-margin-before: 0.5em;
-  -moz-margin-before: 0.5em;
-  -ms-margin-before: 0.5em;
-  -o-margin-before: 0.5em;
-  margin-before: 0.5em;
-  -webkit-margin-after: 0.5em;
-  -moz-margin-after: 0.5em;
-  -ms-margin-after: 0.5em;
-  -o-margin-after: 0.5em;
-  margin-after: 0.5em;
+  -webkit-margin-start: 0.5rem;
+  -moz-margin-start: 0.5rem;
+  -ms-margin-start: 0.5rem;
+  -o-margin-start: 0.5rem;
+  margin-start: 0.5rem;
+  -webkit-margin-end: 0.5rem;
+  -moz-margin-end: 0.5rem;
+  -ms-margin-end: 0.5rem;
+  -o-margin-end: 0.5rem;
+  margin-end: 0.5rem;
+  -webkit-margin-before: 0.5rem;
+  -moz-margin-before: 0.5rem;
+  -ms-margin-before: 0.5rem;
+  -o-margin-before: 0.5rem;
+  margin-before: 0.5rem;
+  -webkit-margin-after: 0.5rem;
+  -moz-margin-after: 0.5rem;
+  -ms-margin-after: 0.5rem;
+  -o-margin-after: 0.5rem;
+  margin-after: 0.5rem;
 }
 
 /*
@@ -502,26 +502,26 @@ h6, .h6 {
   font-size: 1rem;
   font-weight: 100;
   /* Remove defaults */
-  -webkit-margin-start: 0.5em;
-  -moz-margin-start: 0.5em;
-  -ms-margin-start: 0.5em;
-  -o-margin-start: 0.5em;
-  margin-start: 0.5em;
-  -webkit-margin-end: 0.5em;
-  -moz-margin-end: 0.5em;
-  -ms-margin-end: 0.5em;
-  -o-margin-end: 0.5em;
-  margin-end: 0.5em;
-  -webkit-margin-before: 0.5em;
-  -moz-margin-before: 0.5em;
-  -ms-margin-before: 0.5em;
-  -o-margin-before: 0.5em;
-  margin-before: 0.5em;
-  -webkit-margin-after: 0.5em;
-  -moz-margin-after: 0.5em;
-  -ms-margin-after: 0.5em;
-  -o-margin-after: 0.5em;
-  margin-after: 0.5em;
+  -webkit-margin-start: 0.5rem;
+  -moz-margin-start: 0.5rem;
+  -ms-margin-start: 0.5rem;
+  -o-margin-start: 0.5rem;
+  margin-start: 0.5rem;
+  -webkit-margin-end: 0.5rem;
+  -moz-margin-end: 0.5rem;
+  -ms-margin-end: 0.5rem;
+  -o-margin-end: 0.5rem;
+  margin-end: 0.5rem;
+  -webkit-margin-before: 0.5rem;
+  -moz-margin-before: 0.5rem;
+  -ms-margin-before: 0.5rem;
+  -o-margin-before: 0.5rem;
+  margin-before: 0.5rem;
+  -webkit-margin-after: 0.5rem;
+  -moz-margin-after: 0.5rem;
+  -ms-margin-after: 0.5rem;
+  -o-margin-after: 0.5rem;
+  margin-after: 0.5rem;
 }
 
 /*
@@ -827,26 +827,26 @@ p, .p {
   line-height: 140%;
   font-size: 1rem;
   /* Remove defaults */
-  -webkit-margin-start: 0.5em;
-  -moz-margin-start: 0.5em;
-  -ms-margin-start: 0.5em;
-  -o-margin-start: 0.5em;
-  margin-start: 0.5em;
-  -webkit-margin-end: 0.5em;
-  -moz-margin-end: 0.5em;
-  -ms-margin-end: 0.5em;
-  -o-margin-end: 0.5em;
-  margin-end: 0.5em;
-  -webkit-margin-before: 0.5em;
-  -moz-margin-before: 0.5em;
-  -ms-margin-before: 0.5em;
-  -o-margin-before: 0.5em;
-  margin-before: 0.5em;
-  -webkit-margin-after: 0.5em;
-  -moz-margin-after: 0.5em;
-  -ms-margin-after: 0.5em;
-  -o-margin-after: 0.5em;
-  margin-after: 0.5em;
+  -webkit-margin-start: 0.5rem;
+  -moz-margin-start: 0.5rem;
+  -ms-margin-start: 0.5rem;
+  -o-margin-start: 0.5rem;
+  margin-start: 0.5rem;
+  -webkit-margin-end: 0.5rem;
+  -moz-margin-end: 0.5rem;
+  -ms-margin-end: 0.5rem;
+  -o-margin-end: 0.5rem;
+  margin-end: 0.5rem;
+  -webkit-margin-before: 0.5rem;
+  -moz-margin-before: 0.5rem;
+  -ms-margin-before: 0.5rem;
+  -o-margin-before: 0.5rem;
+  margin-before: 0.5rem;
+  -webkit-margin-after: 0.5rem;
+  -moz-margin-after: 0.5rem;
+  -ms-margin-after: 0.5rem;
+  -o-margin-after: 0.5rem;
+  margin-after: 0.5rem;
 }
 
 /*
@@ -1972,26 +1972,26 @@ Description:define media attributes
   text-transform: uppercase;
   color: white;
   /* Remove defaults */
-  -webkit-margin-start: 0.5em;
-  -moz-margin-start: 0.5em;
-  -ms-margin-start: 0.5em;
-  -o-margin-start: 0.5em;
-  margin-start: 0.5em;
-  -webkit-margin-end: 0.5em;
-  -moz-margin-end: 0.5em;
-  -ms-margin-end: 0.5em;
-  -o-margin-end: 0.5em;
-  margin-end: 0.5em;
-  -webkit-margin-before: 0.5em;
-  -moz-margin-before: 0.5em;
-  -ms-margin-before: 0.5em;
-  -o-margin-before: 0.5em;
-  margin-before: 0.5em;
-  -webkit-margin-after: 0.5em;
-  -moz-margin-after: 0.5em;
-  -ms-margin-after: 0.5em;
-  -o-margin-after: 0.5em;
-  margin-after: 0.5em;
+  -webkit-margin-start: 0.5rem;
+  -moz-margin-start: 0.5rem;
+  -ms-margin-start: 0.5rem;
+  -o-margin-start: 0.5rem;
+  margin-start: 0.5rem;
+  -webkit-margin-end: 0.5rem;
+  -moz-margin-end: 0.5rem;
+  -ms-margin-end: 0.5rem;
+  -o-margin-end: 0.5rem;
+  margin-end: 0.5rem;
+  -webkit-margin-before: 0.5rem;
+  -moz-margin-before: 0.5rem;
+  -ms-margin-before: 0.5rem;
+  -o-margin-before: 0.5rem;
+  margin-before: 0.5rem;
+  -webkit-margin-after: 0.5rem;
+  -moz-margin-after: 0.5rem;
+  -ms-margin-after: 0.5rem;
+  -o-margin-after: 0.5rem;
+  margin-after: 0.5rem;
 }
 
 /*
