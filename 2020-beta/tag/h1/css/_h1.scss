@@ -12,6 +12,7 @@ h1, .h1 {
 	font-size: ( variable.$defaultFontSize * variable.$fontLarge );
 	text-transform: variable.$transformTitle;
 	text-align: center;
+	font-weight: normal;
 	
 	/* Remove defaults */
 	@include variable.browserSupport( margin-start, variable.$fontMargin );

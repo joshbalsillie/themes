@@ -6,7 +6,7 @@
  */
 @use '../../../variable/_all/css/variable';
 
-@use '../../../../../widgets/menu/css/menu' with(
+/*@use '../../../../../widgets/menu/css/menu' with(
 	$menu_horizontalColourForeground: variable.$colour1stForeground,
 	$menu_horizontalColourBackground: variable.$colour1stBackground,
 	$menu_horizontalColourForegroundAction: variable.$colourActionDark,
@@ -18,4 +18,4 @@
 	$menu_iconImage: variable.$icon_menu,
 	$menu_iconSize: variable.$sizeMedium,
 	$menu_iconColour: variable.$colourActionLight
-);
+);*/
