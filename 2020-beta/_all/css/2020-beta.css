@@ -118,6 +118,7 @@ body, .body {
   border: 0;
   width: 100%;
   cursor: auto;
+  color: white;
   background: #293136;
   /* Remove default font styles */
   font-style: normal;
@@ -318,6 +319,7 @@ h1, .h1 {
   font-size: 2rem;
   text-transform: uppercase;
   text-align: center;
+  font-weight: normal;
   /* Remove defaults */
   -webkit-margin-start: 0.5em;
   -moz-margin-start: 0.5em;
@@ -349,8 +351,9 @@ h1, .h1 {
 h2, .h2 {
   display: block;
   line-height: 140%;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
+  font-weight: bold;
   /* Remove defaults */
   -webkit-margin-start: 0.5em;
   -moz-margin-start: 0.5em;
@@ -398,7 +401,7 @@ h3, .h3 {
   display: block;
   line-height: 180%;
   font-size: 1rem;
-  font-weight: 100;
+  font-weight: bold;
   /* Remove defaults */
   -webkit-margin-start: 0.5em;
   -moz-margin-start: 0.5em;
@@ -1998,415 +2001,22 @@ Description:define media attributes
  */
 /*
  * Author: Joshua Balsillie
- * Date Created: 2016-08-18
- * Description: define mixins for sass/scss files
- */
-/*
- * Author:Joshua Balsillie
- * Date Created:2020-07-08
- * Description:define menu widget styles
- */
-.menu {
-  display: flex;
-  align-items: center;
-}
-.menu > .showOrHide {
-  cursor: pointer;
-  width: 1rem;
-  height: 1rem;
-  background-color: white;
-  -webkit-mask-image: url(../../../../../asset/image/icon/menu/svg/icon_rgb_menu-hamburger_bg-max_fg-opaque.svg);
-  -moz-mask-image: url(../../../../../asset/image/icon/menu/svg/icon_rgb_menu-hamburger_bg-max_fg-opaque.svg);
-  -ms-mask-image: url(../../../../../asset/image/icon/menu/svg/icon_rgb_menu-hamburger_bg-max_fg-opaque.svg);
-  -o-mask-image: url(../../../../../asset/image/icon/menu/svg/icon_rgb_menu-hamburger_bg-max_fg-opaque.svg);
-  mask-image: url(../../../../../asset/image/icon/menu/svg/icon_rgb_menu-hamburger_bg-max_fg-opaque.svg);
-  -webkit-mask-repeat: no-repeat;
-  -moz-mask-repeat: no-repeat;
-  -ms-mask-repeat: no-repeat;
-  -o-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  -moz-mask-position: center;
-  -ms-mask-position: center;
-  -o-mask-position: center;
-  mask-position: center;
-  -webkit-mask-size: contain;
-  -moz-mask-size: contain;
-  -ms-mask-size: contain;
-  -o-mask-size: contain;
-  mask-size: contain;
-}
-@media only screen and (min-width: 800px) {
-  .menu > .showOrHide {
-    display: none;
-  }
-}
-@media only screen and (max-width: 800px) and (min-width: 480px) {
-  .menu > .showOrHide {
-    display: inline-block;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .menu > .showOrHide {
-    display: inline-block;
-  }
-}
-.menu > div {
-  left: 0;
-  top: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-@media only screen and (min-width: 800px) {
-  .menu > div {
-    display: block;
-  }
-}
-@media only screen and (max-width: 800px) and (min-width: 480px) {
-  .menu > div {
-    display: none;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .menu > div {
-    display: none;
-  }
-}
-@media only screen and (min-width: 800px) {
-  .menu > div {
-    position: static;
-  }
-}
-@media only screen and (max-width: 800px) and (min-width: 480px) {
-  .menu > div {
-    position: fixed;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .menu > div {
-    position: fixed;
-  }
-}
-@media only screen and (min-width: 800px) {
-  .menu > div {
-    z-index: auto;
-  }
-}
-@media only screen and (max-width: 800px) and (min-width: 480px) {
-  .menu > div {
-    z-index: 997;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .menu > div {
-    z-index: 997;
-  }
-}
-@media only screen and (min-width: 800px) {
-  .menu > div {
-    width: auto;
-  }
-}
-@media only screen and (max-width: 800px) and (min-width: 480px) {
-  .menu > div {
-    width: 100%;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .menu > div {
-    width: 100%;
-  }
-}
-@media only screen and (min-width: 800px) {
-  .menu > div {
-    height: auto;
-  }
-}
-@media only screen and (max-width: 800px) and (min-width: 480px) {
-  .menu > div {
-    height: 100%;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .menu > div {
-    height: 100%;
-  }
-}
-@media only screen and (min-width: 800px) {
-  .menu > div {
-    background-color: transparent;
-  }
-}
-@media only screen and (max-width: 800px) and (min-width: 480px) {
-  .menu > div {
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-}
-@media only screen and (max-width: 480px) {
-  .menu > div {
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-}
-.menu > div > div {
-  z-index: calc( $menu_backgroundIndex + 1 );
-  color: white;
-  border-style: solid;
-  border-width: 0;
-  min-width: 25%;
-  overflow-x: hidden;
-}
-@media only screen and (min-width: 800px) {
-  .menu > div > div {
-    max-width: auto;
-  }
-}
-@media only screen and (max-width: 800px) and (min-width: 480px) {
-  .menu > div > div {
-    max-width: 100%;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .menu > div > div {
-    max-width: 100%;
-  }
-}
-@media only screen and (min-width: 800px) {
-  .menu > div > div {
-    overflow-y: hidden;
-  }
-}
-@media only screen and (max-width: 800px) and (min-width: 480px) {
-  .menu > div > div {
-    overflow-y: scroll;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .menu > div > div {
-    overflow-y: scroll;
-  }
-}
-@media only screen and (min-width: 800px) {
-  .menu > div > div {
-    display: inline-block;
-  }
-}
-@media only screen and (max-width: 800px) and (min-width: 480px) {
-  .menu > div > div {
-    display: inline-block;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .menu > div > div {
-    display: inline-block;
-  }
-}
-@media only screen and (min-width: 800px) {
-  .menu > div > div {
-    height: auto;
-  }
-}
-@media only screen and (max-width: 800px) and (min-width: 480px) {
-  .menu > div > div {
-    height: calc( 100% - 2rem );
-  }
-}
-@media only screen and (max-width: 480px) {
-  .menu > div > div {
-    height: calc( 100% - 2rem );
-  }
-}
-@media only screen and (min-width: 800px) {
-  .menu > div > div {
-    right: 10;
-  }
-}
-@media only screen and (max-width: 800px) and (min-width: 480px) {
-  .menu > div > div {
-    right: 0;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .menu > div > div {
-    right: 0;
-  }
-}
-@media only screen and (min-width: 800px) {
-  .menu > div > div {
-    position: static;
-  }
-}
-@media only screen and (max-width: 800px) and (min-width: 480px) {
-  .menu > div > div {
-    position: absolute;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .menu > div > div {
-    position: absolute;
-  }
-}
-@media only screen and (min-width: 800px) {
-  .menu > div > div {
-    background-color: transparent;
-  }
-}
-@media only screen and (max-width: 800px) and (min-width: 480px) {
-  .menu > div > div {
-    background-color: white;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .menu > div > div {
-    background-color: white;
-  }
-}
-@media only screen and (min-width: 800px) {
-  .menu > div > div {
-    border-color: transparent;
-  }
-}
-@media only screen and (max-width: 800px) and (min-width: 480px) {
-  .menu > div > div {
-    border-color: #293136;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .menu > div > div {
-    border-color: #293136;
-  }
-}
-@media only screen and (min-width: 800px) {
-  .menu > div > div {
-    box-shadow: 0;
-  }
-}
-@media only screen and (max-width: 800px) and (min-width: 480px) {
-  .menu > div > div {
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
-  }
-}
-@media only screen and (max-width: 480px) {
-  .menu > div > div {
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
-  }
-}
-@media only screen and (min-width: 800px) {
-  .menu > div > div {
-    padding: 0;
-  }
-}
-@media only screen and (max-width: 800px) and (min-width: 480px) {
-  .menu > div > div {
-    padding: 1rem;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .menu > div > div {
-    padding: 1rem;
-  }
-}
-.menu > div > div > * {
-  padding: 0.5rem;
-  margin: 2px;
-  text-transform: none;
-}
-@media only screen and (min-width: 800px) {
-  .menu > div > div > * {
-    display: none;
-  }
-}
-@media only screen and (max-width: 800px) and (min-width: 480px) {
-  .menu > div > div > * {
-    display: block;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .menu > div > div > * {
-    display: block;
-  }
-}
-.menu > div > div > a {
-  text-decoration: none;
-  text-transform: capitalize;
-  background-color: transparent;
-  -webkit-transition-duration: 0.3s;
-  -moz-transition-duration: 0.3s;
-  -ms-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-}
-@media only screen and (min-width: 800px) {
-  .menu > div > div > a {
-    color: white;
-  }
-}
-@media only screen and (max-width: 800px) and (min-width: 480px) {
-  .menu > div > div > a {
-    color: #293136;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .menu > div > div > a {
-    color: #293136;
-  }
-}
-@media only screen and (min-width: 800px) {
-  .menu > div > div > a {
-    display: inline-block;
-  }
-}
-@media only screen and (max-width: 800px) and (min-width: 480px) {
-  .menu > div > div > a {
-    display: block;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .menu > div > div > a {
-    display: block;
-  }
-}
-.menu > div > div > a:hover, .menu > div > div > a :focus, .menu > div > div > a :active {
-  -webkit-transition-duration: 0.3s;
-  -moz-transition-duration: 0.3s;
-  -ms-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-}
-@media only screen and (min-width: 800px) {
-  .menu > div > div > a:hover, .menu > div > div > a :focus, .menu > div > div > a :active {
-    color: #293136;
-  }
-}
-@media only screen and (max-width: 800px) and (min-width: 480px) {
-  .menu > div > div > a:hover, .menu > div > div > a :focus, .menu > div > div > a :active {
-    color: white;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .menu > div > div > a:hover, .menu > div > div > a :focus, .menu > div > div > a :active {
-    color: white;
-  }
-}
-@media only screen and (min-width: 800px) {
-  .menu > div > div > a:hover, .menu > div > div > a :focus, .menu > div > div > a :active {
-    background-color: white;
-  }
-}
-@media only screen and (max-width: 800px) and (min-width: 480px) {
-  .menu > div > div > a:hover, .menu > div > div > a :focus, .menu > div > div > a :active {
-    background-color: #293136;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .menu > div > div > a:hover, .menu > div > div > a :focus, .menu > div > div > a :active {
-    background-color: #293136;
-  }
-}
-
-/*
- * Author: Joshua Balsillie
  * Date Created: 2020-07-23
  * Description: override the menu widget attributes
  */
+/*@use '../../../../../widgets/menu/css/menu' with(
+	$menu_horizontalColourForeground: variable.$colour1stForeground,
+	$menu_horizontalColourBackground: variable.$colour1stBackground,
+	$menu_horizontalColourForegroundAction: variable.$colourActionDark,
+	$menu_horizontalColourBackgroundAction: variable.$colourActionLight,
+	$menu_verticalColourForeground: variable.$colour1stBackground,
+	$menu_verticalColourBackground: variable.$colour1stForeground,
+	$menu_verticalColourForegroundAction: variable.$colourActionLight,
+	$menu_verticalColourBackgroundAction: variable.$colourActionDark,
+	$menu_iconImage: variable.$icon_menu,
+	$menu_iconSize: variable.$sizeMedium,
+	$menu_iconColour: variable.$colourActionLight
+);*/
 /*
  * Author: Joshua Balsillie
  * Date Created: 2020-07-28

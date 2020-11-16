@@ -10,7 +10,7 @@ h3, .h3 {
 	display: block;
 	line-height: 180%;
 	font-size: ( variable.$defaultFontSize * variable.$fontSmallest );
-	font-weight: 100;
+	font-weight: bold;
 
 	/* Remove defaults */
 	@include variable.browserSupport( margin-start, variable.$fontMargin );

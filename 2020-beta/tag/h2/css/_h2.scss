@@ -9,8 +9,9 @@
 h2, .h2 {
 	display: block;
 	line-height: 140%;
-	font-size: ( variable.$defaultFontSize * variable.$fontSmall );
+	font-size: ( variable.$defaultFontSize * variable.$fontMedium );
 	text-transform: variable.$transformTitle;
+	font-weight: bold;
 
 	@include variable.responsive( text-align, left, left, center );
 	
