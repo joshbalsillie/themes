@@ -9,7 +9,7 @@
 h3, .h3 {
 	display: block;
 	line-height: 180%;
-	font-size: ( variable.$defaultFontSize * variable.$fontSmallest );
+	font-size: ( variable.$defaultFontSize * variable.$fontMedium );
 	font-weight: bold;
 
 	/* Remove defaults */
