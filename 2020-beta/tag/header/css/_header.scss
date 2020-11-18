@@ -22,6 +22,10 @@ header, .header {
 	padding-bottom: variable.$sizeMedium;
 	margin-left: auto;
 	margin-right: auto;
+
+	border-style: solid;
+	border-bottom-width: 0.1rem;
+	border-color: variable.$colour1stForeground;
 	
 	@include variable.browserSupport( box-sizing, border-box ); // Uniform tag sizing
 }
