@@ -10,7 +10,7 @@ header, .header {
 	border-width: 0;
 	border-bottom-width: variable.$defaultBorderWidth;
 	
-	color: variable.$colour1stForeground;
+	color: inherit;
 	background: variable.$colour1stBackground;
 	overflow-y: hidden;
 	
@@ -22,10 +22,6 @@ header, .header {
 	padding-bottom: variable.$sizeMedium;
 	margin-left: auto;
 	margin-right: auto;
-
-	border-style: solid;
-	border-bottom-width: 0.1rem;
-	border-color: variable.$colour1stForeground;
 	
 	@include variable.browserSupport( box-sizing, border-box ); // Uniform tag sizing
 }
@@ -40,4 +36,8 @@ header, .header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+
+	border-style: solid;
+	border-bottom-width: 0.1rem;
+	border-color: variable.$colour1stForeground;
 }
