@@ -985,8 +985,8 @@ video, .video {
  */
 .oneColumn, .twoColumn, .threeColumn, .fourColumn {
   display: block;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
   vertical-align: top;
   font-size: 0;
 }
@@ -1077,7 +1077,7 @@ video, .video {
   width: 100%;
 }
 .oneColumn > *:nth-child(1n+2) {
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 
 @media only screen and (min-width: 800px) {
@@ -1115,12 +1115,12 @@ video, .video {
 }
 @media only screen and (min-width: 800px) {
   .twoColumn > *:nth-child(2n+1) {
-    padding-right: 0.5rem;
+    padding-right: 1rem;
   }
 }
 @media only screen and (max-width: 800px) and (min-width: 480px) {
   .twoColumn > *:nth-child(2n+1) {
-    padding-right: 0.5rem;
+    padding-right: 1rem;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -1130,12 +1130,12 @@ video, .video {
 }
 @media only screen and (min-width: 800px) {
   .twoColumn > *:nth-child(2n+2) {
-    padding-left: 0.5rem;
+    padding-left: 1rem;
   }
 }
 @media only screen and (max-width: 800px) and (min-width: 480px) {
   .twoColumn > *:nth-child(2n+2) {
-    padding-left: 0.5rem;
+    padding-left: 1rem;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -1170,11 +1170,11 @@ video, .video {
 }
 @media only screen and (max-width: 480px) {
   .twoColumn > *:nth-child(2n+2) {
-    padding-top: 1rem;
+    padding-top: 2rem;
   }
 }
 .twoColumn > *:nth-child(2n+3), .twoColumn > *:nth-child(2n+4) {
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 @media only screen and (min-width: 800px) {
   .twoColumn.ratio_1-2 > *:nth-child(2n+1) {
@@ -1327,7 +1327,7 @@ video, .video {
 }
 @media only screen and (min-width: 800px) {
   .threeColumn > *:nth-child(1) {
-    padding-right: 0.6666666667rem;
+    padding-right: 1.3333333333rem;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -1337,7 +1337,7 @@ video, .video {
 }
 @media only screen and (min-width: 800px) {
   .threeColumn > *:nth-child(2) {
-    padding-left: 0.3333333333rem;
+    padding-left: 0.6666666667rem;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -1347,7 +1347,7 @@ video, .video {
 }
 @media only screen and (min-width: 800px) {
   .threeColumn > *:nth-child(2) {
-    padding-right: 0.3333333333rem;
+    padding-right: 0.6666666667rem;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -1362,12 +1362,12 @@ video, .video {
 }
 @media only screen and (max-width: 480px) {
   .threeColumn > *:nth-child(2) {
-    padding-top: 1rem;
+    padding-top: 2rem;
   }
 }
 @media only screen and (min-width: 800px) {
   .threeColumn > *:nth-child(3) {
-    padding-left: 0.6666666667rem;
+    padding-left: 1.3333333333rem;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -1392,16 +1392,16 @@ video, .video {
 }
 @media only screen and (max-width: 800px) and (min-width: 480px) {
   .threeColumn > *:nth-child(3) {
-    padding-top: 1rem;
+    padding-top: 2rem;
   }
 }
 @media only screen and (max-width: 480px) {
   .threeColumn > *:nth-child(3) {
-    padding-top: 1rem;
+    padding-top: 2rem;
   }
 }
 .threeColumn > *:nth-child(3n+4) {
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 @media only screen and (min-width: 800px) {
   .threeColumn > *:nth-child(3n+4) {
@@ -1415,7 +1415,7 @@ video, .video {
 }
 @media only screen and (min-width: 800px) {
   .threeColumn > *:nth-child(3n+4) {
-    padding-right: 0.6666666667rem;
+    padding-right: 1.3333333333rem;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -1424,11 +1424,11 @@ video, .video {
   }
 }
 .threeColumn > *:nth-child(3n+5) {
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 @media only screen and (min-width: 800px) {
   .threeColumn > *:nth-child(3n+5) {
-    padding-left: 0.3333333333rem;
+    padding-left: 0.6666666667rem;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -1438,7 +1438,7 @@ video, .video {
 }
 @media only screen and (min-width: 800px) {
   .threeColumn > *:nth-child(3n+5) {
-    padding-right: 0.3333333333rem;
+    padding-right: 0.6666666667rem;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -1447,11 +1447,11 @@ video, .video {
   }
 }
 .threeColumn > *:nth-child(3n+6) {
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 @media only screen and (min-width: 800px) {
   .threeColumn > *:nth-child(3n+6) {
-    padding-left: 0.6666666667rem;
+    padding-left: 1.3333333333rem;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -1476,12 +1476,12 @@ video, .video {
 }
 @media only screen and (max-width: 800px) and (min-width: 480px) {
   .threeColumn > *:nth-child(2n+1) {
-    padding-right: 0.5rem;
+    padding-right: 1rem;
   }
 }
 @media only screen and (max-width: 800px) and (min-width: 480px) {
   .threeColumn > *:nth-child(2n+2) {
-    padding-left: 0.5rem;
+    padding-left: 1rem;
   }
 }
 @media only screen and (max-width: 800px) and (min-width: 480px) {
@@ -1655,7 +1655,7 @@ video, .video {
 }
 @media only screen and (min-width: 800px) {
   .fourColumn > *:nth-child(1) {
-    padding-right: 0.75rem;
+    padding-right: 1.5rem;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -1665,49 +1665,49 @@ video, .video {
 }
 @media only screen and (min-width: 800px) {
   .fourColumn > *:nth-child(2) {
-    padding-left: 0.25rem;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .fourColumn > *:nth-child(2) {
-    padding-left: 0;
-  }
-}
-@media only screen and (min-width: 800px) {
-  .fourColumn > *:nth-child(2) {
-    padding-right: 0.5rem;
-  }
-}
-@media only screen and (max-width: 800px) and (min-width: 480px) {
-  .fourColumn > *:nth-child(2) {
-    padding-right: 0;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .fourColumn > *:nth-child(2) {
-    padding-right: 0;
-  }
-}
-@media only screen and (min-width: 800px) {
-  .fourColumn > *:nth-child(2) {
-    padding-top: 0;
-  }
-}
-@media only screen and (max-width: 800px) and (min-width: 480px) {
-  .fourColumn > *:nth-child(2) {
-    padding-top: 0;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .fourColumn > *:nth-child(2) {
-    padding-top: 1rem;
-  }
-}
-@media only screen and (min-width: 800px) {
-  .fourColumn > *:nth-child(3) {
     padding-left: 0.5rem;
   }
 }
+@media only screen and (max-width: 480px) {
+  .fourColumn > *:nth-child(2) {
+    padding-left: 0;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .fourColumn > *:nth-child(2) {
+    padding-right: 1rem;
+  }
+}
+@media only screen and (max-width: 800px) and (min-width: 480px) {
+  .fourColumn > *:nth-child(2) {
+    padding-right: 0;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .fourColumn > *:nth-child(2) {
+    padding-right: 0;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .fourColumn > *:nth-child(2) {
+    padding-top: 0;
+  }
+}
+@media only screen and (max-width: 800px) and (min-width: 480px) {
+  .fourColumn > *:nth-child(2) {
+    padding-top: 0;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .fourColumn > *:nth-child(2) {
+    padding-top: 2rem;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .fourColumn > *:nth-child(3) {
+    padding-left: 1rem;
+  }
+}
 @media only screen and (max-width: 800px) and (min-width: 480px) {
   .fourColumn > *:nth-child(3) {
     padding-left: 0;
@@ -1720,7 +1720,7 @@ video, .video {
 }
 @media only screen and (min-width: 800px) {
   .fourColumn > *:nth-child(3) {
-    padding-right: 0.25rem;
+    padding-right: 0.5rem;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -1735,17 +1735,17 @@ video, .video {
 }
 @media only screen and (max-width: 800px) and (min-width: 480px) {
   .fourColumn > *:nth-child(3) {
-    padding-top: 1rem;
+    padding-top: 2rem;
   }
 }
 @media only screen and (max-width: 480px) {
   .fourColumn > *:nth-child(3) {
-    padding-top: 1rem;
+    padding-top: 2rem;
   }
 }
 @media only screen and (min-width: 800px) {
   .fourColumn > *:nth-child(4) {
-    padding-left: 0.75rem;
+    padding-left: 1.5rem;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -1775,16 +1775,16 @@ video, .video {
 }
 @media only screen and (max-width: 800px) and (min-width: 480px) {
   .fourColumn > *:nth-child(4) {
-    padding-top: 1rem;
+    padding-top: 2rem;
   }
 }
 @media only screen and (max-width: 480px) {
   .fourColumn > *:nth-child(4) {
-    padding-top: 1rem;
+    padding-top: 2rem;
   }
 }
 .fourColumn > *:nth-child(4n+5) {
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 @media only screen and (min-width: 800px) {
   .fourColumn > *:nth-child(4n+5) {
@@ -1798,7 +1798,7 @@ video, .video {
 }
 @media only screen and (min-width: 800px) {
   .fourColumn > *:nth-child(4n+5) {
-    padding-right: 0.75rem;
+    padding-right: 1.5rem;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -1807,11 +1807,11 @@ video, .video {
   }
 }
 .fourColumn > *:nth-child(4n+6) {
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 @media only screen and (min-width: 800px) {
   .fourColumn > *:nth-child(4n+6) {
-    padding-left: 0.25rem;
+    padding-left: 0.5rem;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -1821,7 +1821,7 @@ video, .video {
 }
 @media only screen and (min-width: 800px) {
   .fourColumn > *:nth-child(4n+6) {
-    padding-right: 0.5rem;
+    padding-right: 1rem;
   }
 }
 @media only screen and (max-width: 800px) and (min-width: 480px) {
@@ -1835,11 +1835,11 @@ video, .video {
   }
 }
 .fourColumn > *:nth-child(4n+7) {
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 @media only screen and (min-width: 800px) {
   .fourColumn > *:nth-child(4n+7) {
-    padding-left: 0.5rem;
+    padding-left: 1rem;
   }
 }
 @media only screen and (max-width: 800px) and (min-width: 480px) {
@@ -1854,7 +1854,7 @@ video, .video {
 }
 @media only screen and (min-width: 800px) {
   .fourColumn > *:nth-child(4n+7) {
-    padding-right: 0.25rem;
+    padding-right: 0.5rem;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -1863,11 +1863,11 @@ video, .video {
   }
 }
 .fourColumn > *:nth-child(4n+8) {
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 @media only screen and (min-width: 800px) {
   .fourColumn > *:nth-child(4n+8) {
-    padding-left: 0.75rem;
+    padding-left: 1.5rem;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -1897,12 +1897,12 @@ video, .video {
 }
 @media only screen and (max-width: 800px) and (min-width: 480px) {
   .fourColumn > *:nth-child(2n+1) {
-    padding-right: 0.5rem;
+    padding-right: 1rem;
   }
 }
 @media only screen and (max-width: 800px) and (min-width: 480px) {
   .fourColumn > *:nth-child(2n+2) {
-    padding-left: 0.5rem;
+    padding-left: 1rem;
   }
 }
 @media only screen and (max-width: 800px) and (min-width: 480px) {
