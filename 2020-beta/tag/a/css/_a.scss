@@ -22,4 +22,10 @@ a, .a {
 	&:-webkit-any-link {
 		color: inherit;
 	}
+	&:target::before {
+		content: "";
+		display: block;
+		height: 4.5rem; // header height
+		margin-top: -4.5rem; // negative header height
+	}
 }

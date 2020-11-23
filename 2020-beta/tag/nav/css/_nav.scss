@@ -18,8 +18,8 @@ nav, .nav {
 	& a {
 		background-color: transparent;
 		color: variable.$colourActionLight;
-		padding: 10px;
-		margin: 2px;
+		padding: 0.625rem;
+		margin: 0.125rem;
 		text-transform: variable.$transformTitle;
 		@include variable.responsive( display, inline-block, inline-block, block );
 		@include variable.browserSupport( transition-duration, 0.3s );
