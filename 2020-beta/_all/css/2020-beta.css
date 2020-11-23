@@ -40,15 +40,23 @@
 * {
   /* Remove default spacing */
   -webkit-margin-before: 0;
-  -moz-margin-before: 0;
   -ms-margin-before: 0;
   -o-margin-before: 0;
   margin-before: 0;
   -webkit-margin-after: 0;
-  -moz-margin-after: 0;
   -ms-margin-after: 0;
   -o-margin-after: 0;
   margin-after: 0;
+}
+@-moz-document url-prefix() {
+  * {
+    -moz-margin-before: 0;
+  }
+}
+@-moz-document url-prefix() {
+  * {
+    -moz-margin-after: 0;
+  }
 }
 
 /*
@@ -82,28 +90,50 @@ a, .a {
   line-height: 140%;
   /* Remove defaults */
   -webkit-margin-start: 0.5rem;
-  -moz-margin-start: 0.5rem;
   -ms-margin-start: 0.5rem;
   -o-margin-start: 0.5rem;
   margin-start: 0.5rem;
   -webkit-margin-end: 0.5rem;
-  -moz-margin-end: 0.5rem;
   -ms-margin-end: 0.5rem;
   -o-margin-end: 0.5rem;
   margin-end: 0.5rem;
   -webkit-margin-before: 0.5rem;
-  -moz-margin-before: 0.5rem;
   -ms-margin-before: 0.5rem;
   -o-margin-before: 0.5rem;
   margin-before: 0.5rem;
   -webkit-margin-after: 0.5rem;
-  -moz-margin-after: 0.5rem;
   -ms-margin-after: 0.5rem;
   -o-margin-after: 0.5rem;
   margin-after: 0.5rem;
 }
+@-moz-document url-prefix() {
+  a, .a {
+    -moz-margin-start: 0.5rem;
+  }
+}
+@-moz-document url-prefix() {
+  a, .a {
+    -moz-margin-end: 0.5rem;
+  }
+}
+@-moz-document url-prefix() {
+  a, .a {
+    -moz-margin-before: 0.5rem;
+  }
+}
+@-moz-document url-prefix() {
+  a, .a {
+    -moz-margin-after: 0.5rem;
+  }
+}
 a:-webkit-any-link, .a:-webkit-any-link {
   color: inherit;
+}
+a:target::before, .a:target::before {
+  content: "";
+  display: block;
+  height: 4.5rem;
+  margin-top: -4.5rem;
 }
 
 /*
@@ -155,11 +185,15 @@ button, .button {
   padding-left: 0.72rem;
   padding-right: 0.72rem;
   -webkit-transition-duration: 0.3s;
-  -moz-transition-duration: 0.3s;
   -ms-transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
   margin-bottom: 1rem;
+}
+@-moz-document url-prefix() {
+  button, .button {
+    -moz-transition-duration: 0.3s;
+  }
 }
 button:hover, button :focus, button :active, button .selected, .button:hover, .button :focus, .button :active, .button .selected {
   color: white;
@@ -190,10 +224,14 @@ body > div {
   margin-right: auto;
   border: 0;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
+}
+@-moz-document url-prefix() {
+  body > div {
+    -moz-box-sizing: border-box;
+  }
 }
 body > div:nth-of-type(2n+1) {
   color: #293136;
@@ -219,32 +257,26 @@ body > div:last-of-type {
  */
 fieldset, .fieldset {
   -webkit-margin-start: 0;
-  -moz-margin-start: 0;
   -ms-margin-start: 0;
   -o-margin-start: 0;
   margin-start: 0;
   -webkit-margin-end: 0;
-  -moz-margin-end: 0;
   -ms-margin-end: 0;
   -o-margin-end: 0;
   margin-end: 0;
   -webkit-padding-before: 0;
-  -moz-padding-before: 0;
   -ms-padding-before: 0;
   -o-padding-before: 0;
   padding-before: 0;
   -webkit-padding-start: 0;
-  -moz-padding-start: 0;
   -ms-padding-start: 0;
   -o-padding-start: 0;
   padding-start: 0;
   -webkit-padding-end: 0;
-  -moz-padding-end: 0;
   -ms-padding-end: 0;
   -o-padding-end: 0;
   padding-end: 0;
   -webkit-padding-after: 0;
-  -moz-padding-after: 0;
   -ms-padding-after: 0;
   -o-padding-after: 0;
   padding-after: 0;
@@ -259,6 +291,36 @@ fieldset, .fieldset {
   padding-right: 0;
   border-style: none;
   border-width: 0;
+}
+@-moz-document url-prefix() {
+  fieldset, .fieldset {
+    -moz-margin-start: 0;
+  }
+}
+@-moz-document url-prefix() {
+  fieldset, .fieldset {
+    -moz-margin-end: 0;
+  }
+}
+@-moz-document url-prefix() {
+  fieldset, .fieldset {
+    -moz-padding-before: 0;
+  }
+}
+@-moz-document url-prefix() {
+  fieldset, .fieldset {
+    -moz-padding-start: 0;
+  }
+}
+@-moz-document url-prefix() {
+  fieldset, .fieldset {
+    -moz-padding-end: 0;
+  }
+}
+@-moz-document url-prefix() {
+  fieldset, .fieldset {
+    -moz-padding-after: 0;
+  }
 }
 fieldset:last-child, .fieldset:last-child {
   margin-bottom: 0;
@@ -292,10 +354,14 @@ body footer:last-child, body .footer:last-child {
   padding-top: 1rem;
   padding-bottom: 1rem;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
+}
+@-moz-document url-prefix() {
+  body footer:last-child, body .footer:last-child {
+    -moz-box-sizing: border-box;
+  }
 }
 
 /*
@@ -322,25 +388,41 @@ h1, .h1 {
   font-weight: normal;
   /* Remove defaults */
   -webkit-margin-start: 0.5rem;
-  -moz-margin-start: 0.5rem;
   -ms-margin-start: 0.5rem;
   -o-margin-start: 0.5rem;
   margin-start: 0.5rem;
   -webkit-margin-end: 0.5rem;
-  -moz-margin-end: 0.5rem;
   -ms-margin-end: 0.5rem;
   -o-margin-end: 0.5rem;
   margin-end: 0.5rem;
   -webkit-margin-before: 0.5rem;
-  -moz-margin-before: 0.5rem;
   -ms-margin-before: 0.5rem;
   -o-margin-before: 0.5rem;
   margin-before: 0.5rem;
   -webkit-margin-after: 0.5rem;
-  -moz-margin-after: 0.5rem;
   -ms-margin-after: 0.5rem;
   -o-margin-after: 0.5rem;
   margin-after: 0.5rem;
+}
+@-moz-document url-prefix() {
+  h1, .h1 {
+    -moz-margin-start: 0.5rem;
+  }
+}
+@-moz-document url-prefix() {
+  h1, .h1 {
+    -moz-margin-end: 0.5rem;
+  }
+}
+@-moz-document url-prefix() {
+  h1, .h1 {
+    -moz-margin-before: 0.5rem;
+  }
+}
+@-moz-document url-prefix() {
+  h1, .h1 {
+    -moz-margin-after: 0.5rem;
+  }
 }
 
 /*
@@ -356,22 +438,18 @@ h2, .h2 {
   font-weight: bold;
   /* Remove defaults */
   -webkit-margin-start: 0.5rem;
-  -moz-margin-start: 0.5rem;
   -ms-margin-start: 0.5rem;
   -o-margin-start: 0.5rem;
   margin-start: 0.5rem;
   -webkit-margin-end: 0.5rem;
-  -moz-margin-end: 0.5rem;
   -ms-margin-end: 0.5rem;
   -o-margin-end: 0.5rem;
   margin-end: 0.5rem;
   -webkit-margin-before: 0.5rem;
-  -moz-margin-before: 0.5rem;
   -ms-margin-before: 0.5rem;
   -o-margin-before: 0.5rem;
   margin-before: 0.5rem;
   -webkit-margin-after: 0.5rem;
-  -moz-margin-after: 0.5rem;
   -ms-margin-after: 0.5rem;
   -o-margin-after: 0.5rem;
   margin-after: 0.5rem;
@@ -391,6 +469,26 @@ h2, .h2 {
     text-align: center;
   }
 }
+@-moz-document url-prefix() {
+  h2, .h2 {
+    -moz-margin-start: 0.5rem;
+  }
+}
+@-moz-document url-prefix() {
+  h2, .h2 {
+    -moz-margin-end: 0.5rem;
+  }
+}
+@-moz-document url-prefix() {
+  h2, .h2 {
+    -moz-margin-before: 0.5rem;
+  }
+}
+@-moz-document url-prefix() {
+  h2, .h2 {
+    -moz-margin-after: 0.5rem;
+  }
+}
 
 /*
  * Author: Joshua Balsillie
@@ -404,25 +502,41 @@ h3, .h3 {
   font-weight: bold;
   /* Remove defaults */
   -webkit-margin-start: 0.5rem;
-  -moz-margin-start: 0.5rem;
   -ms-margin-start: 0.5rem;
   -o-margin-start: 0.5rem;
   margin-start: 0.5rem;
   -webkit-margin-end: 0.5rem;
-  -moz-margin-end: 0.5rem;
   -ms-margin-end: 0.5rem;
   -o-margin-end: 0.5rem;
   margin-end: 0.5rem;
   -webkit-margin-before: 0.5rem;
-  -moz-margin-before: 0.5rem;
   -ms-margin-before: 0.5rem;
   -o-margin-before: 0.5rem;
   margin-before: 0.5rem;
   -webkit-margin-after: 0.5rem;
-  -moz-margin-after: 0.5rem;
   -ms-margin-after: 0.5rem;
   -o-margin-after: 0.5rem;
   margin-after: 0.5rem;
+}
+@-moz-document url-prefix() {
+  h3, .h3 {
+    -moz-margin-start: 0.5rem;
+  }
+}
+@-moz-document url-prefix() {
+  h3, .h3 {
+    -moz-margin-end: 0.5rem;
+  }
+}
+@-moz-document url-prefix() {
+  h3, .h3 {
+    -moz-margin-before: 0.5rem;
+  }
+}
+@-moz-document url-prefix() {
+  h3, .h3 {
+    -moz-margin-after: 0.5rem;
+  }
 }
 
 /*
@@ -437,25 +551,41 @@ h4, .h4 {
   font-weight: bold;
   /* Remove defaults */
   -webkit-margin-start: 0.5rem;
-  -moz-margin-start: 0.5rem;
   -ms-margin-start: 0.5rem;
   -o-margin-start: 0.5rem;
   margin-start: 0.5rem;
   -webkit-margin-end: 0.5rem;
-  -moz-margin-end: 0.5rem;
   -ms-margin-end: 0.5rem;
   -o-margin-end: 0.5rem;
   margin-end: 0.5rem;
   -webkit-margin-before: 0.5rem;
-  -moz-margin-before: 0.5rem;
   -ms-margin-before: 0.5rem;
   -o-margin-before: 0.5rem;
   margin-before: 0.5rem;
   -webkit-margin-after: 0.5rem;
-  -moz-margin-after: 0.5rem;
   -ms-margin-after: 0.5rem;
   -o-margin-after: 0.5rem;
   margin-after: 0.5rem;
+}
+@-moz-document url-prefix() {
+  h4, .h4 {
+    -moz-margin-start: 0.5rem;
+  }
+}
+@-moz-document url-prefix() {
+  h4, .h4 {
+    -moz-margin-end: 0.5rem;
+  }
+}
+@-moz-document url-prefix() {
+  h4, .h4 {
+    -moz-margin-before: 0.5rem;
+  }
+}
+@-moz-document url-prefix() {
+  h4, .h4 {
+    -moz-margin-after: 0.5rem;
+  }
 }
 
 /*
@@ -470,25 +600,41 @@ h5, .h5 {
   font-weight: 100;
   /* Remove defaults */
   -webkit-margin-start: 0.5rem;
-  -moz-margin-start: 0.5rem;
   -ms-margin-start: 0.5rem;
   -o-margin-start: 0.5rem;
   margin-start: 0.5rem;
   -webkit-margin-end: 0.5rem;
-  -moz-margin-end: 0.5rem;
   -ms-margin-end: 0.5rem;
   -o-margin-end: 0.5rem;
   margin-end: 0.5rem;
   -webkit-margin-before: 0.5rem;
-  -moz-margin-before: 0.5rem;
   -ms-margin-before: 0.5rem;
   -o-margin-before: 0.5rem;
   margin-before: 0.5rem;
   -webkit-margin-after: 0.5rem;
-  -moz-margin-after: 0.5rem;
   -ms-margin-after: 0.5rem;
   -o-margin-after: 0.5rem;
   margin-after: 0.5rem;
+}
+@-moz-document url-prefix() {
+  h5, .h5 {
+    -moz-margin-start: 0.5rem;
+  }
+}
+@-moz-document url-prefix() {
+  h5, .h5 {
+    -moz-margin-end: 0.5rem;
+  }
+}
+@-moz-document url-prefix() {
+  h5, .h5 {
+    -moz-margin-before: 0.5rem;
+  }
+}
+@-moz-document url-prefix() {
+  h5, .h5 {
+    -moz-margin-after: 0.5rem;
+  }
 }
 
 /*
@@ -503,25 +649,41 @@ h6, .h6 {
   font-weight: 100;
   /* Remove defaults */
   -webkit-margin-start: 0.5rem;
-  -moz-margin-start: 0.5rem;
   -ms-margin-start: 0.5rem;
   -o-margin-start: 0.5rem;
   margin-start: 0.5rem;
   -webkit-margin-end: 0.5rem;
-  -moz-margin-end: 0.5rem;
   -ms-margin-end: 0.5rem;
   -o-margin-end: 0.5rem;
   margin-end: 0.5rem;
   -webkit-margin-before: 0.5rem;
-  -moz-margin-before: 0.5rem;
   -ms-margin-before: 0.5rem;
   -o-margin-before: 0.5rem;
   margin-before: 0.5rem;
   -webkit-margin-after: 0.5rem;
-  -moz-margin-after: 0.5rem;
   -ms-margin-after: 0.5rem;
   -o-margin-after: 0.5rem;
   margin-after: 0.5rem;
+}
+@-moz-document url-prefix() {
+  h6, .h6 {
+    -moz-margin-start: 0.5rem;
+  }
+}
+@-moz-document url-prefix() {
+  h6, .h6 {
+    -moz-margin-end: 0.5rem;
+  }
+}
+@-moz-document url-prefix() {
+  h6, .h6 {
+    -moz-margin-before: 0.5rem;
+  }
+}
+@-moz-document url-prefix() {
+  h6, .h6 {
+    -moz-margin-after: 0.5rem;
+  }
 }
 
 /*
@@ -552,10 +714,14 @@ header, .header {
   margin-left: auto;
   margin-right: auto;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
+}
+@-moz-document url-prefix() {
+  header, .header {
+    -moz-box-sizing: border-box;
+  }
 }
 
 #header {
@@ -594,7 +760,6 @@ img, .img {
   display: block;
   /* Uniform tag sizing */
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
@@ -647,6 +812,11 @@ img.circle, .img.circle {
 @media only screen and (max-width: 480px) {
   img.circle, .img.circle {
     margin-right: auto;
+  }
+}
+@-moz-document url-prefix() {
+  img, .img {
+    -moz-box-sizing: border-box;
   }
 }
 
@@ -741,13 +911,17 @@ body > main, .main {
   margin-right: auto;
   border: 0;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
   color: white;
   background-color: #293136;
   border-color: #95b3c2;
+}
+@-moz-document url-prefix() {
+  body > main, .main {
+    -moz-box-sizing: border-box;
+  }
 }
 
 /*
@@ -786,11 +960,10 @@ nav:first-child, .nav:first-child {
 nav a, .nav a {
   background-color: transparent;
   color: white;
-  padding: 10px;
-  margin: 2px;
+  padding: 0.625rem;
+  margin: 0.125rem;
   text-transform: uppercase;
   -webkit-transition-duration: 0.3s;
-  -moz-transition-duration: 0.3s;
   -ms-transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
@@ -810,14 +983,23 @@ nav a, .nav a {
     display: block;
   }
 }
+@-moz-document url-prefix() {
+  nav a, .nav a {
+    -moz-transition-duration: 0.3s;
+  }
+}
 nav a:hover, nav a :focus, nav a :active, .nav a:hover, .nav a :focus, .nav a :active {
   background-color: white;
   color: #293136;
   -webkit-transition-duration: 0.3s;
-  -moz-transition-duration: 0.3s;
   -ms-transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
+}
+@-moz-document url-prefix() {
+  nav a:hover, nav a :focus, nav a :active, .nav a:hover, .nav a :focus, .nav a :active {
+    -moz-transition-duration: 0.3s;
+  }
 }
 
 /*
@@ -831,25 +1013,41 @@ p, .p {
   font-size: 1rem;
   /* Remove defaults */
   -webkit-margin-start: 0.5rem;
-  -moz-margin-start: 0.5rem;
   -ms-margin-start: 0.5rem;
   -o-margin-start: 0.5rem;
   margin-start: 0.5rem;
   -webkit-margin-end: 0.5rem;
-  -moz-margin-end: 0.5rem;
   -ms-margin-end: 0.5rem;
   -o-margin-end: 0.5rem;
   margin-end: 0.5rem;
   -webkit-margin-before: 0.5rem;
-  -moz-margin-before: 0.5rem;
   -ms-margin-before: 0.5rem;
   -o-margin-before: 0.5rem;
   margin-before: 0.5rem;
   -webkit-margin-after: 0.5rem;
-  -moz-margin-after: 0.5rem;
   -ms-margin-after: 0.5rem;
   -o-margin-after: 0.5rem;
   margin-after: 0.5rem;
+}
+@-moz-document url-prefix() {
+  p, .p {
+    -moz-margin-start: 0.5rem;
+  }
+}
+@-moz-document url-prefix() {
+  p, .p {
+    -moz-margin-end: 0.5rem;
+  }
+}
+@-moz-document url-prefix() {
+  p, .p {
+    -moz-margin-before: 0.5rem;
+  }
+}
+@-moz-document url-prefix() {
+  p, .p {
+    -moz-margin-after: 0.5rem;
+  }
 }
 
 /*
@@ -947,11 +1145,16 @@ video, .video {
   object-fit: contain;
   /* Uniform tag sizing */
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
 }
+@-moz-document url-prefix() {
+  video, .video {
+    -moz-box-sizing: border-box;
+  }
+}
+
 /*
  * Author: Joshua Balsillie
  * Date Created: 2020-07-26
@@ -1980,25 +2183,41 @@ Description:define media attributes
   color: white;
   /* Remove defaults */
   -webkit-margin-start: 0.5rem;
-  -moz-margin-start: 0.5rem;
   -ms-margin-start: 0.5rem;
   -o-margin-start: 0.5rem;
   margin-start: 0.5rem;
   -webkit-margin-end: 0.5rem;
-  -moz-margin-end: 0.5rem;
   -ms-margin-end: 0.5rem;
   -o-margin-end: 0.5rem;
   margin-end: 0.5rem;
   -webkit-margin-before: 0.5rem;
-  -moz-margin-before: 0.5rem;
   -ms-margin-before: 0.5rem;
   -o-margin-before: 0.5rem;
   margin-before: 0.5rem;
   -webkit-margin-after: 0.5rem;
-  -moz-margin-after: 0.5rem;
   -ms-margin-after: 0.5rem;
   -o-margin-after: 0.5rem;
   margin-after: 0.5rem;
+}
+@-moz-document url-prefix() {
+  .sitename {
+    -moz-margin-start: 0.5rem;
+  }
+}
+@-moz-document url-prefix() {
+  .sitename {
+    -moz-margin-end: 0.5rem;
+  }
+}
+@-moz-document url-prefix() {
+  .sitename {
+    -moz-margin-before: 0.5rem;
+  }
+}
+@-moz-document url-prefix() {
+  .sitename {
+    -moz-margin-after: 0.5rem;
+  }
 }
 
 /*
