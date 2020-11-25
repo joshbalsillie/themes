@@ -2114,6 +2114,25 @@ video, .video {
   }
 }
 /*
+ * Author: Joshua Balsillie
+ * Date Created: 2020-11-24
+ * Description: define colour swatch styling
+ */
+.colourSwatch {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.5rem;
+  border-style: solid;
+  border-width: 0.15rem;
+  display: inline-block;
+  border-color: #000000;
+  margin-right: 0.5rem;
+  line-height: 0;
+  margin-bottom: 0.5rem;
+  background-color: #FFFFFF;
+}
+
+/*
 Author:Joshua Balsillie
 Date Created:2016-09-07
 Description:define media attributes
