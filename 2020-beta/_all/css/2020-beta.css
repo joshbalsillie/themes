@@ -48,12 +48,12 @@
   -o-margin-after: 0;
   margin-after: 0;
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   * {
     -moz-margin-before: 0;
   }
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   * {
     -moz-margin-after: 0;
   }
@@ -106,22 +106,22 @@ a, .a {
   -o-margin-after: 0.5rem;
   margin-after: 0.5rem;
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   a, .a {
     -moz-margin-start: 0.5rem;
   }
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   a, .a {
     -moz-margin-end: 0.5rem;
   }
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   a, .a {
     -moz-margin-before: 0.5rem;
   }
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   a, .a {
     -moz-margin-after: 0.5rem;
   }
@@ -190,7 +190,7 @@ button, .button {
   transition-duration: 0.3s;
   margin-bottom: 1rem;
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   button, .button {
     -moz-transition-duration: 0.3s;
   }
@@ -228,7 +228,7 @@ body > div {
   -o-box-sizing: border-box;
   box-sizing: border-box;
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   body > div {
     -moz-box-sizing: border-box;
   }
@@ -292,32 +292,32 @@ fieldset, .fieldset {
   border-style: none;
   border-width: 0;
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   fieldset, .fieldset {
     -moz-margin-start: 0;
   }
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   fieldset, .fieldset {
     -moz-margin-end: 0;
   }
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   fieldset, .fieldset {
     -moz-padding-before: 0;
   }
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   fieldset, .fieldset {
     -moz-padding-start: 0;
   }
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   fieldset, .fieldset {
     -moz-padding-end: 0;
   }
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   fieldset, .fieldset {
     -moz-padding-after: 0;
   }
@@ -358,7 +358,7 @@ body footer:last-child, body .footer:last-child {
   -o-box-sizing: border-box;
   box-sizing: border-box;
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   body footer:last-child, body .footer:last-child {
     -moz-box-sizing: border-box;
   }
@@ -404,22 +404,22 @@ h1, .h1 {
   -o-margin-after: 0.5rem;
   margin-after: 0.5rem;
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   h1, .h1 {
     -moz-margin-start: 0.5rem;
   }
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   h1, .h1 {
     -moz-margin-end: 0.5rem;
   }
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   h1, .h1 {
     -moz-margin-before: 0.5rem;
   }
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   h1, .h1 {
     -moz-margin-after: 0.5rem;
   }
@@ -469,22 +469,22 @@ h2, .h2 {
     text-align: center;
   }
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   h2, .h2 {
     -moz-margin-start: 0.5rem;
   }
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   h2, .h2 {
     -moz-margin-end: 0.5rem;
   }
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   h2, .h2 {
     -moz-margin-before: 0.5rem;
   }
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   h2, .h2 {
     -moz-margin-after: 0.5rem;
   }
@@ -518,22 +518,22 @@ h3, .h3 {
   -o-margin-after: 0.5rem;
   margin-after: 0.5rem;
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   h3, .h3 {
     -moz-margin-start: 0.5rem;
   }
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   h3, .h3 {
     -moz-margin-end: 0.5rem;
   }
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   h3, .h3 {
     -moz-margin-before: 0.5rem;
   }
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   h3, .h3 {
     -moz-margin-after: 0.5rem;
   }
@@ -567,22 +567,22 @@ h4, .h4 {
   -o-margin-after: 0.5rem;
   margin-after: 0.5rem;
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   h4, .h4 {
     -moz-margin-start: 0.5rem;
   }
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   h4, .h4 {
     -moz-margin-end: 0.5rem;
   }
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   h4, .h4 {
     -moz-margin-before: 0.5rem;
   }
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   h4, .h4 {
     -moz-margin-after: 0.5rem;
   }
@@ -616,22 +616,22 @@ h5, .h5 {
   -o-margin-after: 0.5rem;
   margin-after: 0.5rem;
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   h5, .h5 {
     -moz-margin-start: 0.5rem;
   }
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   h5, .h5 {
     -moz-margin-end: 0.5rem;
   }
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   h5, .h5 {
     -moz-margin-before: 0.5rem;
   }
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   h5, .h5 {
     -moz-margin-after: 0.5rem;
   }
@@ -665,22 +665,22 @@ h6, .h6 {
   -o-margin-after: 0.5rem;
   margin-after: 0.5rem;
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   h6, .h6 {
     -moz-margin-start: 0.5rem;
   }
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   h6, .h6 {
     -moz-margin-end: 0.5rem;
   }
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   h6, .h6 {
     -moz-margin-before: 0.5rem;
   }
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   h6, .h6 {
     -moz-margin-after: 0.5rem;
   }
@@ -718,7 +718,7 @@ header, .header {
   -o-box-sizing: border-box;
   box-sizing: border-box;
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   header, .header {
     -moz-box-sizing: border-box;
   }
@@ -814,7 +814,7 @@ img.circle, .img.circle {
     margin-right: auto;
   }
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   img, .img {
     -moz-box-sizing: border-box;
   }
@@ -918,7 +918,7 @@ body > main, .main {
   background-color: #293136;
   border-color: #95b3c2;
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   body > main, .main {
     -moz-box-sizing: border-box;
   }
@@ -983,7 +983,7 @@ nav a, .nav a {
     display: block;
   }
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   nav a, .nav a {
     -moz-transition-duration: 0.3s;
   }
@@ -996,7 +996,7 @@ nav a:hover, nav a :focus, nav a :active, .nav a:hover, .nav a :focus, .nav a :a
   -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   nav a:hover, nav a :focus, nav a :active, .nav a:hover, .nav a :focus, .nav a :active {
     -moz-transition-duration: 0.3s;
   }
@@ -1029,22 +1029,22 @@ p, .p {
   -o-margin-after: 0.5rem;
   margin-after: 0.5rem;
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   p, .p {
     -moz-margin-start: 0.5rem;
   }
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   p, .p {
     -moz-margin-end: 0.5rem;
   }
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   p, .p {
     -moz-margin-before: 0.5rem;
   }
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   p, .p {
     -moz-margin-after: 0.5rem;
   }
@@ -1149,7 +1149,7 @@ video, .video {
   -o-box-sizing: border-box;
   box-sizing: border-box;
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   video, .video {
     -moz-box-sizing: border-box;
   }
@@ -2199,22 +2199,22 @@ Description:define media attributes
   -o-margin-after: 0.5rem;
   margin-after: 0.5rem;
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   .sitename {
     -moz-margin-start: 0.5rem;
   }
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   .sitename {
     -moz-margin-end: 0.5rem;
   }
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   .sitename {
     -moz-margin-before: 0.5rem;
   }
 }
-@-moz-document url-prefix() {
+@media (min--moz-device-pixel-ratio: 0) {
   .sitename {
     -moz-margin-after: 0.5rem;
   }
