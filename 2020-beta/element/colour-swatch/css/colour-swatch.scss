@@ -1,0 +1,21 @@
+@charset "utf-8";
+/*
+ * Author: Joshua Balsillie
+ * Date Created: 2020-11-24
+ * Description: define colour swatch styling
+ */
+@use '../../../variable/_all/css/variable';
+
+.colourSwatch{
+	width: 1rem;
+	height: 1rem;
+	border-radius: 0.5rem;
+	border-style: solid;
+	border-width: variable.$defaultBorderWidth;
+	display: inline-block;
+	border-color: #000000;
+	margin-right: 0.5rem;
+	line-height: 0;
+	margin-bottom: 0.5rem;
+	background-color: #FFFFFF;
+}
