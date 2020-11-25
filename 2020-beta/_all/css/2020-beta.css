@@ -884,6 +884,15 @@ label, .label {
 
 /*
  * Author: Joshua Balsillie
+ * Date Created: 2020-11-24
+ * Description: define colour swatch styling
+ */
+li, .li {
+  font-size: 1rem;
+}
+
+/*
+ * Author: Joshua Balsillie
  * Date Created: 2016-08-20
  * Description: define <link></link> attributes
 */
@@ -891,6 +900,11 @@ link, .link {
   display: none;
 }
 
+/*
+ * Author: Joshua Balsillie
+ * Date Created: 2020-11-24
+ * Description: define colour swatch styling
+ */
 /*
  * Author: Joshua Balsillie
  * Date Created: 2016-08-20
