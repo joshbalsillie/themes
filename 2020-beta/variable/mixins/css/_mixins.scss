@@ -7,11 +7,11 @@
 
 @mixin browserSupport( $property, $value ) {
 	// Browser attribute support
-	@-moz-document url-prefix() {
+	@media(min--moz-device-pixel-ratio:0) {
+		//
 	  #{ -moz- + $property }: $value;
 	}
 	#{ -webkit- + $property }: $value;
-	
 	#{ -ms- + $property }: $value;
 	#{ -o- + $property }: $value;
 	#{ $property }: $value;
